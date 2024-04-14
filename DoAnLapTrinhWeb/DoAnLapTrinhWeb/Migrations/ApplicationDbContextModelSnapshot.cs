@@ -252,6 +252,10 @@ namespace DoAnLapTrinhWeb.Migrations
                     b.Property<string>("imageUrl")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("moTa")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<int>("tacGiaId")
                         .HasColumnType("int");
 

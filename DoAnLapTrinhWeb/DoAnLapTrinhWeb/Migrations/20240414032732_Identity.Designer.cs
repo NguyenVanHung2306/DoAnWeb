@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace DoAnLapTrinhWeb.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20240405124628_AddIdentity")]
-    partial class AddIdentity
+    [Migration("20240414032732_Identity")]
+    partial class Identity
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -25,6 +25,102 @@ namespace DoAnLapTrinhWeb.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
+            modelBuilder.Entity("DoAnLapTrinhWeb.Models.ApplicationUser", b =>
+                {
+                    b.Property<string>("Id")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<int>("AccessFailedCount")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Address")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Age")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("ConcurrencyStamp")
+                        .IsConcurrencyToken()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Email")
+                        .HasMaxLength(256)
+                        .HasColumnType("nvarchar(256)");
+
+                    b.Property<bool>("EmailConfirmed")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("FullName")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("LockoutEnabled")
+                        .HasColumnType("bit");
+
+                    b.Property<DateTimeOffset?>("LockoutEnd")
+                        .HasColumnType("datetimeoffset");
+
+                    b.Property<string>("NormalizedEmail")
+                        .HasMaxLength(256)
+                        .HasColumnType("nvarchar(256)");
+
+                    b.Property<string>("NormalizedUserName")
+                        .HasMaxLength(256)
+                        .HasColumnType("nvarchar(256)");
+
+                    b.Property<string>("PasswordHash")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("PhoneNumber")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("PhoneNumberConfirmed")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("SecurityStamp")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("TwoFactorEnabled")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("UserName")
+                        .HasMaxLength(256)
+                        .HasColumnType("nvarchar(256)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("NormalizedEmail")
+                        .HasDatabaseName("EmailIndex");
+
+                    b.HasIndex("NormalizedUserName")
+                        .IsUnique()
+                        .HasDatabaseName("UserNameIndex")
+                        .HasFilter("[NormalizedUserName] IS NOT NULL");
+
+                    b.ToTable("AspNetUsers", (string)null);
+                });
+
+            modelBuilder.Entity("DoAnLapTrinhWeb.Models.TbTrang", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Noidung")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("SachId")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("SachId");
+
+                    b.ToTable("tbTrang");
+                });
+
             modelBuilder.Entity("DoAnLapTrinhWeb.Models.tbChiTietDanhDau", b =>
                 {
                     b.Property<int>("Id")
@@ -33,23 +129,23 @@ namespace DoAnLapTrinhWeb.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<int>("maLoaiDanhDau")
+                    b.Property<int>("danhDauId")
                         .HasColumnType("int");
 
                     b.Property<int>("sachId")
                         .HasColumnType("int");
 
-                    b.Property<int>("tbLoaiDanhDauMaLoaiDanhDau")
-                        .HasColumnType("int");
-
-                    b.Property<int>("tbSachsachId")
-                        .HasColumnType("int");
+                    b.Property<string>("userId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(450)");
 
                     b.HasKey("Id");
 
-                    b.HasIndex("tbLoaiDanhDauMaLoaiDanhDau");
+                    b.HasIndex("danhDauId");
 
-                    b.HasIndex("tbSachsachId");
+                    b.HasIndex("sachId");
+
+                    b.HasIndex("userId");
 
                     b.ToTable("tbChiTietDanhDau");
                 });
@@ -62,23 +158,17 @@ namespace DoAnLapTrinhWeb.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<int>("maTheLoai")
-                        .HasColumnType("int");
-
                     b.Property<int>("sachId")
                         .HasColumnType("int");
 
-                    b.Property<int>("tbSachsachId")
-                        .HasColumnType("int");
-
-                    b.Property<int>("tbTheLoaimaTheLoai")
+                    b.Property<int>("theLoaiId")
                         .HasColumnType("int");
 
                     b.HasKey("Id");
 
-                    b.HasIndex("tbSachsachId");
+                    b.HasIndex("sachId");
 
-                    b.HasIndex("tbTheLoaimaTheLoai");
+                    b.HasIndex("theLoaiId");
 
                     b.ToTable("tbChiTietTheLoai");
                 });
@@ -94,32 +184,35 @@ namespace DoAnLapTrinhWeb.Migrations
                     b.Property<int>("sachId")
                         .HasColumnType("int");
 
-                    b.Property<int>("tbSachsachId")
-                        .HasColumnType("int");
-
                     b.Property<DateTime>("thoiGianDoc")
                         .HasColumnType("datetime2");
 
+                    b.Property<string>("userId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(450)");
+
                     b.HasKey("lichSuId");
 
-                    b.HasIndex("tbSachsachId");
+                    b.HasIndex("sachId");
+
+                    b.HasIndex("userId");
 
                     b.ToTable("tbLichSu");
                 });
 
             modelBuilder.Entity("DoAnLapTrinhWeb.Models.tbLoaiDanhDau", b =>
                 {
-                    b.Property<int>("MaLoaiDanhDau")
+                    b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("MaLoaiDanhDau"));
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
                     b.Property<string>("TenDanhDau")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.HasKey("MaLoaiDanhDau");
+                    b.HasKey("Id");
 
                     b.ToTable("tbLoaiDanhDau");
                 });
@@ -138,35 +231,35 @@ namespace DoAnLapTrinhWeb.Migrations
                     b.Property<int>("sachId")
                         .HasColumnType("int");
 
-                    b.Property<int>("tbSachsachId")
-                        .HasColumnType("int");
+                    b.Property<string>("userId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(450)");
 
                     b.HasKey("Id");
 
-                    b.HasIndex("tbSachsachId");
+                    b.HasIndex("sachId");
+
+                    b.HasIndex("userId");
 
                     b.ToTable("tbPhieuDanhGia");
                 });
 
             modelBuilder.Entity("DoAnLapTrinhWeb.Models.tbSach", b =>
                 {
-                    b.Property<int>("sachId")
+                    b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("sachId"));
-
-                    b.Property<string>("fileUrl")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
                     b.Property<string>("imageUrl")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("tacGiaId")
-                        .HasColumnType("int");
+                    b.Property<string>("moTa")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
-                    b.Property<int?>("tbTacGiaTacGiaId")
+                    b.Property<int>("tacGiaId")
                         .HasColumnType("int");
 
                     b.Property<string>("tenSach")
@@ -174,44 +267,44 @@ namespace DoAnLapTrinhWeb.Migrations
                         .HasMaxLength(100)
                         .HasColumnType("nvarchar(100)");
 
-                    b.HasKey("sachId");
+                    b.HasKey("Id");
 
-                    b.HasIndex("tbTacGiaTacGiaId");
+                    b.HasIndex("tacGiaId");
 
                     b.ToTable("tbSach");
                 });
 
             modelBuilder.Entity("DoAnLapTrinhWeb.Models.tbTacGia", b =>
                 {
-                    b.Property<int>("TacGiaId")
+                    b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("TacGiaId"));
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
                     b.Property<string>("TenTacGia")
                         .IsRequired()
                         .HasMaxLength(100)
                         .HasColumnType("nvarchar(100)");
 
-                    b.HasKey("TacGiaId");
+                    b.HasKey("Id");
 
                     b.ToTable("tbTacGia");
                 });
 
             modelBuilder.Entity("DoAnLapTrinhWeb.Models.tbTheLoai", b =>
                 {
-                    b.Property<int>("maTheLoai")
+                    b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("maTheLoai"));
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
                     b.Property<string>("tenTheLoai")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.HasKey("maTheLoai");
+                    b.HasKey("Id");
 
                     b.ToTable("tbTheLoai");
                 });
@@ -266,71 +359,6 @@ namespace DoAnLapTrinhWeb.Migrations
                     b.HasIndex("RoleId");
 
                     b.ToTable("AspNetRoleClaims", (string)null);
-                });
-
-            modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUser", b =>
-                {
-                    b.Property<string>("Id")
-                        .HasColumnType("nvarchar(450)");
-
-                    b.Property<int>("AccessFailedCount")
-                        .HasColumnType("int");
-
-                    b.Property<string>("ConcurrencyStamp")
-                        .IsConcurrencyToken()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Email")
-                        .HasMaxLength(256)
-                        .HasColumnType("nvarchar(256)");
-
-                    b.Property<bool>("EmailConfirmed")
-                        .HasColumnType("bit");
-
-                    b.Property<bool>("LockoutEnabled")
-                        .HasColumnType("bit");
-
-                    b.Property<DateTimeOffset?>("LockoutEnd")
-                        .HasColumnType("datetimeoffset");
-
-                    b.Property<string>("NormalizedEmail")
-                        .HasMaxLength(256)
-                        .HasColumnType("nvarchar(256)");
-
-                    b.Property<string>("NormalizedUserName")
-                        .HasMaxLength(256)
-                        .HasColumnType("nvarchar(256)");
-
-                    b.Property<string>("PasswordHash")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("PhoneNumber")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<bool>("PhoneNumberConfirmed")
-                        .HasColumnType("bit");
-
-                    b.Property<string>("SecurityStamp")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<bool>("TwoFactorEnabled")
-                        .HasColumnType("bit");
-
-                    b.Property<string>("UserName")
-                        .HasMaxLength(256)
-                        .HasColumnType("nvarchar(256)");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("NormalizedEmail")
-                        .HasDatabaseName("EmailIndex");
-
-                    b.HasIndex("NormalizedUserName")
-                        .IsUnique()
-                        .HasDatabaseName("UserNameIndex")
-                        .HasFilter("[NormalizedUserName] IS NOT NULL");
-
-                    b.ToTable("AspNetUsers", (string)null);
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserClaim<string>", b =>
@@ -414,73 +442,110 @@ namespace DoAnLapTrinhWeb.Migrations
                     b.ToTable("AspNetUserTokens", (string)null);
                 });
 
+            modelBuilder.Entity("DoAnLapTrinhWeb.Models.TbTrang", b =>
+                {
+                    b.HasOne("DoAnLapTrinhWeb.Models.tbSach", "sach")
+                        .WithMany("TbTrangs")
+                        .HasForeignKey("SachId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("sach");
+                });
+
             modelBuilder.Entity("DoAnLapTrinhWeb.Models.tbChiTietDanhDau", b =>
                 {
-                    b.HasOne("DoAnLapTrinhWeb.Models.tbLoaiDanhDau", "tbLoaiDanhDau")
+                    b.HasOne("DoAnLapTrinhWeb.Models.tbLoaiDanhDau", "DanhDau")
                         .WithMany("chiTietDanhDaus")
-                        .HasForeignKey("tbLoaiDanhDauMaLoaiDanhDau")
+                        .HasForeignKey("danhDauId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("DoAnLapTrinhWeb.Models.tbSach", "tbSach")
+                    b.HasOne("DoAnLapTrinhWeb.Models.tbSach", "Sach")
                         .WithMany("chiTietDanhDaus")
-                        .HasForeignKey("tbSachsachId")
+                        .HasForeignKey("sachId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.Navigation("tbLoaiDanhDau");
+                    b.HasOne("DoAnLapTrinhWeb.Models.ApplicationUser", "User")
+                        .WithMany()
+                        .HasForeignKey("userId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
-                    b.Navigation("tbSach");
+                    b.Navigation("DanhDau");
+
+                    b.Navigation("Sach");
+
+                    b.Navigation("User");
                 });
 
             modelBuilder.Entity("DoAnLapTrinhWeb.Models.tbChiTietTheLoai", b =>
                 {
-                    b.HasOne("DoAnLapTrinhWeb.Models.tbSach", "tbSach")
+                    b.HasOne("DoAnLapTrinhWeb.Models.tbSach", "Sach")
                         .WithMany("chiTietTheLoais")
-                        .HasForeignKey("tbSachsachId")
+                        .HasForeignKey("sachId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("DoAnLapTrinhWeb.Models.tbTheLoai", "tbTheLoai")
+                    b.HasOne("DoAnLapTrinhWeb.Models.tbTheLoai", "TheLoai")
                         .WithMany("chiTietTheLoais")
-                        .HasForeignKey("tbTheLoaimaTheLoai")
+                        .HasForeignKey("theLoaiId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.Navigation("tbSach");
+                    b.Navigation("Sach");
 
-                    b.Navigation("tbTheLoai");
+                    b.Navigation("TheLoai");
                 });
 
             modelBuilder.Entity("DoAnLapTrinhWeb.Models.tbLichSu", b =>
                 {
-                    b.HasOne("DoAnLapTrinhWeb.Models.tbSach", "tbSach")
+                    b.HasOne("DoAnLapTrinhWeb.Models.tbSach", "Sach")
                         .WithMany("lichSus")
-                        .HasForeignKey("tbSachsachId")
+                        .HasForeignKey("sachId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.Navigation("tbSach");
+                    b.HasOne("DoAnLapTrinhWeb.Models.ApplicationUser", "User")
+                        .WithMany()
+                        .HasForeignKey("userId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Sach");
+
+                    b.Navigation("User");
                 });
 
             modelBuilder.Entity("DoAnLapTrinhWeb.Models.tbPhieuDanhGia", b =>
                 {
-                    b.HasOne("DoAnLapTrinhWeb.Models.tbSach", "tbSach")
+                    b.HasOne("DoAnLapTrinhWeb.Models.tbSach", "Sach")
                         .WithMany("phieuDanhGias")
-                        .HasForeignKey("tbSachsachId")
+                        .HasForeignKey("sachId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.Navigation("tbSach");
+                    b.HasOne("DoAnLapTrinhWeb.Models.ApplicationUser", "User")
+                        .WithMany()
+                        .HasForeignKey("userId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Sach");
+
+                    b.Navigation("User");
                 });
 
             modelBuilder.Entity("DoAnLapTrinhWeb.Models.tbSach", b =>
                 {
-                    b.HasOne("DoAnLapTrinhWeb.Models.tbTacGia", "tbTacGia")
+                    b.HasOne("DoAnLapTrinhWeb.Models.tbTacGia", "TacGia")
                         .WithMany("Saches")
-                        .HasForeignKey("tbTacGiaTacGiaId");
+                        .HasForeignKey("tacGiaId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
-                    b.Navigation("tbTacGia");
+                    b.Navigation("TacGia");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
@@ -494,7 +559,7 @@ namespace DoAnLapTrinhWeb.Migrations
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserClaim<string>", b =>
                 {
-                    b.HasOne("Microsoft.AspNetCore.Identity.IdentityUser", null)
+                    b.HasOne("DoAnLapTrinhWeb.Models.ApplicationUser", null)
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -503,7 +568,7 @@ namespace DoAnLapTrinhWeb.Migrations
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserLogin<string>", b =>
                 {
-                    b.HasOne("Microsoft.AspNetCore.Identity.IdentityUser", null)
+                    b.HasOne("DoAnLapTrinhWeb.Models.ApplicationUser", null)
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -518,7 +583,7 @@ namespace DoAnLapTrinhWeb.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("Microsoft.AspNetCore.Identity.IdentityUser", null)
+                    b.HasOne("DoAnLapTrinhWeb.Models.ApplicationUser", null)
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -527,7 +592,7 @@ namespace DoAnLapTrinhWeb.Migrations
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserToken<string>", b =>
                 {
-                    b.HasOne("Microsoft.AspNetCore.Identity.IdentityUser", null)
+                    b.HasOne("DoAnLapTrinhWeb.Models.ApplicationUser", null)
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -541,6 +606,8 @@ namespace DoAnLapTrinhWeb.Migrations
 
             modelBuilder.Entity("DoAnLapTrinhWeb.Models.tbSach", b =>
                 {
+                    b.Navigation("TbTrangs");
+
                     b.Navigation("chiTietDanhDaus");
 
                     b.Navigation("chiTietTheLoais");

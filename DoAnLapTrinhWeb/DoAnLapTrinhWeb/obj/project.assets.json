@@ -8567,19 +8567,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\THIEN LY\\.nuget\\packages\\": {}
+    "C:\\Users\\phamh\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\THIEN LY\\Desktop\\Do-An-Doc-Sach-Online\\DoAnLapTrinhWeb\\DoAnLapTrinhWeb.csproj",
+      "projectUniqueName": "C:\\LTWEB\\DAWebGitHub\\DoAnWeb\\DoAnLapTrinhWeb\\DoAnLapTrinhWeb\\DoAnLapTrinhWeb.csproj",
       "projectName": "DoAnLapTrinhWeb",
-      "projectPath": "C:\\Users\\THIEN LY\\Desktop\\Do-An-Doc-Sach-Online\\DoAnLapTrinhWeb\\DoAnLapTrinhWeb.csproj",
-      "packagesPath": "C:\\Users\\THIEN LY\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\THIEN LY\\Desktop\\Do-An-Doc-Sach-Online\\DoAnLapTrinhWeb\\obj\\",
+      "projectPath": "C:\\LTWEB\\DAWebGitHub\\DoAnWeb\\DoAnLapTrinhWeb\\DoAnLapTrinhWeb\\DoAnLapTrinhWeb.csproj",
+      "packagesPath": "C:\\Users\\phamh\\.nuget\\packages\\",
+      "outputPath": "C:\\LTWEB\\DAWebGitHub\\DoAnWeb\\DoAnLapTrinhWeb\\DoAnLapTrinhWeb\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\THIEN LY\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\phamh\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

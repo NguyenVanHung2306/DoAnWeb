@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using System.Runtime.CompilerServices;
 
 namespace DoAnLapTrinhWeb.Models
 {
@@ -12,6 +13,7 @@ namespace DoAnLapTrinhWeb.Models
         public string? imageUrl { get; set; }
         public int tacGiaId { get; set; }
         public tbTacGia TacGia { get; set; }
+        public string moTa { get; set; }
         public List<tbChiTietTheLoai> chiTietTheLoais { get; set; }
         public List<tbChiTietDanhDau> chiTietDanhDaus { get; set; }
         public List<tbLichSu> lichSus { get; set; }
