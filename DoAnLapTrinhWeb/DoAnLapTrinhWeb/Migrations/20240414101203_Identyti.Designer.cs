@@ -4,6 +4,7 @@ using DoAnLapTrinhWeb.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace DoAnLapTrinhWeb.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20240414101203_Identyti")]
+    partial class Identyti
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -147,6 +150,29 @@ namespace DoAnLapTrinhWeb.Migrations
                     b.ToTable("tbChiTietDanhDau");
                 });
 
+            modelBuilder.Entity("DoAnLapTrinhWeb.Models.tbChiTietTheLoai", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<int>("sachId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("theLoaiId")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("sachId");
+
+                    b.HasIndex("theLoaiId");
+
+                    b.ToTable("tbChiTietTheLoai");
+                });
+
             modelBuilder.Entity("DoAnLapTrinhWeb.Models.tbLichSu", b =>
                 {
                     b.Property<int>("lichSuId")
@@ -241,14 +267,9 @@ namespace DoAnLapTrinhWeb.Migrations
                         .HasMaxLength(100)
                         .HasColumnType("nvarchar(100)");
 
-                    b.Property<int>("theLoaiId")
-                        .HasColumnType("int");
-
                     b.HasKey("Id");
 
                     b.HasIndex("tacGiaId");
-
-                    b.HasIndex("theLoaiId");
 
                     b.ToTable("tbSach");
                 });
@@ -459,6 +480,25 @@ namespace DoAnLapTrinhWeb.Migrations
                     b.Navigation("User");
                 });
 
+            modelBuilder.Entity("DoAnLapTrinhWeb.Models.tbChiTietTheLoai", b =>
+                {
+                    b.HasOne("DoAnLapTrinhWeb.Models.tbSach", "Sach")
+                        .WithMany("chiTietTheLoais")
+                        .HasForeignKey("sachId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("DoAnLapTrinhWeb.Models.tbTheLoai", "TheLoai")
+                        .WithMany("chiTietTheLoais")
+                        .HasForeignKey("theLoaiId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Sach");
+
+                    b.Navigation("TheLoai");
+                });
+
             modelBuilder.Entity("DoAnLapTrinhWeb.Models.tbLichSu", b =>
                 {
                     b.HasOne("DoAnLapTrinhWeb.Models.tbSach", "Sach")
@@ -505,15 +545,7 @@ namespace DoAnLapTrinhWeb.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("DoAnLapTrinhWeb.Models.tbTheLoai", "theLoai")
-                        .WithMany("Sachs")
-                        .HasForeignKey("theLoaiId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
                     b.Navigation("TacGia");
-
-                    b.Navigation("theLoai");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
@@ -578,6 +610,8 @@ namespace DoAnLapTrinhWeb.Migrations
 
                     b.Navigation("chiTietDanhDaus");
 
+                    b.Navigation("chiTietTheLoais");
+
                     b.Navigation("lichSus");
 
                     b.Navigation("phieuDanhGias");
@@ -590,7 +624,7 @@ namespace DoAnLapTrinhWeb.Migrations
 
             modelBuilder.Entity("DoAnLapTrinhWeb.Models.tbTheLoai", b =>
                 {
-                    b.Navigation("Sachs");
+                    b.Navigation("chiTietTheLoais");
                 });
 #pragma warning restore 612, 618
         }

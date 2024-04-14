@@ -13,7 +13,6 @@ namespace DoAnLapTrinhWeb.Models
         public DbSet<tbSach> tbSach { get; set; }
         public DbSet<tbTacGia> tbTacGia { get; set; }
         public DbSet<tbTheLoai> tbTheLoai { get; set; }
-        public DbSet<tbChiTietTheLoai> tbChiTietTheLoai { get; set; }
         public DbSet<tbLoaiDanhDau> tbLoaiDanhDau { get; set; }
         public DbSet<tbChiTietDanhDau> tbChiTietDanhDau { get; set; }
         public DbSet<tbLichSu> tbLichSu { get; set; }

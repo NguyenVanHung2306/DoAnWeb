@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace DoAnLapTrinhWeb.Migrations
 {
     /// <inheritdoc />
-    public partial class Identity : Migration
+    public partial class Identyti : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
