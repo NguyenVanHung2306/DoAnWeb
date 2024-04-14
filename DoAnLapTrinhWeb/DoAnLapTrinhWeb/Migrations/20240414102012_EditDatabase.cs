@@ -15,19 +15,19 @@ namespace DoAnLapTrinhWeb.Migrations
 
             migrationBuilder.AddColumn<int>(
                 name: "theLoaiId",
-                table: "tbSach",
+                table: "tbTacGia",
                 type: "int",
                 nullable: false,
                 defaultValue: 0);
 
             migrationBuilder.CreateIndex(
-                name: "IX_tbSach_theLoaiId",
-                table: "tbSach",
+                name: "IX_tbTacGia_theLoaiId",
+                table: "tbTacGia",
                 column: "theLoaiId");
 
             migrationBuilder.AddForeignKey(
-                name: "FK_tbSach_tbTheLoai_theLoaiId",
-                table: "tbSach",
+                name: "FK_tbTacGia_tbTheLoai_theLoaiId",
+                table: "tbTacGia",
                 column: "theLoaiId",
                 principalTable: "tbTheLoai",
                 principalColumn: "Id",
@@ -38,16 +38,16 @@ namespace DoAnLapTrinhWeb.Migrations
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropForeignKey(
-                name: "FK_tbSach_tbTheLoai_theLoaiId",
-                table: "tbSach");
+                name: "FK_tbTacGia_tbTheLoai_theLoaiId",
+                table: "tbTacGia");
 
             migrationBuilder.DropIndex(
-                name: "IX_tbSach_theLoaiId",
-                table: "tbSach");
+                name: "IX_tbTacGia_theLoaiId",
+                table: "tbTacGia");
 
             migrationBuilder.DropColumn(
                 name: "theLoaiId",
-                table: "tbSach");
+                table: "tbTacGia");
 
             migrationBuilder.CreateTable(
                 name: "tbChiTietTheLoai",
@@ -62,9 +62,9 @@ namespace DoAnLapTrinhWeb.Migrations
                 {
                     table.PrimaryKey("PK_tbChiTietTheLoai", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_tbChiTietTheLoai_tbSach_sachId",
+                        name: "FK_tbChiTietTheLoai_tbTacGia_sachId",
                         column: x => x.sachId,
-                        principalTable: "tbSach",
+                        principalTable: "tbTacGia",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(

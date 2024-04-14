@@ -199,7 +199,7 @@ namespace DoAnLapTrinhWeb.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "tbSach",
+                name: "tbTacGia",
                 columns: table => new
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
@@ -211,9 +211,9 @@ namespace DoAnLapTrinhWeb.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_tbSach", x => x.Id);
+                    table.PrimaryKey("PK_tbTacGia", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_tbSach_tbTacGia_tacGiaId",
+                        name: "FK_tbTacGia_tbTacGia_tacGiaId",
                         column: x => x.tacGiaId,
                         principalTable: "tbTacGia",
                         principalColumn: "Id",
@@ -246,9 +246,9 @@ namespace DoAnLapTrinhWeb.Migrations
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
-                        name: "FK_tbChiTietDanhDau_tbSach_sachId",
+                        name: "FK_tbChiTietDanhDau_tbTacGia_sachId",
                         column: x => x.sachId,
-                        principalTable: "tbSach",
+                        principalTable: "tbTacGia",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                 });
@@ -266,9 +266,9 @@ namespace DoAnLapTrinhWeb.Migrations
                 {
                     table.PrimaryKey("PK_tbChiTietTheLoai", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_tbChiTietTheLoai_tbSach_sachId",
+                        name: "FK_tbChiTietTheLoai_tbTacGia_sachId",
                         column: x => x.sachId,
-                        principalTable: "tbSach",
+                        principalTable: "tbTacGia",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
@@ -299,9 +299,9 @@ namespace DoAnLapTrinhWeb.Migrations
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
-                        name: "FK_tbLichSu_tbSach_sachId",
+                        name: "FK_tbLichSu_tbTacGia_sachId",
                         column: x => x.sachId,
-                        principalTable: "tbSach",
+                        principalTable: "tbTacGia",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                 });
@@ -326,9 +326,9 @@ namespace DoAnLapTrinhWeb.Migrations
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
-                        name: "FK_tbPhieuDanhGia_tbSach_sachId",
+                        name: "FK_tbPhieuDanhGia_tbTacGia_sachId",
                         column: x => x.sachId,
-                        principalTable: "tbSach",
+                        principalTable: "tbTacGia",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                 });
@@ -346,9 +346,9 @@ namespace DoAnLapTrinhWeb.Migrations
                 {
                     table.PrimaryKey("PK_tbTrang", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_tbTrang_tbSach_SachId",
+                        name: "FK_tbTrang_tbTacGia_SachId",
                         column: x => x.SachId,
-                        principalTable: "tbSach",
+                        principalTable: "tbTacGia",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                 });
@@ -438,8 +438,8 @@ namespace DoAnLapTrinhWeb.Migrations
                 column: "userId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_tbSach_tacGiaId",
-                table: "tbSach",
+                name: "IX_tbTacGia_tacGiaId",
+                table: "tbTacGia",
                 column: "tacGiaId");
 
             migrationBuilder.CreateIndex(
@@ -494,7 +494,7 @@ namespace DoAnLapTrinhWeb.Migrations
                 name: "AspNetUsers");
 
             migrationBuilder.DropTable(
-                name: "tbSach");
+                name: "tbTacGia");
 
             migrationBuilder.DropTable(
                 name: "tbTacGia");
