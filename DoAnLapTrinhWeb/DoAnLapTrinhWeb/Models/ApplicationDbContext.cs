@@ -9,7 +9,17 @@ namespace DoAnLapTrinhWeb.Models
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext>options) : base(options)
         {
         }
+        public ApplicationDbContext()
+        {
 
+        }
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        {
+            if (!optionsBuilder.IsConfigured)
+            {
+                optionsBuilder.UseSqlServer("Data Source=LAPTOP-BGSRQD70\\SQLEXPRESS;Initial Catalog=Book-ThucHien;Integrated Security=True;Connect Timeout=30;Encrypt=False;Trust Server Certificate=False;Application Intent=ReadWrite;Multi Subnet Failover=False");
+            }
+        }
         public DbSet<tbSach> tbSach { get; set; }
         public DbSet<tbTacGia> tbTacGia { get; set; }
         public DbSet<tbTheLoai> tbTheLoai { get; set; }

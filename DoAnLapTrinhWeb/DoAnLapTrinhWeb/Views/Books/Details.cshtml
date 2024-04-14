@@ -1,0 +1,23 @@
+﻿@model DoAnLapTrinhWeb.Models.tbSach
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<h2>@Model.tenSach</h2>
+<div>
+    @{
+        ApplicationDbContext context = new ApplicationDbContext();
+        var theloai = context.tbTheLoai.FirstOrDefault(b => b.Id == @Model.theLoaiId);
+        var tacgia = context.tbTacGia.FirstOrDefault(b => b.Id == @Model.tacGiaId);
+
+    }
+    <h3>Tác giả: @tacgia.TenTacGia.ToString()</h3>
+    <p>Mô tả: @Model.moTa</p>
+    <p>Thể loại: @theloai.tenTheLoai.ToString()</p>
+    @if (!string.IsNullOrEmpty(Model.imageUrl))
+    {
+        <img src="@Model.imageUrl" alt="Image" style="max-width:200px;" />
+    }
+    <a asp-action="Read">Đọc</a>
+
+</div>
+<a asp-action="Index">Back to List</a>
