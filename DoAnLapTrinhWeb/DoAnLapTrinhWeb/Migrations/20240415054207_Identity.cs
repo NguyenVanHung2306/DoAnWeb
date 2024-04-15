@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace DoAnLapTrinhWeb.Migrations
 {
     /// <inheritdoc />
-    public partial class Identyti : Migration
+    public partial class Identity : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -207,7 +207,8 @@ namespace DoAnLapTrinhWeb.Migrations
                     tenSach = table.Column<string>(type: "nvarchar(100)", maxLength: 100, nullable: false),
                     imageUrl = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     tacGiaId = table.Column<int>(type: "int", nullable: false),
-                    moTa = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                    moTa = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    theLoaiId = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -216,6 +217,12 @@ namespace DoAnLapTrinhWeb.Migrations
                         name: "FK_tbSach_tbTacGia_tacGiaId",
                         column: x => x.tacGiaId,
                         principalTable: "tbTacGia",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
+                    table.ForeignKey(
+                        name: "FK_tbSach_tbTheLoai_theLoaiId",
+                        column: x => x.theLoaiId,
+                        principalTable: "tbTheLoai",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                 });
@@ -249,32 +256,6 @@ namespace DoAnLapTrinhWeb.Migrations
                         name: "FK_tbChiTietDanhDau_tbSach_sachId",
                         column: x => x.sachId,
                         principalTable: "tbSach",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
-                });
-
-            migrationBuilder.CreateTable(
-                name: "tbChiTietTheLoai",
-                columns: table => new
-                {
-                    Id = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
-                    sachId = table.Column<int>(type: "int", nullable: false),
-                    theLoaiId = table.Column<int>(type: "int", nullable: false)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_tbChiTietTheLoai", x => x.Id);
-                    table.ForeignKey(
-                        name: "FK_tbChiTietTheLoai_tbSach_sachId",
-                        column: x => x.sachId,
-                        principalTable: "tbSach",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
-                    table.ForeignKey(
-                        name: "FK_tbChiTietTheLoai_tbTheLoai_theLoaiId",
-                        column: x => x.theLoaiId,
-                        principalTable: "tbTheLoai",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                 });
@@ -408,16 +389,6 @@ namespace DoAnLapTrinhWeb.Migrations
                 column: "userId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_tbChiTietTheLoai_sachId",
-                table: "tbChiTietTheLoai",
-                column: "sachId");
-
-            migrationBuilder.CreateIndex(
-                name: "IX_tbChiTietTheLoai_theLoaiId",
-                table: "tbChiTietTheLoai",
-                column: "theLoaiId");
-
-            migrationBuilder.CreateIndex(
                 name: "IX_tbLichSu_sachId",
                 table: "tbLichSu",
                 column: "sachId");
@@ -441,6 +412,11 @@ namespace DoAnLapTrinhWeb.Migrations
                 name: "IX_tbSach_tacGiaId",
                 table: "tbSach",
                 column: "tacGiaId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_tbSach_theLoaiId",
+                table: "tbSach",
+                column: "theLoaiId");
 
             migrationBuilder.CreateIndex(
                 name: "IX_tbTrang_SachId",
@@ -470,9 +446,6 @@ namespace DoAnLapTrinhWeb.Migrations
                 name: "tbChiTietDanhDau");
 
             migrationBuilder.DropTable(
-                name: "tbChiTietTheLoai");
-
-            migrationBuilder.DropTable(
                 name: "tbLichSu");
 
             migrationBuilder.DropTable(
@@ -488,9 +461,6 @@ namespace DoAnLapTrinhWeb.Migrations
                 name: "tbLoaiDanhDau");
 
             migrationBuilder.DropTable(
-                name: "tbTheLoai");
-
-            migrationBuilder.DropTable(
                 name: "AspNetUsers");
 
             migrationBuilder.DropTable(
@@ -498,6 +468,9 @@ namespace DoAnLapTrinhWeb.Migrations
 
             migrationBuilder.DropTable(
                 name: "tbTacGia");
+
+            migrationBuilder.DropTable(
+                name: "tbTheLoai");
         }
     }
 }

@@ -1,0 +1,28 @@
+﻿@model IEnumerable<DoAnLapTrinhWeb.Models.tbSach>
+@{
+    ViewData["Title"] = "DoAnLapTrinhWeb";
+}
+
+<h2>Books</h2>
+<h6><a asp-action="Add">Thêm Sách</a></h6>
+<table class="table">
+
+
+    <thead>
+        <tr>
+            <th>Ten Sach</th>
+            <th>Ten The Loai</th>
+            <th>Image</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var sach in Model)
+        {
+            <tr>
+                <td>@sach.tenSach</td>
+                <td>@sach.theLoai.tenTheLoai</td>
+                <td><img src="@sach.imageUrl" style="width: 90px; height: 90px;" /></td>
+            </tr>
+        }
+    </tbody>
+</table>

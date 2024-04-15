@@ -38,6 +38,15 @@ namespace DoAnLapTrinhWeb.Repositories
             _context.tbSach.Remove(sach);
             await _context.SaveChangesAsync();
         }
+
+        public async Task<bool> IsTenSachExisted(string tenSach)
+        {
+            // Truy vấn cơ sở dữ liệu để kiểm tra xem tên sách đã tồn tại hay chưa
+            var sach = await _context.tbSach.FirstOrDefaultAsync(s => s.tenSach == tenSach);
+
+            // Trả về kết quả: true nếu tên sách đã tồn tại và false nếu không
+            return sach != null;
+        }
+
     }
 }
-
