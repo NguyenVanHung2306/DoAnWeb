@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "cmf5dFtVTLN0yckVBUrmteILekcshwLjFgGDEoj6Zo8=",
+  "Hash": "wXFdY/OGAC5jcc6Y9cnH7arAWZ9oxh9L5crsodPNS+s=",
   "Source": "DoAnLapTrinhWeb",
   "BasePath": "_content/DoAnLapTrinhWeb",
   "Mode": "Default",
@@ -1195,6 +1195,25 @@
       "OriginalItemSpec": "D:\\DoAnWeb\\DoAnLapTrinhWeb\\DoAnLapTrinhWeb\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\DoAnLapTrinhWeb.bundle.scp.css"
     },
     {
+      "Identity": "D:\\DoAnWeb\\DoAnLapTrinhWeb\\DoAnLapTrinhWeb\\wwwroot\\css\\rateStar.css",
+      "SourceId": "DoAnLapTrinhWeb",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\DoAnWeb\\DoAnLapTrinhWeb\\DoAnLapTrinhWeb\\wwwroot\\",
+      "BasePath": "_content/DoAnLapTrinhWeb",
+      "RelativePath": "css/rateStar.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\rateStar.css"
+    },
+    {
       "Identity": "D:\\DoAnWeb\\DoAnLapTrinhWeb\\DoAnLapTrinhWeb\\wwwroot\\css\\site.css",
       "SourceId": "DoAnLapTrinhWeb",
       "SourceType": "Discovered",
@@ -1231,6 +1250,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "D:\\DoAnWeb\\DoAnLapTrinhWeb\\DoAnLapTrinhWeb\\wwwroot\\images\\asdasd.png",
+      "SourceId": "DoAnLapTrinhWeb",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\DoAnWeb\\DoAnLapTrinhWeb\\DoAnLapTrinhWeb\\wwwroot\\",
+      "BasePath": "_content/DoAnLapTrinhWeb",
+      "RelativePath": "images/asdasd.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\asdasd.png"
     },
     {
       "Identity": "D:\\DoAnWeb\\DoAnLapTrinhWeb\\DoAnLapTrinhWeb\\wwwroot\\js\\site.js",

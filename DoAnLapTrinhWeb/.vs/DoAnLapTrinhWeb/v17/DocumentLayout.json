@@ -3,28 +3,28 @@
   "WorkspaceRootPath": "D:\\DoAnWeb\\DoAnLapTrinhWeb\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D06F71D4-0547-4316-B9DD-95EA3B7DBEF1}|DoAnLapTrinhWeb\\DoAnLapTrinhWeb.csproj|d:\\doanweb\\doanlaptrinhweb\\doanlaptrinhweb\\models\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D06F71D4-0547-4316-B9DD-95EA3B7DBEF1}|DoAnLapTrinhWeb\\DoAnLapTrinhWeb.csproj|solutionrelative:doanlaptrinhweb\\models\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D06F71D4-0547-4316-B9DD-95EA3B7DBEF1}|DoAnLapTrinhWeb\\DoAnLapTrinhWeb.csproj|d:\\doanweb\\doanlaptrinhweb\\doanlaptrinhweb\\controllers\\bookcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D06F71D4-0547-4316-B9DD-95EA3B7DBEF1}|DoAnLapTrinhWeb\\DoAnLapTrinhWeb.csproj|solutionrelative:doanlaptrinhweb\\controllers\\bookcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D06F71D4-0547-4316-B9DD-95EA3B7DBEF1}|DoAnLapTrinhWeb\\DoAnLapTrinhWeb.csproj|d:\\doanweb\\doanlaptrinhweb\\doanlaptrinhweb\\repositories\\efsachrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D06F71D4-0547-4316-B9DD-95EA3B7DBEF1}|DoAnLapTrinhWeb\\DoAnLapTrinhWeb.csproj|solutionrelative:doanlaptrinhweb\\repositories\\efsachrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D06F71D4-0547-4316-B9DD-95EA3B7DBEF1}|DoAnLapTrinhWeb\\DoAnLapTrinhWeb.csproj|d:\\doanweb\\doanlaptrinhweb\\doanlaptrinhweb\\repositories\\isachrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D06F71D4-0547-4316-B9DD-95EA3B7DBEF1}|DoAnLapTrinhWeb\\DoAnLapTrinhWeb.csproj|solutionrelative:doanlaptrinhweb\\repositories\\isachrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D06F71D4-0547-4316-B9DD-95EA3B7DBEF1}|DoAnLapTrinhWeb\\DoAnLapTrinhWeb.csproj|d:\\doanweb\\doanlaptrinhweb\\doanlaptrinhweb\\views\\book\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{D06F71D4-0547-4316-B9DD-95EA3B7DBEF1}|DoAnLapTrinhWeb\\DoAnLapTrinhWeb.csproj|solutionrelative:doanlaptrinhweb\\views\\book\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D06F71D4-0547-4316-B9DD-95EA3B7DBEF1}|DoAnLapTrinhWeb\\DoAnLapTrinhWeb.csproj|d:\\doanweb\\doanlaptrinhweb\\doanlaptrinhweb\\models\\tbtacgia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D06F71D4-0547-4316-B9DD-95EA3B7DBEF1}|DoAnLapTrinhWeb\\DoAnLapTrinhWeb.csproj|solutionrelative:doanlaptrinhweb\\models\\tbtacgia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D06F71D4-0547-4316-B9DD-95EA3B7DBEF1}|DoAnLapTrinhWeb\\DoAnLapTrinhWeb.csproj|d:\\doanweb\\doanlaptrinhweb\\doanlaptrinhweb\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D06F71D4-0547-4316-B9DD-95EA3B7DBEF1}|DoAnLapTrinhWeb\\DoAnLapTrinhWeb.csproj|solutionrelative:doanlaptrinhweb\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D06F71D4-0547-4316-B9DD-95EA3B7DBEF1}|DoAnLapTrinhWeb\\DoAnLapTrinhWeb.csproj|d:\\doanweb\\doanlaptrinhweb\\doanlaptrinhweb\\repositories\\itheloairepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D06F71D4-0547-4316-B9DD-95EA3B7DBEF1}|DoAnLapTrinhWeb\\DoAnLapTrinhWeb.csproj|solutionrelative:doanlaptrinhweb\\repositories\\itheloairepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D06F71D4-0547-4316-B9DD-95EA3B7DBEF1}|DoAnLapTrinhWeb\\DoAnLapTrinhWeb.csproj|d:\\doanweb\\doanlaptrinhweb\\doanlaptrinhweb\\models\\tbsach.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D06F71D4-0547-4316-B9DD-95EA3B7DBEF1}|DoAnLapTrinhWeb\\DoAnLapTrinhWeb.csproj|solutionrelative:doanlaptrinhweb\\models\\tbsach.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D06F71D4-0547-4316-B9DD-95EA3B7DBEF1}|DoAnLapTrinhWeb\\DoAnLapTrinhWeb.csproj|d:\\doanweb\\doanlaptrinhweb\\doanlaptrinhweb\\controllers\\bookcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D06F71D4-0547-4316-B9DD-95EA3B7DBEF1}|DoAnLapTrinhWeb\\DoAnLapTrinhWeb.csproj|solutionrelative:doanlaptrinhweb\\controllers\\bookcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D06F71D4-0547-4316-B9DD-95EA3B7DBEF1}|DoAnLapTrinhWeb\\DoAnLapTrinhWeb.csproj|d:\\doanweb\\doanlaptrinhweb\\doanlaptrinhweb\\views\\book\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D06F71D4-0547-4316-B9DD-95EA3B7DBEF1}|DoAnLapTrinhWeb\\DoAnLapTrinhWeb.csproj|solutionrelative:doanlaptrinhweb\\views\\book\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D06F71D4-0547-4316-B9DD-95EA3B7DBEF1}|DoAnLapTrinhWeb\\DoAnLapTrinhWeb.csproj|d:\\doanweb\\doanlaptrinhweb\\doanlaptrinhweb\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -35,20 +35,8 @@
       "RelativeMoniker": "D:0:0:{D06F71D4-0547-4316-B9DD-95EA3B7DBEF1}|DoAnLapTrinhWeb\\DoAnLapTrinhWeb.csproj|solutionrelative:doanlaptrinhweb\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D06F71D4-0547-4316-B9DD-95EA3B7DBEF1}|DoAnLapTrinhWeb\\DoAnLapTrinhWeb.csproj|d:\\doanweb\\doanlaptrinhweb\\doanlaptrinhweb\\repositories\\isachrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D06F71D4-0547-4316-B9DD-95EA3B7DBEF1}|DoAnLapTrinhWeb\\DoAnLapTrinhWeb.csproj|solutionrelative:doanlaptrinhweb\\repositories\\isachrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D06F71D4-0547-4316-B9DD-95EA3B7DBEF1}|DoAnLapTrinhWeb\\DoAnLapTrinhWeb.csproj|d:\\doanweb\\doanlaptrinhweb\\doanlaptrinhweb\\repositories\\efsachrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D06F71D4-0547-4316-B9DD-95EA3B7DBEF1}|DoAnLapTrinhWeb\\DoAnLapTrinhWeb.csproj|solutionrelative:doanlaptrinhweb\\repositories\\efsachrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{D06F71D4-0547-4316-B9DD-95EA3B7DBEF1}|DoAnLapTrinhWeb\\DoAnLapTrinhWeb.csproj|d:\\doanweb\\doanlaptrinhweb\\doanlaptrinhweb\\repositories\\eftheloairepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D06F71D4-0547-4316-B9DD-95EA3B7DBEF1}|DoAnLapTrinhWeb\\DoAnLapTrinhWeb.csproj|solutionrelative:doanlaptrinhweb\\repositories\\eftheloairepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D06F71D4-0547-4316-B9DD-95EA3B7DBEF1}|DoAnLapTrinhWeb\\DoAnLapTrinhWeb.csproj|d:\\doanweb\\doanlaptrinhweb\\doanlaptrinhweb\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{D06F71D4-0547-4316-B9DD-95EA3B7DBEF1}|DoAnLapTrinhWeb\\DoAnLapTrinhWeb.csproj|solutionrelative:doanlaptrinhweb\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D06F71D4-0547-4316-B9DD-95EA3B7DBEF1}|DoAnLapTrinhWeb\\DoAnLapTrinhWeb.csproj|d:\\doanweb\\doanlaptrinhweb\\doanlaptrinhweb\\views\\shared\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -62,7 +50,7 @@
       "DocumentGroups": [
         {
           "DockedHeight": 236,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -78,78 +66,52 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "EFSachRepository.cs",
+              "DocumentMoniker": "D:\\DoAnWeb\\DoAnLapTrinhWeb\\DoAnLapTrinhWeb\\Repositories\\EFSachRepository.cs",
+              "RelativeDocumentMoniker": "DoAnLapTrinhWeb\\Repositories\\EFSachRepository.cs",
+              "ToolTip": "D:\\DoAnWeb\\DoAnLapTrinhWeb\\DoAnLapTrinhWeb\\Repositories\\EFSachRepository.cs",
+              "RelativeToolTip": "DoAnLapTrinhWeb\\Repositories\\EFSachRepository.cs",
+              "ViewState": "AQIAAB0AAAAAAAAAAAA6wCcAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-14T14:39:50.651Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "ApplicationDbContext.cs",
-              "DocumentMoniker": "D:\\DoAnWeb\\DoAnLapTrinhWeb\\DoAnLapTrinhWeb\\Models\\ApplicationDbContext.cs",
-              "RelativeDocumentMoniker": "DoAnLapTrinhWeb\\Models\\ApplicationDbContext.cs",
-              "ToolTip": "D:\\DoAnWeb\\DoAnLapTrinhWeb\\DoAnLapTrinhWeb\\Models\\ApplicationDbContext.cs",
-              "RelativeToolTip": "DoAnLapTrinhWeb\\Models\\ApplicationDbContext.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAABkAAAAAAAAA",
+              "Title": "BookController.cs",
+              "DocumentMoniker": "D:\\DoAnWeb\\DoAnLapTrinhWeb\\DoAnLapTrinhWeb\\Controllers\\BookController.cs",
+              "RelativeDocumentMoniker": "DoAnLapTrinhWeb\\Controllers\\BookController.cs",
+              "ToolTip": "D:\\DoAnWeb\\DoAnLapTrinhWeb\\DoAnLapTrinhWeb\\Controllers\\BookController.cs",
+              "RelativeToolTip": "DoAnLapTrinhWeb\\Controllers\\BookController.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAqwBMAAAAeAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-14T17:22:13.052Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "ISachRepository.cs",
-              "DocumentMoniker": "D:\\DoAnWeb\\DoAnLapTrinhWeb\\DoAnLapTrinhWeb\\Repositories\\ISachRepository.cs",
-              "RelativeDocumentMoniker": "DoAnLapTrinhWeb\\Repositories\\ISachRepository.cs",
-              "ToolTip": "D:\\DoAnWeb\\DoAnLapTrinhWeb\\DoAnLapTrinhWeb\\Repositories\\ISachRepository.cs",
-              "RelativeToolTip": "DoAnLapTrinhWeb\\Repositories\\ISachRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-14T17:11:36.476Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "ITheLoaiRepository.cs",
-              "DocumentMoniker": "D:\\DoAnWeb\\DoAnLapTrinhWeb\\DoAnLapTrinhWeb\\Repositories\\ITheLoaiRepository.cs",
-              "RelativeDocumentMoniker": "DoAnLapTrinhWeb\\Repositories\\ITheLoaiRepository.cs",
-              "ToolTip": "D:\\DoAnWeb\\DoAnLapTrinhWeb\\DoAnLapTrinhWeb\\Repositories\\ITheLoaiRepository.cs",
-              "RelativeToolTip": "DoAnLapTrinhWeb\\Repositories\\ITheLoaiRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-14T17:11:35.804Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "tbSach.cs",
-              "DocumentMoniker": "D:\\DoAnWeb\\DoAnLapTrinhWeb\\DoAnLapTrinhWeb\\Models\\tbSach.cs",
-              "RelativeDocumentMoniker": "DoAnLapTrinhWeb\\Models\\tbSach.cs",
-              "ToolTip": "D:\\DoAnWeb\\DoAnLapTrinhWeb\\DoAnLapTrinhWeb\\Models\\tbSach.cs",
-              "RelativeToolTip": "DoAnLapTrinhWeb\\Models\\tbSach.cs",
-              "ViewState": "AQIAAAgAAAAAAAAAAAAywBkAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-14T16:59:57.195Z",
+              "WhenOpened": "2024-04-15T05:43:12.814Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "tbTacGia.cs",
-              "DocumentMoniker": "D:\\DoAnWeb\\DoAnLapTrinhWeb\\DoAnLapTrinhWeb\\Models\\tbTacGia.cs",
-              "RelativeDocumentMoniker": "DoAnLapTrinhWeb\\Models\\tbTacGia.cs",
-              "ToolTip": "D:\\DoAnWeb\\DoAnLapTrinhWeb\\DoAnLapTrinhWeb\\Models\\tbTacGia.cs",
-              "RelativeToolTip": "DoAnLapTrinhWeb\\Models\\tbTacGia.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAAAAAA",
+              "Title": "ISachRepository.cs",
+              "DocumentMoniker": "D:\\DoAnWeb\\DoAnLapTrinhWeb\\DoAnLapTrinhWeb\\Repositories\\ISachRepository.cs",
+              "RelativeDocumentMoniker": "DoAnLapTrinhWeb\\Repositories\\ISachRepository.cs",
+              "ToolTip": "D:\\DoAnWeb\\DoAnLapTrinhWeb\\DoAnLapTrinhWeb\\Repositories\\ISachRepository.cs",
+              "RelativeToolTip": "DoAnLapTrinhWeb\\Repositories\\ISachRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-14T16:53:39.9Z",
+              "WhenOpened": "2024-04-15T05:45:30.534Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "Index.cshtml",
               "DocumentMoniker": "D:\\DoAnWeb\\DoAnLapTrinhWeb\\DoAnLapTrinhWeb\\Views\\Book\\Index.cshtml",
               "RelativeDocumentMoniker": "DoAnLapTrinhWeb\\Views\\Book\\Index.cshtml",
               "ToolTip": "D:\\DoAnWeb\\DoAnLapTrinhWeb\\DoAnLapTrinhWeb\\Views\\Book\\Index.cshtml",
               "RelativeToolTip": "DoAnLapTrinhWeb\\Views\\Book\\Index.cshtml",
-              "ViewState": "AQIAABAAAAAAAAAAAAAgwC4AAAAWAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAEUAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-04-14T16:43:53.515Z",
               "EditorCaption": ""
@@ -157,14 +119,27 @@
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "BookController.cs",
-              "DocumentMoniker": "D:\\DoAnWeb\\DoAnLapTrinhWeb\\DoAnLapTrinhWeb\\Controllers\\BookController.cs",
-              "RelativeDocumentMoniker": "DoAnLapTrinhWeb\\Controllers\\BookController.cs",
-              "ToolTip": "D:\\DoAnWeb\\DoAnLapTrinhWeb\\DoAnLapTrinhWeb\\Controllers\\BookController.cs",
-              "RelativeToolTip": "DoAnLapTrinhWeb\\Controllers\\BookController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAfAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-14T16:37:06.247Z",
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "D:\\DoAnWeb\\DoAnLapTrinhWeb\\DoAnLapTrinhWeb\\Views\\Book\\Details.cshtml",
+              "RelativeDocumentMoniker": "DoAnLapTrinhWeb\\Views\\Book\\Details.cshtml",
+              "ToolTip": "D:\\DoAnWeb\\DoAnLapTrinhWeb\\DoAnLapTrinhWeb\\Views\\Book\\Details.cshtml",
+              "RelativeToolTip": "DoAnLapTrinhWeb\\Views\\Book\\Details.cshtml",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAwAAAA5AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-15T03:18:32.242Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "D:\\DoAnWeb\\DoAnLapTrinhWeb\\DoAnLapTrinhWeb\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "DoAnLapTrinhWeb\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "D:\\DoAnWeb\\DoAnLapTrinhWeb\\DoAnLapTrinhWeb\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "DoAnLapTrinhWeb\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-14T13:09:55.7Z",
               "EditorCaption": ""
             },
             {
@@ -177,8 +152,7 @@
               "RelativeToolTip": "DoAnLapTrinhWeb\\Program.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAADkAAAAXAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-14T13:09:11.763Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-14T13:09:11.763Z"
             },
             {
               "$type": "Document",
@@ -190,12 +164,11 @@
               "RelativeToolTip": "DoAnLapTrinhWeb\\appsettings.json",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-04-14T14:39:32.884Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-14T14:39:32.884Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 8,
               "Title": "EFTheLoaiRepository.cs",
               "DocumentMoniker": "D:\\DoAnWeb\\DoAnLapTrinhWeb\\DoAnLapTrinhWeb\\Repositories\\EFTheLoaiRepository.cs",
               "RelativeDocumentMoniker": "DoAnLapTrinhWeb\\Repositories\\EFTheLoaiRepository.cs",
@@ -203,38 +176,11 @@
               "RelativeToolTip": "DoAnLapTrinhWeb\\Repositories\\EFTheLoaiRepository.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-14T14:39:47.09Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-14T14:39:47.09Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 9,
-              "Title": "EFSachRepository.cs",
-              "DocumentMoniker": "D:\\DoAnWeb\\DoAnLapTrinhWeb\\DoAnLapTrinhWeb\\Repositories\\EFSachRepository.cs",
-              "RelativeDocumentMoniker": "DoAnLapTrinhWeb\\Repositories\\EFSachRepository.cs",
-              "ToolTip": "D:\\DoAnWeb\\DoAnLapTrinhWeb\\DoAnLapTrinhWeb\\Repositories\\EFSachRepository.cs",
-              "RelativeToolTip": "DoAnLapTrinhWeb\\Repositories\\EFSachRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-14T14:39:50.651Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "D:\\DoAnWeb\\DoAnLapTrinhWeb\\DoAnLapTrinhWeb\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "DoAnLapTrinhWeb\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "D:\\DoAnWeb\\DoAnLapTrinhWeb\\DoAnLapTrinhWeb\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "DoAnLapTrinhWeb\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAUwBkAAABaAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-14T13:09:55.7Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
               "Title": "_ValidationScriptsPartial.cshtml",
               "DocumentMoniker": "D:\\DoAnWeb\\DoAnLapTrinhWeb\\DoAnLapTrinhWeb\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
               "RelativeDocumentMoniker": "DoAnLapTrinhWeb\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
@@ -242,8 +188,7 @@
               "RelativeToolTip": "DoAnLapTrinhWeb\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-14T13:22:35.947Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-14T13:22:35.947Z"
             }
           ]
         }

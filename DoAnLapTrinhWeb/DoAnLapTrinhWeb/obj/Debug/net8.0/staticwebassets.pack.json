@@ -5,12 +5,20 @@
       "PackagePath": "staticwebassets\\DoAnLapTrinhWeb.bundle.scp.css"
     },
     {
+      "Id": "D:\\DoAnWeb\\DoAnLapTrinhWeb\\DoAnLapTrinhWeb\\wwwroot\\css\\rateStar.css",
+      "PackagePath": "staticwebassets\\css\\rateStar.css"
+    },
+    {
       "Id": "D:\\DoAnWeb\\DoAnLapTrinhWeb\\DoAnLapTrinhWeb\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
       "Id": "D:\\DoAnWeb\\DoAnLapTrinhWeb\\DoAnLapTrinhWeb\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "D:\\DoAnWeb\\DoAnLapTrinhWeb\\DoAnLapTrinhWeb\\wwwroot\\images\\asdasd.png",
+      "PackagePath": "staticwebassets\\images\\asdasd.png"
     },
     {
       "Id": "D:\\DoAnWeb\\DoAnLapTrinhWeb\\DoAnLapTrinhWeb\\wwwroot\\js\\site.js",

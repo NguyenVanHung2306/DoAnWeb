@@ -1,5 +1,6 @@
 ﻿using DoAnLapTrinhWeb.Repositories;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
 namespace DoAnLapTrinhWeb.Controllers
 {
@@ -15,6 +16,7 @@ namespace DoAnLapTrinhWeb.Controllers
         //Action xuất danh sách các cuốn sách
         public async Task<ActionResult> Index()
         {
+
             var books = await _sachRepository.GetAllAsync();
             return View(books);
         }

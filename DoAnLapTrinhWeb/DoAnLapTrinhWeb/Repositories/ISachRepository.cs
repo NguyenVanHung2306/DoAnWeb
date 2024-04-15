@@ -9,5 +9,6 @@ namespace DoAnLapTrinhWeb.Repositories
         Task AddAsync(tbSach sach);
         Task UpdateAsync(tbSach sach);
         Task DeleteAsync(int id);
+
     }
 }

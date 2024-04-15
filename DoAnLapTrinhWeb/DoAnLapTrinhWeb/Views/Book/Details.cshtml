@@ -1,0 +1,70 @@
+﻿@model DoAnLapTrinhWeb.Models.tbSach
+
+@{
+    ViewData["Title"] = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+    <link rel="stylesheet" href="~/css/rateStar.css" asp-append-version="true" />
+<div class="title-list book-intro">
+    <h2>Thông Tin Cuốn Sách</h2>
+
+    <dd class="col-sm-10">
+        <h2>@Html.DisplayFor(model => model.tenSach)</h2>
+    </dd>
+
+    <div class="star-wrap">
+            <input type="radio" name="rate" title="Không có gì để nói...."/>
+            <input type="radio" name="rate" title="WTF"/>
+            <input type="radio" name="rate" title="Cái gì thế này ?!"/>
+            <input type="radio" name="rate" title="Haizzz!"/>
+            <input type="radio" name="rate" title="Tạm"/>
+            <input type="radio" name="rate" title="Cũng được"/>
+            <input type="radio" name="rate" title="Khá đấy"/>
+            <input type="radio" name="rate" title="Được"/>
+            <input type="radio" name="rate" title="Hay"/>
+            <input type="radio" name="rate" title="Tuyệt đỉnh"/>
+    </div>
+
+    <dt class="col-sm-2">
+        Bạn đang đọc @Html.DisplayFor(model => model.tenSach) của ......<br />
+        Giới thiệu:
+    </dt>
+    <dd class="col-sm-2">
+        @Html.DisplayFor(model => model.moTa)
+    </dd>
+
+    <dl class="row">
+        <dd>
+            <img src="~/images/asdasd.png" alt="Image" onclick="bam" style="width: 300px; height: 450px" />
+        </dd>
+        <dt class = "col-sm-1">
+            Tác Giả: 
+        </dt>
+        <dd>
+            <td>
+                @{
+                    ApplicationDbContext context = new ApplicationDbContext();
+                    var book = context.tbTacGia.FirstOrDefault(b => b.Id == Model.Id);
+                }
+                @book.TenTacGia.ToString()
+            </td>
+        </dd>
+
+        
+
+        <dt class = "col-sm-3">
+            @Html.DisplayNameFor(model => model.theLoai)
+        </dt>
+        <dd class = "col-sm-3">
+            @Html.DisplayFor(model => model.theLoai.tenTheLoai)
+        </dd>
+
+        
+        
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model?.Id">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>
