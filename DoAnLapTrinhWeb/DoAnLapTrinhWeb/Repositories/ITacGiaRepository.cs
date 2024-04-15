@@ -9,5 +9,6 @@ namespace DoAnLapTrinhWeb.Repositories
         Task AddAsync(tbTacGia tacGia);
         Task UpdateAsync(tbTacGia tacGia);
         Task DeleteAsync(int id);
+        Task<bool> IsTenTacGiaExisted(string tenTacGia);
     }
 }

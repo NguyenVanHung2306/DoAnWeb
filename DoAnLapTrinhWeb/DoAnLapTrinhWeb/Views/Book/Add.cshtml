@@ -4,6 +4,8 @@
     ViewData["Title"] = "Add Book";
 }
 <h2>Add Book</h2>
+<h6><a asp-action="AddTacGia">Thêm Tác Giả</a></h6>
+<h6><a asp-action="AddTheLoai">Thêm The Loai</a></h6>
 <form asp-action="Add" method="post" enctype="multipart/form-data">
     <div class="form-group">
         <label asp-for="tenSach"></label>

@@ -39,5 +39,10 @@ namespace DoAnLapTrinhWeb.Repositories
             _context.tbTacGia.Remove(tacGia);
             await _context.SaveChangesAsync();
         }
+        public async Task<bool> IsTenTacGiaExisted(string tenTacGia)
+        {
+            return await _context.tbTacGia.AnyAsync(t => t.TenTacGia == tenTacGia);
+        }
+
     }
 }

@@ -84,6 +84,53 @@ namespace DoAnLapTrinhWeb.Controllers
             }
             return "/images/" + image.FileName; // Trả về đường dẫn tương đối
         }
+        public IActionResult AddTacGia()
+        {
+            return View();
+        }
+        [HttpPost]
+        public async Task<IActionResult> AddTacGia(tbTacGia tacGia)
+        {
+            if (ModelState.IsValid)
+            {
+                // Kiểm tra xem tên tác giả đã tồn tại hay chưa
+                if (await _tacGiaRepository.IsTenTacGiaExisted(tacGia.TenTacGia))
+                {
+                    // Hiển thị thông báo khi tên tác giả đã tồn tại
+                    ModelState.AddModelError("TenTacGia", "Đã có tác giả này trong danh sách, không thể thêm.");
+                    return View(tacGia);
+                }
+
+                // Thêm tác giả vào cơ sở dữ liệu
+                await _tacGiaRepository.AddAsync(tacGia);
+
+                // Hiển thị thông báo khi thêm tác giả thành công
+                TempData["SuccessMessage"] = "Đã thêm tác giả thành công.";
+
+                return RedirectToAction(nameof(Index));
+            }
+            return View(tacGia);
+        }
+
+        public IActionResult AddTheLoai()
+        {
+            return View();
+        }
+        [HttpPost]
+        public async Task<IActionResult> AddTheLoai(tbTheLoai theLoai)
+        {
+            if (ModelState.IsValid)
+            {
+                // Thêm thể loại vào cơ sở dữ liệu
+                await _theLoaiyRepository.AddAsync(theLoai);
+
+                // Hiển thị thông báo khi thêm thể loại thành công
+                TempData["SuccessMessage"] = "Đã thêm thể loại thành công.";
+
+                return RedirectToAction(nameof(Index));
+            }
+            return View(theLoai);
+        }
 
     }
 

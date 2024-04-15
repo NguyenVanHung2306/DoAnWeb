@@ -1,0 +1,14 @@
+﻿@model DoAnLapTrinhWeb.Models.tbTheLoai
+@{
+    ViewData["Title"] = "Add Genre";
+}
+
+<h2>Add Genre</h2>
+<form asp-action="AddTheLoai" method="post">
+    <div class="form-group">
+        <label asp-for="tenTheLoai">The Loai</label>
+        <input asp-for="tenTheLoai" class="form-control" />
+        <span asp-validation-for="tenTheLoai" class="text-danger"></span>
+    </div>
+    <button type="submit" class="btn btn-primary">Add</button>
+</form>
