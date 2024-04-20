@@ -4,6 +4,7 @@ using DoAnLapTrinhWeb.Repositories;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using System;
 
 namespace DoAnLapTrinhWeb.Controllers
 {
@@ -36,15 +37,17 @@ namespace DoAnLapTrinhWeb.Controllers
             }
             return View(books);
         }
-        public async Task<IActionResult> Read()
+        public async Task<IActionResult> Read(int sachId)
         {
             //var books = await _sachRepository.GetByIdAsync(id);
             //if (books == null)
             //{
             //    return NotFound();
             //}
+            ViewBag.SachId = sachId;
             return View();
         }
+        [HttpGet]
         public ActionResult GetImagePaths(int sachId)
         {
             var result = from c in _context.tbTrang
@@ -52,9 +55,7 @@ namespace DoAnLapTrinhWeb.Controllers
                          select c;
             // Truy vấn CSDL và lấy danh sách đường dẫn hình ảnh
             List<string> imagePaths = result.Select(c => c.Noidung).ToList();
-
-            return Json(imagePaths);
+            return new JsonResult(imagePaths);
         }
-
     }
 }

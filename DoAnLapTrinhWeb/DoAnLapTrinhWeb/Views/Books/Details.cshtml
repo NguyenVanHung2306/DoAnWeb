@@ -16,7 +16,7 @@
     {
         <img src="@Model.imageUrl" alt="Image" style="max-width:200px;" />
     }
-    <a asp-controller="Books" asp-action="Read">Đọc</a>
+    <a asp-controller="Books" asp-action="Read" asp-route-sachId="@Model.Id">Đọc</a>
 </div>
 
 <button><a asp-controller="DanhGia" asp-action="Index" asp-route-sachId="@Model.Id">Xem đánh giá</a></button>

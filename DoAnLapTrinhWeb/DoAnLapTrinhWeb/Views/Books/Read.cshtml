@@ -1,114 +1,103 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <title>Đọc sách</title>
     <style>
-        .book {
-            width: 600px;
-            height: 800px;
-            border: 1px solid #ccc;
-            margin: 50px auto;
-            padding: 20px;
-            background-color: #fff;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        #container {
+          display: flex;
+          justify-content: center;
+          align-items: center;
         }
 
-        .book-title {
-            text-align: center;
-            font-size: 24px;
-            font-weight: bold;
-            margin-bottom: 20px;
+        #prev-page,
+        #book-container,
+        #next-page {
+          margin: 10px;
         }
 
-        .book-content {
-            position: relative;
-            width: 100%;
-            height: 100%;
-            overflow: hidden;
+        #book-container {
+          text-align: center;
+          margin-bottom: 20px;
         }
 
-            .book-content img {
-                position: absolute;
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-                transition: opacity 0.5s ease;
-            }
-
-        .flip-button {
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-            padding: 10px;
-            background-color: #fff;
-            border: none;
-            cursor: pointer;
+        #book-image {
+          max-width: 50%;
+          height: auto;
         }
 
-        .next {
-            right: 10px;
+        #prev-page,
+        #next-page {
+          padding: 10px 20px;
+          background-color: #4CAF50;
+          color: white;
+          border: none;
+          cursor: pointer;
         }
 
-        .prev {
-            left: 10px;
+        #prev-page:hover,
+        #next-page:hover {
+          background-color: #45a049;
         }
-    </style>
+</style>
 </head>
 <body>
-    <div class="book">
-        <h1 class="book-title">Tiêu đề sách</h1>
-        <button class="flip-button prev" onclick="prevImage()">&#10094;</button>
-        <div class="book-content">
-            <img id="book-image" src="" alt="Nội dung sách">
+    <div id="container ">
+        
+        <div id="book-container">
+            <button id="prev-page">Prev</button>
+            <img id="book-image" src="" alt="Book Image">
+            <button id="next-page">Next</button>
         </div>
-        <button class="flip-button next" onclick="nextImage()">&#10095;</button>
-
+        
     </div>
-
     <script>
-        var images = [
-            "/images/Mạnh Tử_page-0001.jpg",
-            "/images/Mạnh Tử_page-0002.jpg",
-            "/images/Mạnh Tử_page-0003.jpg",
-            "/images/Mạnh Tử_page-0004.jpg",
-            "/images/Mạnh Tử_page-0005.jpg",
-            "/images/Mạnh Tử_page-0006.jpg",
-            "/images/Mạnh Tử_page-0007.jpg",
-            // Thêm đường dẫn của các hình ảnh khác vào đây
-        ];
-        // Gửi yêu cầu AJAX để lấy danh sách đường dẫn hình ảnh từ CSDL
-        // $.ajax({
-        //     url: "/Books/GetImagePaths?sachId=1",
-        //     type: "GET",
-        //     success: function (data) {
-        //         images = data;
-        //         showImage(currentImageIndex);
-        //     },
-        //     error: function () {
-        //         console.log("Lỗi khi lấy dữ liệu từ CSDL");
-        //     
-        // });
+        $(document).ready(function () {
+            var currentPage = 0;
+            var imagePaths = [];
 
-        var currentImageIndex = 0;
-        var bookImage = document.getElementById("book-image");
+            // Hàm để tải danh sách đường dẫn hình ảnh từ máy chủ
+            function loadImagePaths() {
+                $.ajax({
+                    url: '/Books/GetImagePaths/?sachId=' + @ViewBag.SachId,
+                    type: 'GET',
+                    dataType: 'json',
+                    success: function (response) {
+                        imagePaths = response;
+                        loadPage(currentPage);
+                    },
+                    error: function () {
+                        alert('Có lỗi xảy ra khi tải danh sách đường dẫn hình ảnh.');
+                    }
+                });
+            }
 
-        function showImage(index) {
-            bookImage.src = images[index];
-        }
+            // Hàm để tải nội dung trang sách từ danh sách đường dẫn hình ảnh
+            function loadPage(pageNumber) {
+                if (pageNumber >= 0 && pageNumber < imagePaths.length) {
+                    var imagePath = imagePaths[pageNumber];
+                    $('#book-image').attr('src', imagePath);
+                    currentPage = pageNumber;
+                }
+            }
 
-        function prevImage() {
-            currentImageIndex = (currentImageIndex - 1 + images.length) % images.length;
-            showImage(currentImageIndex);
-        }
+            // Sự kiện nút "Prev"
+            $('#prev-page').click(function () {
+                if (currentPage > 0) {
+                    loadPage(currentPage - 1);
+                }
+            });
 
-        function nextImage() {
-            currentImageIndex = (currentImageIndex + 1) % images.length;
-            showImage(currentImageIndex);
-        }
+            // Sự kiện nút "Next"
+            $('#next-page').click(function () {
+                if (currentPage < imagePaths.length - 1) {
+                    loadPage(currentPage + 1);
+                }
+            });
 
-        showImage(currentImageIndex);
+            // Tải danh sách đường dẫn hình ảnh khi trang được tải lần đầu
+            loadImagePaths();
+        });
     </script>
 </body>
 </html>
