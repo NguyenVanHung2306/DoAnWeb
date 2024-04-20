@@ -41,17 +41,10 @@ namespace DoAnLapTrinhWeb.Controllers
         [HttpPost]
         public async Task<IActionResult> LuuDanhGia(tbPhieuDanhGia model, int sachId)
         {
-            
-                // Lưu đánh giá vào CSDL
-                _context.tbPhieuDanhGia.Add(model);
-                await _context.SaveChangesAsync();
-
-                return RedirectToAction("Index", "DanhGia"); // Hoặc chuyển hướng đến trang khác
-               
-            //ViewBag.sachId = sachId;
-            //var user = await _userManager.GetUserAsync(User);
-            //ViewBag.UserId = user.Id;
-            //return View(model);
+            // Lưu đánh giá vào CSDL
+            _context.tbPhieuDanhGia.Add(model);
+            await _context.SaveChangesAsync();
+            return RedirectToAction("LuuDanhGia", "DanhGia", new { sachId = sachId });
         }
     }
 }

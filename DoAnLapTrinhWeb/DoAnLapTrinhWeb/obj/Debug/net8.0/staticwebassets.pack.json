@@ -413,6 +413,10 @@
       "PackagePath": "staticwebassets\\images\\Mạnh Tử_page-0100.jpg"
     },
     {
+      "Id": "D:\\LapTrinhWeb\\DoAn-ThucHien\\DoAnWeb\\DoAnLapTrinhWeb\\DoAnLapTrinhWeb\\wwwroot\\images\\ToiThayHoaVangTrenCoXanh.jpg",
+      "PackagePath": "staticwebassets\\images\\ToiThayHoaVangTrenCoXanh.jpg"
+    },
+    {
       "Id": "D:\\LapTrinhWeb\\DoAn-ThucHien\\DoAnWeb\\DoAnLapTrinhWeb\\DoAnLapTrinhWeb\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },

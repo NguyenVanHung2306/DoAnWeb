@@ -2,6 +2,7 @@
 @{
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
+<button><a asp-controller="LichSu" asp-action="Index" asp-route-userId="@ViewBag.UserId">Lịch sử</a></button>
 <table class="table">
     <thead>
         <tr>
@@ -24,32 +25,32 @@
         </tr>
     </thead>
     <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.tenSach)
-            </td>
-            <td>
-                @* @Html.DisplayFor(modelItem => item.imageUrl) *@
-                <img src="@item" alt="Image" style="width: 50px; height: auto" />
-            </td>
-            <td>
-                @{
-                    ApplicationDbContext context = new ApplicationDbContext();
-                    var book = context.tbTacGia.FirstOrDefault(b => b.Id == @item.Id);
-                }
-                @book.TenTacGia.ToString()
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.moTa)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.theLoai.tenTheLoai)
-            </td>
-            <td>
-                    <a asp-action="Details" asp-route-id="@item.Id">Xem sách</a>
-            </td>
-        </tr>
-}
+        @foreach (var item in Model) {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.tenSach)
+                </td>
+                <td>
+                    @* @Html.DisplayFor(modelItem => item.imageUrl) *@
+                    <img src="@item.imageUrl" alt="Image" style="width: 50px; height: auto" />
+                </td>
+                <td>
+                    @{
+                        ApplicationDbContext context = new ApplicationDbContext();
+                        var book = context.tbTacGia.FirstOrDefault(b => b.Id == @item.Id);
+                    }
+                    @book.TenTacGia.ToString()
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.moTa)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.theLoai.tenTheLoai)
+                </td>
+                <td>
+                        <button><a asp-action="Details" asp-route-id="@item.Id">Xem sách</a></button>
+                </td>
+            </tr>
+        }
     </tbody>
 </table>

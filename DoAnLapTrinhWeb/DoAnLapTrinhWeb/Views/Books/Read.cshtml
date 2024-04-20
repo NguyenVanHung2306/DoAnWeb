@@ -43,11 +43,11 @@
 </head>
 <body>
     <div id="container ">
-        
+        <p id="book-page"></p>
         <div id="book-container">
-            <button id="prev-page">Prev</button>
+            <button id="prev-page">&#10094</button>
             <img id="book-image" src="" alt="Book Image">
-            <button id="next-page">Next</button>
+            <button id="next-page">&#10095</button>
         </div>
         
     </div>
@@ -78,6 +78,12 @@
                     var imagePath = imagePaths[pageNumber];
                     $('#book-image').attr('src', imagePath);
                     currentPage = pageNumber;
+
+                    //Hiện số trang đang đọc
+                    const page = document.getElementById('book-page');
+                    var tongtrang = imagePaths.length;
+                    var tranghientai = pageNumber + 1;
+                    page.innerText = `Trang ${tranghientai}/${tongtrang}`;
                 }
             }
 

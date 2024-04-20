@@ -3,6 +3,7 @@ using DoAnLapTrinhWeb.Models;
 using DoAnLapTrinhWeb.Repositories;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using System;
 
@@ -13,16 +14,22 @@ namespace DoAnLapTrinhWeb.Controllers
     {
         private readonly ISachRepository _sachRepository;
         private readonly ApplicationDbContext _context;
-        public BooksController(ISachRepository sachRepositoryy, ApplicationDbContext context)
+        private readonly UserManager<ApplicationUser> _userManager;
 
+        public BooksController(ISachRepository sachRepositoryy,
+                                UserManager<ApplicationUser> userManager, 
+                                ApplicationDbContext context)
         {
             _sachRepository = sachRepositoryy;
             _context = context;
+            _userManager = userManager;
         }
 
         //Action xuất danh sách các cuốn sách
         public async Task<ActionResult> Index()
         {
+            var user = await _userManager.GetUserAsync(User);
+            ViewBag.UserId = user.Id;
             var books = await _sachRepository.GetAllAsync();
             return View(books);
         }
@@ -37,16 +44,33 @@ namespace DoAnLapTrinhWeb.Controllers
             }
             return View(books);
         }
+
+        //Action để đọc các trang sách
         public async Task<IActionResult> Read(int sachId)
         {
-            //var books = await _sachRepository.GetByIdAsync(id);
-            //if (books == null)
-            //{
-            //    return NotFound();
-            //}
+            var user = await _userManager.GetUserAsync(User);
+            var lichSu = _context.tbLichSu.FirstOrDefault(p => p.sachId == sachId && p.userId == user.Id);
+            if (lichSu == null)
+            {
+                //Nếu sách chưa có trong lịch sử thì thêm vào
+                tbLichSu tempLichSu = new tbLichSu();
+                tempLichSu.sachId = sachId;
+                tempLichSu.userId = user.Id;
+                tempLichSu.thoiGianDoc = DateTime.Now;
+                _context.tbLichSu.Add(tempLichSu);
+            }
+            else
+            {
+                //Đã có thì cập nhật thời gian đọc
+                lichSu.thoiGianDoc = DateTime.UtcNow;
+            }
+
+            _context.SaveChanges();
             ViewBag.SachId = sachId;
             return View();
         }
+
+        //Action dùng để lấy danh sách trang
         [HttpGet]
         public ActionResult GetImagePaths(int sachId)
         {

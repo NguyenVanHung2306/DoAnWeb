@@ -1,0 +1,43 @@
+﻿@model IEnumerable<DoAnLapTrinhWeb.Models.tbLichSu>
+@{
+    var userId = (string)ViewBag.userId;
+    ApplicationDbContext context = new ApplicationDbContext();
+    // var result = from c in context.tbLichSu
+    //              where c.userId == userId;
+    //              select c;
+    // List<tbLichSu> listLichSu = result.ToList();
+    var listLichSu = context.tbLichSu.Where(lichSu => lichSu.userId == userId).ToList();
+}
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Sach)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.thoiGianDoc)
+            </th>
+            <th>
+                Action
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in listLichSu)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Sach.tenSach)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.thoiGianDoc)
+                </td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.lichSuId">Edit</a> |
+                    <a asp-action="Details" asp-route-id="@item.lichSuId">Details</a> |
+                    <a asp-action="Delete" asp-route-id="@item.lichSuId">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
