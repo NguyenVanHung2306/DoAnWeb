@@ -4,7 +4,7 @@ using Microsoft.AspNetCore.Identity;
 using DoAnLapTrinhWeb.Repositories;
 
 var builder = WebApplication.CreateBuilder(args);
-builder.Services.AddDbContext<ApplicationDbContext>(options =>options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+builder.Services.AddDbContext<ApplicationDbContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
 builder.Services.AddIdentity<ApplicationUser, IdentityRole>()
     .AddDefaultTokenProviders()
@@ -26,6 +26,7 @@ builder.Services.AddControllersWithViews();
 
 builder.Services.AddScoped<ISachRepository, EFSachRepository>();
 builder.Services.AddScoped<ITheLoaiRepository, EFTheLoaiRepository>();
+builder.Services.AddScoped<ITacGiaRepository, EFTacGiaRepository>();
 
 
 var app = builder.Build();
@@ -58,5 +59,15 @@ app.UseEndpoints(endpoints =>
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Book}/{action=Index}/{id?}");
+
+app.MapControllerRoute(
+    name: "default",
+    pattern: "{controller=TacGia}/{action=Index}/{id?}");
+
+
+app.MapControllerRoute(
+    name: "default",
+    pattern: "{controller=TheLoai}/{action=Index}/{id?}");
+
 
 app.Run();

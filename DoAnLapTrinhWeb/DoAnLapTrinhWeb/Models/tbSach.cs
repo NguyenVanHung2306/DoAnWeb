@@ -12,7 +12,7 @@ namespace DoAnLapTrinhWeb.Models
         public string tenSach { get; set; }
         public string? imageUrl { get; set; }
         public int tacGiaId { get; set; }
-        public tbTacGia? TacGia { get; set; }
+        public tbTacGia TacGia { get; set; }
         public string moTa { get; set; }
         public int theLoaiId { get; set; }
         public tbTheLoai theLoai { get; set; }

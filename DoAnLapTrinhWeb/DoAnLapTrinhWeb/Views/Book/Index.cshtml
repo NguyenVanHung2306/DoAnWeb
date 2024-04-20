@@ -1,73 +1,26 @@
 ﻿@model IEnumerable<DoAnLapTrinhWeb.Models.tbSach>
-@using Microsoft.EntityFrameworkCore
-@using Microsoft.Extensions.Options
 @{
-    ViewData["Title"] = "Index";
-    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewData["Title"] = "DoAnLapTrinhWeb";
 }
 
-<h1>Index</h1>
-
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
+<h2>Books</h2>
+<script src="~/js/onclick-Image.js"></script>
+<h6><a asp-action="Add">Thêm Sách</a></h6>
 <table class="table">
-    <thead>
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.tenSach)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.imageUrl)
-            </th>
-            <th>
-                Author
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.moTa)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.theLoai)
-            </th>
-            <th></th>
-        </tr>
-    </thead>
+
+    
     <tbody>
-        @foreach (var item in Model)
+        @foreach (var sach in Model)
         {
+            
             <tr>
-                <td>
-                    @Html.DisplayFor(modelItem => item.tenSach)
-                </td>
-                <td>
-                    @* @Html.DisplayFor(modelItem => item.imageUrl) *@
-                    <img src="~/images/asdasd.png" alt="Image" onclick="bam" style="width: 50px; height: auto" />
-                </td>
-                <td>
-                    @{
-                        ApplicationDbContext context = new ApplicationDbContext();
-                        var book = context.tbTacGia.FirstOrDefault(b => b.Id == @item.Id);
-                    }
-                    @book.TenTacGia.ToString()
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.moTa)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.theLoai.tenTheLoai)
-                </td>
-                <td>
-                    <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
-                    <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
-                    <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
-                </td>
+                <td><img src="@sach.imageUrl" style="width: 90px; height: 90px; cursor: pointer;" onclick="redirectToDetails(@sach.Id)" /></td>
+                
             </tr>
         }
     </tbody>
+
 </table>
 
-
-<div>
-    <p>Total Books: @ViewBag.TotalBooks</p>
-    <!-- Các phần khác của trang chủ -->
-</div>
+<p>Member @ViewBag.TotalUsers</p>
+<p>Book: @ViewBag.BookCount</p>

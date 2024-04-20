@@ -21,6 +21,30 @@
       "PackagePath": "staticwebassets\\images\\asdasd.png"
     },
     {
+      "Id": "D:\\DoAnWeb\\DoAnLapTrinhWeb\\DoAnLapTrinhWeb\\wwwroot\\images\\chotoixinmotvedituoitho.jpg",
+      "PackagePath": "staticwebassets\\images\\chotoixinmotvedituoitho.jpg"
+    },
+    {
+      "Id": "D:\\DoAnWeb\\DoAnLapTrinhWeb\\DoAnLapTrinhWeb\\wwwroot\\images\\songcham.jpg",
+      "PackagePath": "staticwebassets\\images\\songcham.jpg"
+    },
+    {
+      "Id": "D:\\DoAnWeb\\DoAnLapTrinhWeb\\DoAnLapTrinhWeb\\wwwroot\\images\\sucmanhcuasutute.jpg",
+      "PackagePath": "staticwebassets\\images\\sucmanhcuasutute.jpg"
+    },
+    {
+      "Id": "D:\\DoAnWeb\\DoAnLapTrinhWeb\\DoAnLapTrinhWeb\\wwwroot\\images\\toithayhoavangtrencoxanh.jpg",
+      "PackagePath": "staticwebassets\\images\\toithayhoavangtrencoxanh.jpg"
+    },
+    {
+      "Id": "D:\\DoAnWeb\\DoAnLapTrinhWeb\\DoAnLapTrinhWeb\\wwwroot\\js\\onclick-Image.js",
+      "PackagePath": "staticwebassets\\js\\onclick-Image.js"
+    },
+    {
+      "Id": "D:\\DoAnWeb\\DoAnLapTrinhWeb\\DoAnLapTrinhWeb\\wwwroot\\js\\rating_Star.js",
+      "PackagePath": "staticwebassets\\js\\rating_Star.js"
+    },
+    {
       "Id": "D:\\DoAnWeb\\DoAnLapTrinhWeb\\DoAnLapTrinhWeb\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },

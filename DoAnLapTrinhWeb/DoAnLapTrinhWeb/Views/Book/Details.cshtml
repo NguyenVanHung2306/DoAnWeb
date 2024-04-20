@@ -5,66 +5,67 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-    <link rel="stylesheet" href="~/css/rateStar.css" asp-append-version="true" />
+
+<link rel="stylesheet" href="~/css/rateStar.css" asp-append-version="true" />
 <div class="title-list book-intro">
+    <div class="box-shadow">
+        <dl class="row">
+            <dd>
+                <img src="@Html.DisplayFor(model => model.imageUrl)" alt="Image" style="width: 300px; height: 450px; border: 2px solid #ddd" />
+                
+            </dd>
+            <dt class = "col-sm-2">
+                Tác Giả:
+            </dt>
+            <dd class="col-sm-10">
+                <td>
+                    @ViewBag.TacGia?.TenTacGia
+                </td>
+            </dd>
+            <dt class = "col-sm-2">
+                Thể Loại: 
+            </dt>
+            <dd class = "col-sm-10">
+                @Html.DisplayFor(model => model.theLoai.tenTheLoai)
+            </dd>
+        </dl>
+    </div>
+
     <h2>Thông Tin Cuốn Sách</h2>
 
     <dd class="col-sm-10">
         <h2>@Html.DisplayFor(model => model.tenSach)</h2>
     </dd>
-
+    @* <script src="~/js/rating_Star.js"></script> *@
     <div class="star-wrap">
-            <input type="radio" name="rate" title="Không có gì để nói...."/>
-            <input type="radio" name="rate" title="WTF"/>
-            <input type="radio" name="rate" title="Cái gì thế này ?!"/>
-            <input type="radio" name="rate" title="Haizzz!"/>
-            <input type="radio" name="rate" title="Tạm"/>
-            <input type="radio" name="rate" title="Cũng được"/>
-            <input type="radio" name="rate" title="Khá đấy"/>
-            <input type="radio" name="rate" title="Được"/>
-            <input type="radio" name="rate" title="Hay"/>
-            <input type="radio" name="rate" title="Tuyệt đỉnh"/>
+        <span></span>
+        <input type="radio" name="rate" title="Không có gì để nói...." value="1" />
+        <span></span>
+        <input type="radio" name="rate" title="WTF" value="2" />
+        <span></span>
+        <input type="radio" name="rate" title="Cái gì thế này ?!" value="3" />
+        <span></span>
+        <input type="radio" name="rate" title="Haizzz!" value="4" />
+        <input type="radio" name="rate" title="Tạm" value="5" />
+        <input type="radio" name="rate" title="Cũng được" value="6" />
+        <input type="radio" name="rate" title="Khá đấy" value="7" />
+        <input type="radio" name="rate" title="Được" value="8" />
+        <input type="radio" name="rate" title="Hay" value="9" />
+        <input type="radio" name="rate" title="Tuyệt đỉnh" value="10" />
     </div>
 
     <dt class="col-sm-2">
         Bạn đang đọc @Html.DisplayFor(model => model.tenSach) của ......<br />
         Giới thiệu:
     </dt>
-    <dd class="col-sm-2">
+    <dd class="col-sm-10">
         @Html.DisplayFor(model => model.moTa)
     </dd>
 
-    <dl class="row">
-        <dd>
-            <img src="~/images/asdasd.png" alt="Image" onclick="bam" style="width: 300px; height: 450px" />
-        </dd>
-        <dt class = "col-sm-1">
-            Tác Giả: 
-        </dt>
-        <dd>
-            <td>
-                @{
-                    ApplicationDbContext context = new ApplicationDbContext();
-                    var book = context.tbTacGia.FirstOrDefault(b => b.Id == Model.Id);
-                }
-                @book.TenTacGia.ToString()
-            </td>
-        </dd>
 
-        
-
-        <dt class = "col-sm-3">
-            @Html.DisplayNameFor(model => model.theLoai)
-        </dt>
-        <dd class = "col-sm-3">
-            @Html.DisplayFor(model => model.theLoai.tenTheLoai)
-        </dd>
-
-        
-        
-    </dl>
 </div>
 <div>
-    <a asp-action="Edit" asp-route-id="@Model?.Id">Edit</a> |
     <a asp-action="Index">Back to List</a>
 </div>
+
+

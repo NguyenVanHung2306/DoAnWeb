@@ -7,6 +7,6 @@ namespace DoAnLapTrinhWeb.Models
         //[Key]
         public int Id { get; set; }
         public string tenTheLoai { get; set;  }
-        public List<tbSach> Sachs { get; set; }
+        public List<tbSach>? Sachs { get; set; }
 }
 }

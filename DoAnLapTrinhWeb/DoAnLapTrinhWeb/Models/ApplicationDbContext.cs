@@ -12,7 +12,7 @@ namespace DoAnLapTrinhWeb.Models
         {
             
         }
-        public ApplicationDbContext()
+        /*public ApplicationDbContext()
         {
 
         }
@@ -22,7 +22,7 @@ namespace DoAnLapTrinhWeb.Models
             {
                 optionsBuilder.UseSqlServer("Data Source=QUOCDEV\\QUOCDEV;Initial Catalog=Book-ThucHien;Integrated Security=True;Connect Timeout=30;Encrypt=False;Trust Server Certificate=False;Application Intent=ReadWrite;Multi Subnet Failover=False");
             }
-        }
+        }*/
 
         public DbSet<tbSach> tbSach { get; set; }
         public DbSet<tbTacGia> tbTacGia { get; set; }

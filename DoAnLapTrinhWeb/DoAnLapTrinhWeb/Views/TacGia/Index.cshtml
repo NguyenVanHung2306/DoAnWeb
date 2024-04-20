@@ -1,0 +1,37 @@
+﻿
+@model IEnumerable<DoAnLapTrinhWeb.Models.tbTacGia>
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Tác Giả</h2>
+<h6><a asp-action="Add">Them Tac Gia</a></h6>
+<table class="table">
+
+
+    <thead>
+        <tr>
+            <th>Ten Tac Gia</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var tacGia in Model)
+        {
+            <tr>
+                <td>@tacGia.TenTacGia</td>
+            
+                <td>
+
+                    <a asp-action="Display" asp-route-id="@tacGia.Id">View</a> |
+
+                    <a asp-action="Update" asp-route-id="@tacGia.Id">Edit</a> |
+
+                    <a asp-action="Delete" asp-route-id="@tacGia.Id">Delete</a>
+
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
