@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.IdentityModel.Tokens;
 
 namespace DoAnLapTrinhWeb.Controllers
 {
@@ -64,7 +65,8 @@ namespace DoAnLapTrinhWeb.Controllers
             ViewBag.TheLoai = new SelectList(tbTheLoais, "Id", "tenTheLoai");
             var tbTacGias = await _tacGiaRepository.GetAllAsync();
             ViewBag.TacGia = new SelectList(tbTacGias, "Id", "TenTacGia");
-            return View();
+            var sach = new tbSach { theLoaiId = -1, tacGiaId = -1 };
+            return View(sach);
 
         }
 
@@ -72,37 +74,36 @@ namespace DoAnLapTrinhWeb.Controllers
         //Xữ lý thêm sách
         public async Task<IActionResult> Add(tbSach sach, IFormFile imageUrl)
         {
-            // Kiểm tra xem tên sách có trống không và có quá 150 ký tự không
-            if (string.IsNullOrEmpty(sach.tenSach) || sach.tenSach.Length > 150)
+            // Kiểm tra xem tên sách có trống không
+            if (ModelState.IsValid)
             {
-                ModelState.AddModelError("tenSach", "Tên sách không hợp lệ. Tên sách không được để trống và không được vượt quá 150 ký tự.");
-                return View(sach);
-            }
+                if (await _sachRepository.IsTenSachExisted(sach.tenSach))
+                {
+                    TempData["ErrorMessage"] = "Tên sách đã tồn tại, vui lòng chọn tên sách khác.";
+                    return View(sach);
+                }
+                else
+                {
+                    await _sachRepository.AddAsync(sach);
 
-            // Kiểm tra xem tên sách có trùng không
-            if (await _sachRepository.IsTenSachExisted(sach.tenSach))
+                    TempData["SuccessMessage"] = "Đã thêm sách thành công.";
+                }
+
+            }
+            else
             {
-                ModelState.AddModelError("tenSach", "Tên sách bị trùng, bạn có thể đổi tên khác.");
-                return View(sach);
+                // Nếu ModelState không hợp lệ, tái tạo SelectList cho theLoaiId và tacGiaId
+                var tbTheLoais = await _theLoaiyRepository.GetAllAsync();
+                ViewBag.TheLoai = new SelectList(tbTheLoais, "Id", "tenTheLoai", sach.theLoaiId);
+                var tbTacGias = await _tacGiaRepository.GetAllAsync();
+                ViewBag.TacGia = new SelectList(tbTacGias, "Id", "TenTacGia", sach.tacGiaId);
+                TempData["ErrorMessage"] = "Vui long nhap day du";
             }
-
-            if (imageUrl != null)
-            {
-                // Lưu hình ảnh đại diện
-                sach.imageUrl = await SaveImage(imageUrl);
-            }
-
-            // Thêm sách vào cơ sở dữ liệu
-            await _sachRepository.AddAsync(sach);
-
-            // Hiển thị thông báo khi thêm sách thành công
-            TempData["SuccessMessage"] = "Đã thêm sách thành công.";
-
-            return RedirectToAction(nameof(Index));
+            return View(sach);
         }
 
 
-        // hàm SaveImage 
+            // hàm SaveImage 
         private async Task<string> SaveImage(IFormFile image)
         {
             var savePath = Path.Combine("wwwroot/images", image.FileName); //

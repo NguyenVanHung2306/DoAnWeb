@@ -12,15 +12,12 @@ namespace DoAnLapTrinhWeb.Repositories
         }
         public async Task<IEnumerable<tbTheLoai>> GetAllAsync()
         {
-            // return await _context.Products.ToListAsync();
             return await _context.tbTheLoai
-            .Include(p => p.Sachs) // Include thông tin về category
+            .Include(p => p.Sachs) 
             .ToListAsync();
         }
         public async Task<tbTheLoai> GetByIdAsync(int id)
         {
-            // return await _context.Products.FindAsync(id);
-            // lấy thông tin kèm theo category
             return await _context.tbTheLoai.Include(p => p.Sachs).FirstOrDefaultAsync(p => p.Id == id);
         }
         public async Task AddAsync(tbTheLoai theLoai)

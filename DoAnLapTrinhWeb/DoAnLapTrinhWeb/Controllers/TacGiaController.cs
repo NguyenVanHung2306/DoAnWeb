@@ -51,7 +51,7 @@ namespace DoAnLapTrinhWeb.Controllers
                 if (await _tacGiaRepository.IsTenTacGiaExisted(tacGia.TenTacGia))
                 {
                     // Hiển thị thông báo khi tên tác giả đã tồn tại
-                    TempData["ErrorMessage"] = "Ten tac gia trung vui long nhap ten khac";
+                    TempData["ErrorMessage"] = "Đã tồn tại tên tác giả, vui lòng nhập tên khác";
                     return View(tacGia);
                 }
                 else
@@ -90,8 +90,12 @@ namespace DoAnLapTrinhWeb.Controllers
             if (ModelState.IsValid)
             {
                 await _tacGiaRepository.UpdateAsync(tacGia);
-                return RedirectToAction(nameof(Index));
+                TempData["SuccessMessage"] = "Đã cập nhật tác giả thành công";
 
+            }
+            else
+            {
+                TempData["ErrorMessage"] = "Vui lòng nhập thông tin đầy đủ";
             }
             return View(tacGia);
         }
@@ -105,15 +109,15 @@ namespace DoAnLapTrinhWeb.Controllers
             return View(tacGia);
         }
 
-        [HttpPost, ActionName("DeleteConfirmed")]
-        public async Task<IActionResult> DeleteConfirmed(int id)
+        [HttpPost, ActionName("Delete")]
+        public async Task<IActionResult> Delete(int id, tbTacGia tacGia)
         {
-            var tacGia = await _tacGiaRepository.GetByIdAsync(id);
             if (tacGia != null)
             {
                 await _tacGiaRepository.DeleteAsync(id);
+                TempData["SuccessMessage"] = "Xóa tác giả thành công";
             }
-            return RedirectToAction(nameof(Index));
+            return View(tacGia);
         }
     }
 }

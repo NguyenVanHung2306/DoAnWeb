@@ -49,18 +49,18 @@ namespace DoAnLapTrinhWeb.Controllers
                 if (await _theLoaiyRepository.IsTenTheLoaiExisted(theLoai.tenTheLoai))
                 {
                     // Hiển thị thông báo khi tên tác giả đã tồn tại
-                    TempData["ErrorMessage"] = "Ten the loai trung vui long nhap ten khac";
+                    TempData["ErrorMessage"] = "Đã tồn tại tên thể loại, vui lòng nhập tên khác";
                     return View(theLoai);
                 }
                 else
                 {
-                    TempData["SuccessMessage"] = "Đã thêm the loai thành công.";
+                    TempData["SuccessMessage"] = "Đã thêm thể loại thành công";
                     await _theLoaiyRepository.AddAsync(theLoai);
                 }
             }
             else
             {
-                TempData["ErrorMessage"] = "Vui long nhap day du";
+                TempData["ErrorMessage"] = "Vui lòng nhập thông tin đầy đủ";
             }
             return View(theLoai);
         }
@@ -84,8 +84,12 @@ namespace DoAnLapTrinhWeb.Controllers
             if (ModelState.IsValid)
             {
                 await _theLoaiyRepository.UpdateAsync(theLoai);
-                return RedirectToAction(nameof(Index));
+                TempData["SuccessMessage"] = "Đã cập nhật thể loại thành công";
 
+            }
+            else
+            {
+                TempData["ErrorMessage"] = "Vui lòng nhập thông tin đầy đủ";
             }
             return View(theLoai);
         }
@@ -99,15 +103,16 @@ namespace DoAnLapTrinhWeb.Controllers
             return View(theLoai);
         }
 
-        [HttpPost, ActionName("DeleteConfirmed")]
-        public async Task<IActionResult> DeleteConfirmed(int id)
+        [HttpPost, ActionName("Delete")]
+        public async Task<IActionResult> Delete(int id, tbTheLoai theLoai)
         {
-            var theLoai = await _theLoaiyRepository.GetByIdAsync(id);
+            
             if (theLoai != null)
             {
                 await _theLoaiyRepository.DeleteAsync(id);
+                TempData["SuccessMessage"] = "Xóa thể loại thành công";
             }
-            return RedirectToAction(nameof(Index));
+            return View(theLoai);
         }
     }
 }
