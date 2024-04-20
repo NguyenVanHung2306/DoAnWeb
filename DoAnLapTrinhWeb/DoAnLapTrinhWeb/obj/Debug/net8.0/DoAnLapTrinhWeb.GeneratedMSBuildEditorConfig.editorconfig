@@ -17,123 +17,135 @@ build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = DoAnLapTrinhWeb
 build_property.RootNamespace = DoAnLapTrinhWeb
-build_property.ProjectDir = D:\DoAnWeb\DoAnLapTrinhWeb\DoAnLapTrinhWeb\
+build_property.ProjectDir = C:\LTWEB\Github_DoAn\DoAnWeb\DoAnLapTrinhWeb\DoAnLapTrinhWeb\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = D:\DoAnWeb\DoAnLapTrinhWeb\DoAnLapTrinhWeb
+build_property.MSBuildProjectDirectory = C:\LTWEB\Github_DoAn\DoAnWeb\DoAnLapTrinhWeb\DoAnLapTrinhWeb
 build_property._RazorSourceGeneratorDebug = 
 
-[D:/DoAnWeb/DoAnLapTrinhWeb/DoAnLapTrinhWeb/Areas/Identity/Pages/Account/Login.cshtml]
+[C:/LTWEB/Github_DoAn/DoAnWeb/DoAnLapTrinhWeb/DoAnLapTrinhWeb/Areas/Identity/Pages/Account/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/DoAnWeb/DoAnLapTrinhWeb/DoAnLapTrinhWeb/Areas/Identity/Pages/Account/Logout.cshtml]
+[C:/LTWEB/Github_DoAn/DoAnWeb/DoAnLapTrinhWeb/DoAnLapTrinhWeb/Areas/Identity/Pages/Account/Logout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxMb2dvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/DoAnWeb/DoAnLapTrinhWeb/DoAnLapTrinhWeb/Areas/Identity/Pages/Account/Register.cshtml]
+[C:/LTWEB/Github_DoAn/DoAnWeb/DoAnLapTrinhWeb/DoAnLapTrinhWeb/Areas/Identity/Pages/Account/Register.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/DoAnWeb/DoAnLapTrinhWeb/DoAnLapTrinhWeb/Areas/Identity/Pages/Account/_ViewImports.cshtml]
+[C:/LTWEB/Github_DoAn/DoAnWeb/DoAnLapTrinhWeb/DoAnLapTrinhWeb/Areas/Identity/Pages/Account/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxfVmlld0ltcG9ydHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/DoAnWeb/DoAnLapTrinhWeb/DoAnLapTrinhWeb/Areas/Identity/Pages/_ValidationScriptsPartial.cshtml]
+[C:/LTWEB/Github_DoAn/DoAnWeb/DoAnLapTrinhWeb/DoAnLapTrinhWeb/Areas/Identity/Pages/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZhbGlkYXRpb25TY3JpcHRzUGFydGlhbC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/DoAnWeb/DoAnLapTrinhWeb/DoAnLapTrinhWeb/Areas/Identity/Pages/_ViewImports.cshtml]
+[C:/LTWEB/Github_DoAn/DoAnWeb/DoAnLapTrinhWeb/DoAnLapTrinhWeb/Areas/Identity/Pages/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/DoAnWeb/DoAnLapTrinhWeb/DoAnLapTrinhWeb/Areas/Identity/Pages/_ViewStart.cshtml]
+[C:/LTWEB/Github_DoAn/DoAnWeb/DoAnLapTrinhWeb/DoAnLapTrinhWeb/Areas/Identity/Pages/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/DoAnWeb/DoAnLapTrinhWeb/DoAnLapTrinhWeb/Views/Book/Add.cshtml]
+[C:/LTWEB/Github_DoAn/DoAnWeb/DoAnLapTrinhWeb/DoAnLapTrinhWeb/Views/Book/Add.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va1xBZGQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/DoAnWeb/DoAnLapTrinhWeb/DoAnLapTrinhWeb/Views/Book/Details.cshtml]
+[C:/LTWEB/Github_DoAn/DoAnWeb/DoAnLapTrinhWeb/DoAnLapTrinhWeb/Views/Book/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va1xEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/DoAnWeb/DoAnLapTrinhWeb/DoAnLapTrinhWeb/Views/Book/Index.cshtml]
+[C:/LTWEB/Github_DoAn/DoAnWeb/DoAnLapTrinhWeb/DoAnLapTrinhWeb/Views/Book/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/DoAnWeb/DoAnLapTrinhWeb/DoAnLapTrinhWeb/Views/Home/Index.cshtml]
+[C:/LTWEB/Github_DoAn/DoAnWeb/DoAnLapTrinhWeb/DoAnLapTrinhWeb/Views/Book/Index2.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va1xJbmRleDIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/LTWEB/Github_DoAn/DoAnWeb/DoAnLapTrinhWeb/DoAnLapTrinhWeb/Views/Book/Update.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va1xVcGRhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/LTWEB/Github_DoAn/DoAnWeb/DoAnLapTrinhWeb/DoAnLapTrinhWeb/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/DoAnWeb/DoAnLapTrinhWeb/DoAnLapTrinhWeb/Views/Home/Privacy.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+[C:/LTWEB/Github_DoAn/DoAnWeb/DoAnLapTrinhWeb/DoAnLapTrinhWeb/Views/Page/Add.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFnZVxBZGQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/DoAnWeb/DoAnLapTrinhWeb/DoAnLapTrinhWeb/Views/Shared/Error.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+[C:/LTWEB/Github_DoAn/DoAnWeb/DoAnLapTrinhWeb/DoAnLapTrinhWeb/Views/Page/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFnZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/DoAnWeb/DoAnLapTrinhWeb/DoAnLapTrinhWeb/Views/Shared/_LoginPartial.cshtml]
+[C:/LTWEB/Github_DoAn/DoAnWeb/DoAnLapTrinhWeb/DoAnLapTrinhWeb/Views/Shared/_LoginPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Mb2dpblBhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/DoAnWeb/DoAnLapTrinhWeb/DoAnLapTrinhWeb/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/LTWEB/Github_DoAn/DoAnWeb/DoAnLapTrinhWeb/DoAnLapTrinhWeb/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/DoAnWeb/DoAnLapTrinhWeb/DoAnLapTrinhWeb/Views/TacGia/Add.cshtml]
+[C:/LTWEB/Github_DoAn/DoAnWeb/DoAnLapTrinhWeb/DoAnLapTrinhWeb/Views/TacGia/Add.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGFjR2lhXEFkZC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/DoAnWeb/DoAnLapTrinhWeb/DoAnLapTrinhWeb/Views/TacGia/Delete.cshtml]
+[C:/LTWEB/Github_DoAn/DoAnWeb/DoAnLapTrinhWeb/DoAnLapTrinhWeb/Views/TacGia/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGFjR2lhXERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/DoAnWeb/DoAnLapTrinhWeb/DoAnLapTrinhWeb/Views/TacGia/Display.cshtml]
+[C:/LTWEB/Github_DoAn/DoAnWeb/DoAnLapTrinhWeb/DoAnLapTrinhWeb/Views/TacGia/Display.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGFjR2lhXERpc3BsYXkuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/DoAnWeb/DoAnLapTrinhWeb/DoAnLapTrinhWeb/Views/TacGia/Index.cshtml]
+[C:/LTWEB/Github_DoAn/DoAnWeb/DoAnLapTrinhWeb/DoAnLapTrinhWeb/Views/TacGia/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGFjR2lhXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/LTWEB/Github_DoAn/DoAnWeb/DoAnLapTrinhWeb/DoAnLapTrinhWeb/Views/TacGia/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGFjR2lhXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/DoAnWeb/DoAnLapTrinhWeb/DoAnLapTrinhWeb/Views/TacGia/Update.cshtml]
+[C:/LTWEB/Github_DoAn/DoAnWeb/DoAnLapTrinhWeb/DoAnLapTrinhWeb/Views/TacGia/Update.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGFjR2lhXFVwZGF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/DoAnWeb/DoAnLapTrinhWeb/DoAnLapTrinhWeb/Views/TheLoai/Add.cshtml]
+[C:/LTWEB/Github_DoAn/DoAnWeb/DoAnLapTrinhWeb/DoAnLapTrinhWeb/Views/TheLoai/Add.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGhlTG9haVxBZGQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/DoAnWeb/DoAnLapTrinhWeb/DoAnLapTrinhWeb/Views/TheLoai/Delete.cshtml]
+[C:/LTWEB/Github_DoAn/DoAnWeb/DoAnLapTrinhWeb/DoAnLapTrinhWeb/Views/TheLoai/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGhlTG9haVxEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/DoAnWeb/DoAnLapTrinhWeb/DoAnLapTrinhWeb/Views/TheLoai/Display.cshtml]
+[C:/LTWEB/Github_DoAn/DoAnWeb/DoAnLapTrinhWeb/DoAnLapTrinhWeb/Views/TheLoai/Display.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGhlTG9haVxEaXNwbGF5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/DoAnWeb/DoAnLapTrinhWeb/DoAnLapTrinhWeb/Views/TheLoai/Index.cshtml]
+[C:/LTWEB/Github_DoAn/DoAnWeb/DoAnLapTrinhWeb/DoAnLapTrinhWeb/Views/TheLoai/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGhlTG9haVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/DoAnWeb/DoAnLapTrinhWeb/DoAnLapTrinhWeb/Views/TheLoai/Update.cshtml]
+[C:/LTWEB/Github_DoAn/DoAnWeb/DoAnLapTrinhWeb/DoAnLapTrinhWeb/Views/TheLoai/Update.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGhlTG9haVxVcGRhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/DoAnWeb/DoAnLapTrinhWeb/DoAnLapTrinhWeb/Views/_ViewImports.cshtml]
+[C:/LTWEB/Github_DoAn/DoAnWeb/DoAnLapTrinhWeb/DoAnLapTrinhWeb/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/DoAnWeb/DoAnLapTrinhWeb/DoAnLapTrinhWeb/Views/_ViewStart.cshtml]
+[C:/LTWEB/Github_DoAn/DoAnWeb/DoAnLapTrinhWeb/DoAnLapTrinhWeb/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/DoAnWeb/DoAnLapTrinhWeb/DoAnLapTrinhWeb/Views/Shared/_Layout.cshtml]
+[C:/LTWEB/Github_DoAn/DoAnWeb/DoAnLapTrinhWeb/DoAnLapTrinhWeb/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-f6zo0yalrz

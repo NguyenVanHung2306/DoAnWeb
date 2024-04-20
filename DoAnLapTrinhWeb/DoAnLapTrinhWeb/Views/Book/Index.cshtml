@@ -4,8 +4,9 @@
 }
 
 <h2>Books</h2>
+<p>Member @ViewBag.TotalUsers</p>
+<p>Book: @ViewBag.BookCount</p>
 <script src="~/js/onclick-Image.js"></script>
-<h6><a asp-action="Add">Thêm Sách</a></h6>
 <table class="table">
 
     
@@ -17,10 +18,13 @@
                 <td><img src="@sach.imageUrl" style="width: 90px; height: 90px; cursor: pointer;" onclick="redirectToDetails(@sach.Id)" /></td>
                 
             </tr>
+            <tr>
+                <td>
+                    <a href="/Page/Add/@sach.Id">Thêm trang</a>
+                </td>
+            </tr>
         }
+
     </tbody>
 
 </table>
-
-<p>Member @ViewBag.TotalUsers</p>
-<p>Book: @ViewBag.BookCount</p>

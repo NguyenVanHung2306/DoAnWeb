@@ -11,5 +11,6 @@ namespace DoAnLapTrinhWeb.Repositories
         Task DeleteAsync(int id);
         Task<bool> IsTenSachExisted(string tenSach);
         Task<dynamic> GetBookCountAsync();
+        IEnumerable<object> GetAll();
     }
 }

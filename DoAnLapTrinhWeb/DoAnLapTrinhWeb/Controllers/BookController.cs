@@ -40,6 +40,20 @@ namespace DoAnLapTrinhWeb.Controllers
 
             return View(books);
         }
+        public async Task<ActionResult> Index2()
+        {
+            //THong ke nguoi dung da dang ki 
+            var totalUsers = await _userManager.Users.CountAsync();
+            ViewBag.TotalUsers = totalUsers;
+
+            //Thong ke so luong cuon sach trong trong web
+            var bookCount = await _sachRepository.GetBookCountAsync();
+            ViewBag.BookCount = bookCount;
+
+            var books = await _sachRepository.GetAllAsync();
+
+            return View(books);
+        }
 
         //Action Xuất thông tin sách
         public async Task<IActionResult> Details(int id)
@@ -113,6 +127,58 @@ namespace DoAnLapTrinhWeb.Controllers
             }
             return "/images/" + image.FileName; // Trả về đường dẫn tương đối
         }
+        public async Task<IActionResult> Update(int id)
+        {
+            // Lấy thông tin cuốn sách cần cập nhật từ ID
+            var sach = await _sachRepository.GetByIdAsync(id);
+            if (sach == null)
+            {
+                return NotFound();
+            }
+
+            // Lấy danh sách thể loại và tác giả để hiển thị trong dropdownlist
+            var tbTheLoais = await _theLoaiyRepository.GetAllAsync();
+            ViewBag.TheLoai = new SelectList(tbTheLoais, "Id", "tenTheLoai", sach.theLoaiId);
+            var tbTacGias = await _tacGiaRepository.GetAllAsync();
+            ViewBag.TacGia = new SelectList(tbTacGias, "Id", "TenTacGia", sach.tacGiaId);
+
+            // Trả về view với thông tin sách cần cập nhật
+            return View(sach);
+        }
+
+        // Hành động xử lý việc cập nhật sách
+        [HttpPost]
+        public async Task<IActionResult> Update(int id, tbSach sach, IFormFile newImageUrl)
+        {
+            // Kiểm tra xem sách có tồn tại không
+            var existingSach = await _sachRepository.GetByIdAsync(id);
+            if (existingSach == null)
+            {
+                return NotFound();
+            }
+
+
+            // Cập nhật thông tin sách
+            existingSach.tenSach = sach.tenSach;
+            existingSach.moTa = sach.moTa;
+            existingSach.tacGiaId = sach.tacGiaId;
+            existingSach.theLoaiId = sach.theLoaiId;
+
+            // Kiểm tra và lưu ảnh mới nếu có
+            if (newImageUrl != null )
+            {
+                existingSach.imageUrl = await SaveImage(newImageUrl);
+            }
+
+            // Cập nhật sách trong cơ sở dữ liệu
+            await _sachRepository.UpdateAsync(existingSach);
+
+            // Hiển thị thông báo khi cập nhật thành công
+            TempData["SuccessMessage"] = "Đã cập nhật thông tin sách thành công.";
+
+            return RedirectToAction(nameof(Index));
+        }
+
 
     }
 }

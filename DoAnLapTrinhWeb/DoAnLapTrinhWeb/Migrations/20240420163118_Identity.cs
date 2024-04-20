@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace DoAnLapTrinhWeb.Migrations
 {
     /// <inheritdoc />
-    public partial class Identyti : Migration
+    public partial class Identity : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -199,7 +199,7 @@ namespace DoAnLapTrinhWeb.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "tbTacGia",
+                name: "tbSach",
                 columns: table => new
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
@@ -207,15 +207,22 @@ namespace DoAnLapTrinhWeb.Migrations
                     tenSach = table.Column<string>(type: "nvarchar(100)", maxLength: 100, nullable: false),
                     imageUrl = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     tacGiaId = table.Column<int>(type: "int", nullable: false),
-                    moTa = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                    moTa = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    theLoaiId = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_tbTacGia", x => x.Id);
+                    table.PrimaryKey("PK_tbSach", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_tbTacGia_tbTacGia_tacGiaId",
+                        name: "FK_tbSach_tbTacGia_tacGiaId",
                         column: x => x.tacGiaId,
                         principalTable: "tbTacGia",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
+                    table.ForeignKey(
+                        name: "FK_tbSach_tbTheLoai_theLoaiId",
+                        column: x => x.theLoaiId,
+                        principalTable: "tbTheLoai",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                 });
@@ -246,35 +253,9 @@ namespace DoAnLapTrinhWeb.Migrations
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
-                        name: "FK_tbChiTietDanhDau_tbTacGia_sachId",
+                        name: "FK_tbChiTietDanhDau_tbSach_sachId",
                         column: x => x.sachId,
-                        principalTable: "tbTacGia",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
-                });
-
-            migrationBuilder.CreateTable(
-                name: "tbChiTietTheLoai",
-                columns: table => new
-                {
-                    Id = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
-                    sachId = table.Column<int>(type: "int", nullable: false),
-                    theLoaiId = table.Column<int>(type: "int", nullable: false)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_tbChiTietTheLoai", x => x.Id);
-                    table.ForeignKey(
-                        name: "FK_tbChiTietTheLoai_tbTacGia_sachId",
-                        column: x => x.sachId,
-                        principalTable: "tbTacGia",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
-                    table.ForeignKey(
-                        name: "FK_tbChiTietTheLoai_tbTheLoai_theLoaiId",
-                        column: x => x.theLoaiId,
-                        principalTable: "tbTheLoai",
+                        principalTable: "tbSach",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                 });
@@ -299,9 +280,9 @@ namespace DoAnLapTrinhWeb.Migrations
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
-                        name: "FK_tbLichSu_tbTacGia_sachId",
+                        name: "FK_tbLichSu_tbSach_sachId",
                         column: x => x.sachId,
-                        principalTable: "tbTacGia",
+                        principalTable: "tbSach",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                 });
@@ -326,9 +307,9 @@ namespace DoAnLapTrinhWeb.Migrations
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
-                        name: "FK_tbPhieuDanhGia_tbTacGia_sachId",
+                        name: "FK_tbPhieuDanhGia_tbSach_sachId",
                         column: x => x.sachId,
-                        principalTable: "tbTacGia",
+                        principalTable: "tbSach",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                 });
@@ -340,15 +321,15 @@ namespace DoAnLapTrinhWeb.Migrations
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     SachId = table.Column<int>(type: "int", nullable: false),
-                    Noidung = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                    Noidung = table.Column<string>(type: "nvarchar(max)", nullable: true)
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_tbTrang", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_tbTrang_tbTacGia_SachId",
+                        name: "FK_tbTrang_tbSach_SachId",
                         column: x => x.SachId,
-                        principalTable: "tbTacGia",
+                        principalTable: "tbSach",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                 });
@@ -408,16 +389,6 @@ namespace DoAnLapTrinhWeb.Migrations
                 column: "userId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_tbChiTietTheLoai_sachId",
-                table: "tbChiTietTheLoai",
-                column: "sachId");
-
-            migrationBuilder.CreateIndex(
-                name: "IX_tbChiTietTheLoai_theLoaiId",
-                table: "tbChiTietTheLoai",
-                column: "theLoaiId");
-
-            migrationBuilder.CreateIndex(
                 name: "IX_tbLichSu_sachId",
                 table: "tbLichSu",
                 column: "sachId");
@@ -438,9 +409,14 @@ namespace DoAnLapTrinhWeb.Migrations
                 column: "userId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_tbTacGia_tacGiaId",
-                table: "tbTacGia",
+                name: "IX_tbSach_tacGiaId",
+                table: "tbSach",
                 column: "tacGiaId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_tbSach_theLoaiId",
+                table: "tbSach",
+                column: "theLoaiId");
 
             migrationBuilder.CreateIndex(
                 name: "IX_tbTrang_SachId",
@@ -470,9 +446,6 @@ namespace DoAnLapTrinhWeb.Migrations
                 name: "tbChiTietDanhDau");
 
             migrationBuilder.DropTable(
-                name: "tbChiTietTheLoai");
-
-            migrationBuilder.DropTable(
                 name: "tbLichSu");
 
             migrationBuilder.DropTable(
@@ -488,16 +461,16 @@ namespace DoAnLapTrinhWeb.Migrations
                 name: "tbLoaiDanhDau");
 
             migrationBuilder.DropTable(
-                name: "tbTheLoai");
-
-            migrationBuilder.DropTable(
                 name: "AspNetUsers");
 
             migrationBuilder.DropTable(
-                name: "tbTacGia");
+                name: "tbSach");
 
             migrationBuilder.DropTable(
                 name: "tbTacGia");
+
+            migrationBuilder.DropTable(
+                name: "tbTheLoai");
         }
     }
 }

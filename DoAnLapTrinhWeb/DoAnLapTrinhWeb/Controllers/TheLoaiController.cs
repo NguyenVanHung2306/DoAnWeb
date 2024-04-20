@@ -64,7 +64,7 @@ namespace DoAnLapTrinhWeb.Controllers
             return View(theLoai);
         }
 
-        public async Task<IActionResult> Update(int id)
+        public async Task<IActionResult> Update (int id)
         {
             var theLoai = await _theLoaiyRepository.GetByIdAsync(id);
             if (theLoai == null)
@@ -74,7 +74,7 @@ namespace DoAnLapTrinhWeb.Controllers
             return View(theLoai);
         }
         [HttpPost]
-        public async Task<IActionResult> Update(int id, tbTheLoai theLoai)
+        public async Task<IActionResult> Update (int id, tbTheLoai theLoai)
         {
             if (id != theLoai.Id)
             {

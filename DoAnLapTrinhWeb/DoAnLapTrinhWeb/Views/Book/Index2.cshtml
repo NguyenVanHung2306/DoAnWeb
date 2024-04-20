@@ -1,0 +1,43 @@
+﻿@model IEnumerable<DoAnLapTrinhWeb.Models.tbSach>
+@{
+    ViewData["Title"] = "DoAnLapTrinhWeb";
+}
+
+<h2>Books</h2>
+<script src="~/js/onclick-Image.js"></script>
+<h6><a asp-action="Add">Thêm Sách</a></h6>
+<table class="table">
+
+    <thead>
+        <tr>
+            <th>Ten Sach</th>
+            <th>Anh Bia</th>
+            <th>Cac Chuc Nang</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        @foreach (var sach in Model)
+        {
+
+            <tr>
+                <td>@sach.tenSach</td>
+                <td><img src="@sach.imageUrl" style="width: 90px; height: 90px; cursor: pointer;" onclick="redirectToDetails(@sach.Id)" /></td>
+                <td>
+                    <a asp-action="Details" asp-route-id="@sach.Id">View</a> |
+
+                    <a asp-action="Update" asp-route-id="@sach.Id">Edit</a> |
+
+                    <a asp-action="Delete" asp-route-id="@sach.Id">Delete</a>
+
+                </td>
+            </tr>
+
+        }
+    </tbody>
+
+</table>
+<h5>
+    <p>Member @ViewBag.TotalUsers</p>
+    <p>Book: @ViewBag.BookCount</p>
+</h5>

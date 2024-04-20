@@ -1,0 +1,46 @@
+﻿@model IEnumerable<DoAnLapTrinhWeb.Models.TbTrang>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Index</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.sach.tenSach)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Noidung)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @if (item.sach != null)
+                    {
+                        @Html.DisplayFor(modelItem => item.sach.tenSach)
+                    }
+                    else
+                    {
+                        <text>Không có tên sách</text>
+                    }
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Noidung)
+                </td>
+                <td>
+                    <a asp-action="Details" asp-route-id="@item.Id">Details</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+
+</table>

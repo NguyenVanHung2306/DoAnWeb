@@ -1,4 +1,6 @@
 using DoAnLapTrinhWeb.Models;
+using DoAnLapTrinhWeb.Repositories;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 
@@ -6,11 +8,20 @@ namespace DoAnLapTrinhWeb.Controllers
 {
     public class HomeController : Controller
     {
-        private readonly ILogger<HomeController> _logger;
+        private readonly ISachRepository _sachRepository;
+        private readonly ITheLoaiRepository _theLoaiyRepository;
+        private readonly ITacGiaRepository _tacGiaRepository;
+        private readonly UserManager<ApplicationUser> _userManager;
+        public HomeController(ISachRepository sachRepositoryy, UserManager<ApplicationUser> userManager,
 
-        public HomeController(ILogger<HomeController> logger)
+        ITheLoaiRepository theLoaiRepository,
+        ITacGiaRepository tacGiaRepository)
+
         {
-            _logger = logger;
+            _sachRepository = sachRepositoryy;
+            _userManager = userManager;
+            _theLoaiyRepository = theLoaiRepository;
+            _tacGiaRepository = tacGiaRepository;
         }
 
         public IActionResult Index()
@@ -18,12 +29,6 @@ namespace DoAnLapTrinhWeb.Controllers
             return View();
         }
 
-        public IActionResult Privacy()
-        {
-            return View();
-        }
-
-        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });

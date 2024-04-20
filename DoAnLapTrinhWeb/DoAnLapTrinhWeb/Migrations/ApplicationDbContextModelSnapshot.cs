@@ -105,7 +105,6 @@ namespace DoAnLapTrinhWeb.Migrations
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
                     b.Property<string>("Noidung")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<int>("SachId")
@@ -230,7 +229,6 @@ namespace DoAnLapTrinhWeb.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("moTa")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<int>("tacGiaId")

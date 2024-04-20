@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace DoAnLapTrinhWeb.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20240414102012_EditDatabase")]
-    partial class EditDatabase
+    [Migration("20240420163118_Identity")]
+    partial class Identity
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -108,7 +108,6 @@ namespace DoAnLapTrinhWeb.Migrations
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
                     b.Property<string>("Noidung")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<int>("SachId")
@@ -233,7 +232,6 @@ namespace DoAnLapTrinhWeb.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("moTa")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<int>("tacGiaId")

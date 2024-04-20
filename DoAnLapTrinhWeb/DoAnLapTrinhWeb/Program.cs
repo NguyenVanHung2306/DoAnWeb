@@ -27,7 +27,7 @@ builder.Services.AddControllersWithViews();
 builder.Services.AddScoped<ISachRepository, EFSachRepository>();
 builder.Services.AddScoped<ITheLoaiRepository, EFTheLoaiRepository>();
 builder.Services.AddScoped<ITacGiaRepository, EFTacGiaRepository>();
-
+builder.Services.AddScoped<ITrangRepository, EFTrangRepository>();
 
 var app = builder.Build();
 
@@ -69,5 +69,9 @@ app.MapControllerRoute(
     name: "default",
     pattern: "{controller=TheLoai}/{action=Index}/{id?}");
 
+
+app.MapControllerRoute(
+    name: "default",
+    pattern: "{controller=Page}/{action=Index}/{id?}");
 
 app.Run();

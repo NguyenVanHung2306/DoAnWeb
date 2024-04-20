@@ -52,6 +52,11 @@ namespace DoAnLapTrinhWeb.Repositories
         {
             return await _context.tbSach.CountAsync();
         }
+
+        public IEnumerable<object> GetAll()
+        {
+            throw new NotImplementedException();
+        }
     }
 }
 
