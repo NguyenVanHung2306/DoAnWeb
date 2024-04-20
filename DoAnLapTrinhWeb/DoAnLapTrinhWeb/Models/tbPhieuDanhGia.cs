@@ -10,7 +10,7 @@ namespace DoAnLapTrinhWeb.Models
         public tbSach Sach { get; set; }
 
         public long diem { get; set; }
-
+        public string? binhluan { get; set; }
         public string userId { get; set; }
         public ApplicationUser User { get; set; }
     }

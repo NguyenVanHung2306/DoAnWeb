@@ -1,4 +1,5 @@
 ﻿using DoAnLapTrinhWeb.Areas.Admin.Models;
+using DoAnLapTrinhWeb.Models;
 using DoAnLapTrinhWeb.Repositories;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
@@ -10,10 +11,12 @@ namespace DoAnLapTrinhWeb.Controllers
     public class BooksController : Controller
     {
         private readonly ISachRepository _sachRepository;
-        public BooksController(ISachRepository sachRepositoryy)
+        private readonly ApplicationDbContext _context;
+        public BooksController(ISachRepository sachRepositoryy, ApplicationDbContext context)
 
         {
             _sachRepository = sachRepositoryy;
+            _context = context;
         }
 
         //Action xuất danh sách các cuốn sách
@@ -33,7 +36,25 @@ namespace DoAnLapTrinhWeb.Controllers
             }
             return View(books);
         }
+        public async Task<IActionResult> Read()
+        {
+            //var books = await _sachRepository.GetByIdAsync(id);
+            //if (books == null)
+            //{
+            //    return NotFound();
+            //}
+            return View();
+        }
+        public ActionResult GetImagePaths(int sachId)
+        {
+            var result = from c in _context.tbTrang
+                         where c.SachId == sachId
+                         select c;
+            // Truy vấn CSDL và lấy danh sách đường dẫn hình ảnh
+            List<string> imagePaths = result.Select(c => c.Noidung).ToList();
 
+            return Json(imagePaths);
+        }
 
     }
 }

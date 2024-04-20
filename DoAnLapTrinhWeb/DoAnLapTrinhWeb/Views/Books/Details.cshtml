@@ -8,7 +8,6 @@
         ApplicationDbContext context = new ApplicationDbContext();
         var theloai = context.tbTheLoai.FirstOrDefault(b => b.Id == @Model.theLoaiId);
         var tacgia = context.tbTacGia.FirstOrDefault(b => b.Id == @Model.tacGiaId);
-
     }
     <h3>Tác giả: @tacgia.TenTacGia.ToString()</h3>
     <p>Mô tả: @Model.moTa</p>
@@ -17,7 +16,10 @@
     {
         <img src="@Model.imageUrl" alt="Image" style="max-width:200px;" />
     }
-    <a asp-action="Read">Đọc</a>
-
+    <a asp-controller="Books" asp-action="Read">Đọc</a>
 </div>
-<a asp-action="Index">Back to List</a>
+
+<button><a asp-controller="DanhGia" asp-action="Index" asp-route-sachId="@Model.Id">Xem đánh giá</a></button>
+
+
+
