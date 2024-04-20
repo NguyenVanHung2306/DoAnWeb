@@ -49,17 +49,18 @@ namespace DoAnLapTrinhWeb.Controllers
                 if (await _theLoaiyRepository.IsTenTheLoaiExisted(theLoai.tenTheLoai))
                 {
                     // Hiển thị thông báo khi tên tác giả đã tồn tại
-                    ModelState.AddModelError("TenTheLoai", "Đã có the Loai này trong danh sách, không thể thêm.");
+                    TempData["ErrorMessage"] = "Ten the loai trung vui long nhap ten khac";
                     return View(theLoai);
                 }
-
-                // Thêm tác giả vào cơ sở dữ liệu
-                await _theLoaiyRepository.AddAsync(theLoai);
-
-                // Hiển thị thông báo khi thêm tác giả thành công
-                TempData["SuccessMessage"] = "Đã thêm the loai thành công.";
-
-                return RedirectToAction(nameof(Index));
+                else
+                {
+                    TempData["SuccessMessage"] = "Đã thêm the loai thành công.";
+                    await _theLoaiyRepository.AddAsync(theLoai);
+                }
+            }
+            else
+            {
+                TempData["ErrorMessage"] = "Vui long nhap day du";
             }
             return View(theLoai);
         }

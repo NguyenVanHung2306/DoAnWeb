@@ -42,7 +42,7 @@ namespace DoAnLapTrinhWeb.Repositories
 
         public async Task<bool> IsTenTheLoaiExisted(string TenTheLoai)
         {
-            return await _context.tbTacGia.AnyAsync(t => t.TenTacGia == TenTheLoai);
+            return await _context.tbTheLoai.AnyAsync(t => t.tenTheLoai == TenTheLoai);
         }
     }
 }

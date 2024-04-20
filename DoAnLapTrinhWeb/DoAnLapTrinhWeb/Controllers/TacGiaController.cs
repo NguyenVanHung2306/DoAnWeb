@@ -1,6 +1,8 @@
 ﻿using DoAnLapTrinhWeb.Models;
 using DoAnLapTrinhWeb.Repositories;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.CodeAnalysis.Scripting;
+
 
 namespace DoAnLapTrinhWeb.Controllers
 {
@@ -35,6 +37,7 @@ namespace DoAnLapTrinhWeb.Controllers
             return View(tacGia);
         }
 
+
         public IActionResult Add()
         {
             return View();
@@ -48,17 +51,23 @@ namespace DoAnLapTrinhWeb.Controllers
                 if (await _tacGiaRepository.IsTenTacGiaExisted(tacGia.TenTacGia))
                 {
                     // Hiển thị thông báo khi tên tác giả đã tồn tại
-                    ModelState.AddModelError("TenTacGia", "Đã có tác giả này trong danh sách, không thể thêm.");
+                    TempData["ErrorMessage"] = "Ten tac gia trung vui long nhap ten khac";
                     return View(tacGia);
                 }
+                else
+                {
+                    // Thêm tác giả vào cơ sở dữ liệu
 
-                // Thêm tác giả vào cơ sở dữ liệu
-                await _tacGiaRepository.AddAsync(tacGia);
+                    await _tacGiaRepository.AddAsync(tacGia);
 
-                // Hiển thị thông báo khi thêm tác giả thành công
-                TempData["SuccessMessage"] = "Đã thêm tác giả thành công.";
+                    // Hiển thị thông báo khi thêm tác giả thành công
 
-                return RedirectToAction(nameof(Index));
+                    TempData["SuccessMessage"] = "Đã thêm tác giả thành công.";
+                }
+            }
+            else
+            {
+                TempData["ErrorMessage"] = "Vui long nhap day du";
             }
             return View(tacGia);
         }
