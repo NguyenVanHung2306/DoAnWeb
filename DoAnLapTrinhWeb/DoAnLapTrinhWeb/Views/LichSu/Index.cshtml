@@ -1,5 +1,6 @@
-﻿@model IEnumerable<DoAnLapTrinhWeb.Models.tbLichSu>
+﻿@* @model IEnumerable<DoAnLapTrinhWeb.Models.tbLichSu> *@
 @{
+    Layout = "~/Views/Shared/_Layout.cshtml";
     var userId = (string)ViewBag.userId;
     ApplicationDbContext context = new ApplicationDbContext();
     // var result = from c in context.tbLichSu
@@ -8,14 +9,15 @@
     // List<tbLichSu> listLichSu = result.ToList();
     var listLichSu = context.tbLichSu.Where(lichSu => lichSu.userId == userId).ToList();
 }
+<h2>Lịch sử</h2>
 <table class="table">
     <thead>
         <tr>
             <th>
-                @Html.DisplayNameFor(model => model.Sach)
+                Tên sách
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.thoiGianDoc)
+                Thời gian đọc
             </th>
             <th>
                 Action
@@ -27,15 +29,17 @@
         {
             <tr>
                 <td>
-                    @Html.DisplayFor(modelItem => item.Sach.tenSach)
+                    @{
+                        var Sach = context.tbSach.FirstOrDefault(b => b.Id == item.sachId);
+                    }
+                    @Sach.tenSach.ToString()
                 </td>
                 <td>
                     @Html.DisplayFor(modelItem => item.thoiGianDoc)
                 </td>
                 <td>
-                    <a asp-action="Edit" asp-route-id="@item.lichSuId">Edit</a> |
-                    <a asp-action="Details" asp-route-id="@item.lichSuId">Details</a> |
-                    <a asp-action="Delete" asp-route-id="@item.lichSuId">Delete</a>
+                    <button><a asp-controller="Books" asp-action="Read" asp-route-sachId="@item.sachId">Đọc</a></button>
+                   <button><a asp-controller="LichSu" asp-action="Delete" asp-route-sachId="@item.sachId" asp-route-userId="@item.userId">Xóa</a></button>
                 </td>
             </tr>
         }
