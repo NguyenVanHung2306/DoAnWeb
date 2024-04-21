@@ -3,10 +3,6 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
     var userId = (string)ViewBag.userId;
     ApplicationDbContext context = new ApplicationDbContext();
-    // var result = from c in context.tbLichSu
-    //              where c.userId == userId;
-    //              select c;
-    // List<tbLichSu> listLichSu = result.ToList();
     var listLichSu = context.tbLichSu.Where(lichSu => lichSu.userId == userId).ToList();
 }
 <h2>Lịch sử</h2>
@@ -38,7 +34,7 @@
                     @Html.DisplayFor(modelItem => item.thoiGianDoc)
                 </td>
                 <td>
-                    <button><a asp-controller="Books" asp-action="Read" asp-route-sachId="@item.sachId">Đọc</a></button>
+                    <button><a asp-controller="Books" asp-action="Details" asp-route-Id="@item.sachId">Xem sách</a></button> |
                    <button><a asp-controller="LichSu" asp-action="Delete" asp-route-sachId="@item.sachId" asp-route-userId="@item.userId">Xóa</a></button>
                 </td>
             </tr>

@@ -1,5 +1,6 @@
 ﻿using DoAnLapTrinhWeb.Models;
 using DoAnLapTrinhWeb.Repositories;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
@@ -7,6 +8,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace DoAnLapTrinhWeb.Controllers
 {
+    [Authorize]
     public class DanhGiaController : Controller
     {
         private readonly ISachRepository _sachRepository;

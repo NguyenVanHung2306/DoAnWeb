@@ -37,11 +37,13 @@ namespace DoAnLapTrinhWeb.Controllers
         //Action Xuất thông tin sách
         public async Task<IActionResult> Details(int id)
         {
+            var user = await _userManager.GetUserAsync(User);
             var books = await _sachRepository.GetByIdAsync(id);
             if (books == null)
             {
                 return NotFound();
             }
+            ViewBag.UserId = user.Id;
             return View(books);
         }
 
@@ -67,6 +69,7 @@ namespace DoAnLapTrinhWeb.Controllers
 
             _context.SaveChanges();
             ViewBag.SachId = sachId;
+            ViewBag.UserId = user.Id;
             return View();
         }
 

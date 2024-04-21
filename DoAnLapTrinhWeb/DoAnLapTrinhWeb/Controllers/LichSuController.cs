@@ -9,6 +9,7 @@ using System;
 
 namespace DoAnLapTrinhWeb.Controllers
 {
+    [Authorize]
     public class LichSuController : Controller
     {
         private readonly ApplicationDbContext _context;

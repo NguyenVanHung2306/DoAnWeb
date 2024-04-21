@@ -10,76 +10,107 @@
     List<tbPhieuDanhGia> listPhieuDanhGia = result.ToList(); 
     var Sach = context.tbSach.FirstOrDefault(b => b.Id == sachId);
 }
-<hr />
-<div class="row">
-    <div class="col-md-4">
-        <form asp-action="LuuDanhGia">
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <div class="form-group">
-                <input type="hidden" asp-for="sachId" class="control-label" value="@sachId" />
-            </div>
-            <div class="form-group">
-                <select asp-for="diem" class="control-label">
-                    <option value="1">&#9733;</option>
-                    <option value="2">&#9733;&#9733;</option>
-                    <option value="3">&#9733;&#9733;&#9733;</option>
-                    <option value="4">&#9733;&#9733;&#9733;&#9733;</option>
-                    <option value="5">&#9733;&#9733;&#9733;&#9733;&#9733;</option>
-                </select>
-            </div>
-            <div class="form-group">
-                <input asp-for="binhluan" class="form-control" placeholder="Nhập bình luận"/>
-                <span asp-validation-for="binhluan" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <input type="hidden" asp-for="userId" class="control-label" value="@userId" />
-            </div>
-            <div class="form-group">
-                <input type="submit" value="Đánh giá" class="btn btn-primary" />
-            </div>
-        </form>
-    </div>
-</div>
 <h3>@Sach.tenSach</h3>
-<div>
-    <table class="table">
-        <thead>
-            <tr>
-                <th>
-                    Tên người dùng
-                </th>
-                <th>
-                    Bình luận
-                </th>
-                <th>
-                    Đánh giá
-                </th>
-            </tr>
-        </thead>
-        <tbody>
-            @foreach (var item in listPhieuDanhGia)
-            {
-                <tr>
-                    <td>
-                        @{
-                            var name = context.Users.FirstOrDefault(b => b.Id == item.userId);
-                        }
-                        @name.FullName.ToString()
-                    </td>
-                    <td>
-                        @Html.DisplayFor(modelItem => item.binhluan)
-                    </td>
-                    <td>
-                        @{
-                            string sao = "★";
-                            for (int i = 1; i < item.diem; i++)
-                                sao += "★";
-                        }
-                        @Html.Raw(sao)
-                    </td>
-                </tr>
-            }
-        </tbody>
-    </table>
-</div>
+<head>
+    <title>Đánh giá sách</title>
+    <style>
+        .review-form {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
 
+            .review-form label {
+                display: block;
+                margin-bottom: 10px;
+            }
+
+            .review-form textarea {
+                width: 100%;
+                height: 100px;
+                resize: vertical;
+            }
+
+            .review-form button {
+                padding: 10px 20px;
+                background-color: #4CAF50;
+                color: white;
+                border: none;
+                border-radius: 5px;
+                text-decoration: none;
+                cursor: pointer;
+            }
+
+        .review-list {
+            max-width: 600px;
+            margin: 20px auto;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 20px;
+        }
+
+        .review-item {
+            margin-bottom: 10px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #ccc;
+        }
+
+            .review-item .review-title {
+                font-weight: bold;
+                margin-bottom: 5px;
+            }
+
+            .review-item .review-text {
+                margin-bottom: 5px;
+            }
+
+            .review-item .review-date {
+                font-style: italic;
+                color: #888;
+            }
+    </style>
+</head>
+
+<body>
+    <form asp-action="LuuDanhGia">
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+        <input type="hidden" asp-for="sachId" class="control-label" value="@sachId" />
+        <input type="hidden" asp-for="userId" class="control-label" value="@userId" />
+
+        <div class="review-form">
+            <h2>Đánh giá sách</h2>
+            <label for="review-title">Tiêu đề:</label>
+            <select asp-for="diem" class="control-label">
+                <option value="1">&#9733;</option>
+                <option value="2">&#9733;&#9733;</option>
+                <option value="3">&#9733;&#9733;&#9733;</option>
+                <option value="4">&#9733;&#9733;&#9733;&#9733;</option>
+                <option value="5">&#9733;&#9733;&#9733;&#9733;&#9733;</option>
+            </select>
+            @* <input type="text" id="review-title" name="review-title"> *@
+            <label for="review-text">Nội dung đánh giá:</label>
+            @* <Input asp-for="binhluan" class="control-control" id="review-text" name="review-text" placeholder="Nhập bình luận"> *@
+
+            <input asp-for="binhluan" class="form-control" id="review-text" placeholder="Nhập bình luận" />
+            <span asp-validation-for="binhluan" class="text-danger"></span>
+            <button type="submit">Gửi đánh giá</button>
+        </div>
+    </form>
+    <div class="review-list">
+        <h2>Danh sách đánh giá</h2>
+        @foreach (var item in listPhieuDanhGia)
+        {
+            var name = context.Users.FirstOrDefault(b => b.Id == item.userId);
+            string sao = "★";
+            for (int i = 1; i < item.diem; i++)
+                sao += "★";
+            <div class="review-item">
+                <p class="review-title">@name.FullName.ToString()</p>
+                <p class="review-text">@item.binhluan</p>
+                <p class="review-date">@Html.Raw(sao)</p>
+            </div>
+        }
+    </div>
+</body>

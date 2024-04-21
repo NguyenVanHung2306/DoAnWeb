@@ -1,4 +1,10 @@
-﻿<!DOCTYPE html>
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    var sachId = (int)ViewBag.SachId;
+    ApplicationDbContext context = new ApplicationDbContext();
+    var Sach = context.tbSach.FirstOrDefault(b => b.Id == sachId);
+}
+<!DOCTYPE html>
 <html>
 <head>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -39,10 +45,17 @@
         #next-page:hover {
           background-color: #45a049;
         }
+
+        .book-title {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
 </style>
 </head>
 <body>
     <div id="container ">
+        <h1 class="book-title">@Sach.tenSach.ToString()</h1>
         <p id="book-page"></p>
         <div id="book-container">
             <button id="prev-page">&#10094</button>
