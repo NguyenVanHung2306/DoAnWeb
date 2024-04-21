@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "EMR+xQUSXGmaNjsTQ0vwhZl/rdloI6mljEblDuJOvgE=",
+  "Hash": "wIdT0VvF//P6QLczywBXrSu4sVHuj+FaFPX8DGfOeSs=",
   "Source": "DoAnLapTrinhWeb",
   "BasePath": "_content/DoAnLapTrinhWeb",
   "Mode": "Default",
@@ -1440,6 +1440,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Identity": "C:\\LTWEB\\Github_DoAn\\DoAnWeb\\DoAnLapTrinhWeb\\DoAnLapTrinhWeb\\wwwroot\\pages\\434203301_385231591089537_6214640521865620366_n.jpg",
+      "SourceId": "DoAnLapTrinhWeb",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\LTWEB\\Github_DoAn\\DoAnWeb\\DoAnLapTrinhWeb\\DoAnLapTrinhWeb\\wwwroot\\",
+      "BasePath": "_content/DoAnLapTrinhWeb",
+      "RelativePath": "pages/434203301_385231591089537_6214640521865620366_n.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\pages\\434203301_385231591089537_6214640521865620366_n.jpg"
     },
     {
       "Identity": "C:\\LTWEB\\Github_DoAn\\DoAnWeb\\DoAnLapTrinhWeb\\DoAnLapTrinhWeb\\wwwroot\\pages\\434229046_808188694683156_3919707701174112761_n - Copy.jpg",

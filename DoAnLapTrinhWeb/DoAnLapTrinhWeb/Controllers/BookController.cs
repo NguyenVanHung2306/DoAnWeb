@@ -148,8 +148,9 @@ namespace DoAnLapTrinhWeb.Controllers
 
         // Hành động xử lý việc cập nhật sách
         [HttpPost]
-        public async Task<IActionResult> Update(int id, tbSach sach, IFormFile newImageUrl)
+        public async Task<IActionResult> Update(int id, tbSach sach, IFormFile imageUrl)
         {
+/*            Console.WriteLine("New Image URL: " + newImageUrl);*/
             // Kiểm tra xem sách có tồn tại không
             var existingSach = await _sachRepository.GetByIdAsync(id);
             if (existingSach == null)
@@ -165,9 +166,9 @@ namespace DoAnLapTrinhWeb.Controllers
             existingSach.theLoaiId = sach.theLoaiId;
 
             // Kiểm tra và lưu ảnh mới nếu có
-            if (newImageUrl != null )
+            if (imageUrl != null )
             {
-                existingSach.imageUrl = await SaveImage(newImageUrl);
+                existingSach.imageUrl = await SaveImage(imageUrl);
             }
 
             // Cập nhật sách trong cơ sở dữ liệu

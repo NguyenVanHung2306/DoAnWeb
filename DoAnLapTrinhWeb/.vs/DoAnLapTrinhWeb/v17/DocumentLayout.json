@@ -7,6 +7,22 @@
       "RelativeMoniker": "D:0:0:{D06F71D4-0547-4316-B9DD-95EA3B7DBEF1}|DoAnLapTrinhWeb\\DoAnLapTrinhWeb.csproj|solutionrelative:doanlaptrinhweb\\controllers\\pagecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{D06F71D4-0547-4316-B9DD-95EA3B7DBEF1}|DoAnLapTrinhWeb\\DoAnLapTrinhWeb.csproj|c:\\ltweb\\github_doan\\doanweb\\doanlaptrinhweb\\doanlaptrinhweb\\views\\book\\update.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D06F71D4-0547-4316-B9DD-95EA3B7DBEF1}|DoAnLapTrinhWeb\\DoAnLapTrinhWeb.csproj|solutionrelative:doanlaptrinhweb\\views\\book\\update.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D06F71D4-0547-4316-B9DD-95EA3B7DBEF1}|DoAnLapTrinhWeb\\DoAnLapTrinhWeb.csproj|c:\\ltweb\\github_doan\\doanweb\\doanlaptrinhweb\\doanlaptrinhweb\\controllers\\bookcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D06F71D4-0547-4316-B9DD-95EA3B7DBEF1}|DoAnLapTrinhWeb\\DoAnLapTrinhWeb.csproj|solutionrelative:doanlaptrinhweb\\controllers\\bookcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D06F71D4-0547-4316-B9DD-95EA3B7DBEF1}|DoAnLapTrinhWeb\\DoAnLapTrinhWeb.csproj|c:\\ltweb\\github_doan\\doanweb\\doanlaptrinhweb\\doanlaptrinhweb\\views\\book\\add.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D06F71D4-0547-4316-B9DD-95EA3B7DBEF1}|DoAnLapTrinhWeb\\DoAnLapTrinhWeb.csproj|solutionrelative:doanlaptrinhweb\\views\\book\\add.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D06F71D4-0547-4316-B9DD-95EA3B7DBEF1}|DoAnLapTrinhWeb\\DoAnLapTrinhWeb.csproj|c:\\ltweb\\github_doan\\doanweb\\doanlaptrinhweb\\doanlaptrinhweb\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D06F71D4-0547-4316-B9DD-95EA3B7DBEF1}|DoAnLapTrinhWeb\\DoAnLapTrinhWeb.csproj|solutionrelative:doanlaptrinhweb\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{D06F71D4-0547-4316-B9DD-95EA3B7DBEF1}|DoAnLapTrinhWeb\\DoAnLapTrinhWeb.csproj|c:\\ltweb\\github_doan\\doanweb\\doanlaptrinhweb\\doanlaptrinhweb\\views\\page\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{D06F71D4-0547-4316-B9DD-95EA3B7DBEF1}|DoAnLapTrinhWeb\\DoAnLapTrinhWeb.csproj|solutionrelative:doanlaptrinhweb\\views\\page\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
@@ -29,14 +45,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{D06F71D4-0547-4316-B9DD-95EA3B7DBEF1}|DoAnLapTrinhWeb\\DoAnLapTrinhWeb.csproj|c:\\ltweb\\github_doan\\doanweb\\doanlaptrinhweb\\doanlaptrinhweb\\views\\page\\add.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{D06F71D4-0547-4316-B9DD-95EA3B7DBEF1}|DoAnLapTrinhWeb\\DoAnLapTrinhWeb.csproj|solutionrelative:doanlaptrinhweb\\views\\page\\add.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D06F71D4-0547-4316-B9DD-95EA3B7DBEF1}|DoAnLapTrinhWeb\\DoAnLapTrinhWeb.csproj|c:\\ltweb\\github_doan\\doanweb\\doanlaptrinhweb\\doanlaptrinhweb\\controllers\\bookcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D06F71D4-0547-4316-B9DD-95EA3B7DBEF1}|DoAnLapTrinhWeb\\DoAnLapTrinhWeb.csproj|solutionrelative:doanlaptrinhweb\\controllers\\bookcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D06F71D4-0547-4316-B9DD-95EA3B7DBEF1}|DoAnLapTrinhWeb\\DoAnLapTrinhWeb.csproj|c:\\ltweb\\github_doan\\doanweb\\doanlaptrinhweb\\doanlaptrinhweb\\views\\book\\update.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{D06F71D4-0547-4316-B9DD-95EA3B7DBEF1}|DoAnLapTrinhWeb\\DoAnLapTrinhWeb.csproj|solutionrelative:doanlaptrinhweb\\views\\book\\update.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D06F71D4-0547-4316-B9DD-95EA3B7DBEF1}|DoAnLapTrinhWeb\\DoAnLapTrinhWeb.csproj|c:\\ltweb\\github_doan\\doanweb\\doanlaptrinhweb\\doanlaptrinhweb\\views\\book\\index2.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -63,16 +71,8 @@
       "RelativeMoniker": "D:0:0:{D06F71D4-0547-4316-B9DD-95EA3B7DBEF1}|DoAnLapTrinhWeb\\DoAnLapTrinhWeb.csproj|solutionrelative:doanlaptrinhweb\\views\\book\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D06F71D4-0547-4316-B9DD-95EA3B7DBEF1}|DoAnLapTrinhWeb\\DoAnLapTrinhWeb.csproj|c:\\ltweb\\github_doan\\doanweb\\doanlaptrinhweb\\doanlaptrinhweb\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D06F71D4-0547-4316-B9DD-95EA3B7DBEF1}|DoAnLapTrinhWeb\\DoAnLapTrinhWeb.csproj|solutionrelative:doanlaptrinhweb\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{D06F71D4-0547-4316-B9DD-95EA3B7DBEF1}|DoAnLapTrinhWeb\\DoAnLapTrinhWeb.csproj|c:\\ltweb\\github_doan\\doanweb\\doanlaptrinhweb\\doanlaptrinhweb\\views\\book\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{D06F71D4-0547-4316-B9DD-95EA3B7DBEF1}|DoAnLapTrinhWeb\\DoAnLapTrinhWeb.csproj|solutionrelative:doanlaptrinhweb\\views\\book\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D06F71D4-0547-4316-B9DD-95EA3B7DBEF1}|DoAnLapTrinhWeb\\DoAnLapTrinhWeb.csproj|c:\\ltweb\\github_doan\\doanweb\\doanlaptrinhweb\\doanlaptrinhweb\\views\\book\\add.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{D06F71D4-0547-4316-B9DD-95EA3B7DBEF1}|DoAnLapTrinhWeb\\DoAnLapTrinhWeb.csproj|solutionrelative:doanlaptrinhweb\\views\\book\\add.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D06F71D4-0547-4316-B9DD-95EA3B7DBEF1}|DoAnLapTrinhWeb\\DoAnLapTrinhWeb.csproj|c:\\ltweb\\github_doan\\doanweb\\doanlaptrinhweb\\doanlaptrinhweb\\migrations\\20240420163118_identity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -218,7 +218,7 @@
       "DocumentGroups": [
         {
           "DockedHeight": 236,
-          "SelectedChildIndex": 10,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Bookmark",
@@ -246,46 +246,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\LTWEB\\Github_DoAn\\DoAnWeb\\DoAnLapTrinhWeb\\DoAnLapTrinhWeb\\Views\\Page\\Index.cshtml",
-              "RelativeDocumentMoniker": "DoAnLapTrinhWeb\\Views\\Page\\Index.cshtml",
-              "ToolTip": "C:\\LTWEB\\Github_DoAn\\DoAnWeb\\DoAnLapTrinhWeb\\DoAnLapTrinhWeb\\Views\\Page\\Index.cshtml",
-              "RelativeToolTip": "DoAnLapTrinhWeb\\Views\\Page\\Index.cshtml",
-              "ViewState": "AQIAAAsAAAAAAAAAAAAwwBoAAAArAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-20T02:36:21.738Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "EFTrangRepository.cs",
-              "DocumentMoniker": "C:\\LTWEB\\Github_DoAn\\DoAnWeb\\DoAnLapTrinhWeb\\DoAnLapTrinhWeb\\Repositories\\EFTrangRepository.cs",
-              "RelativeDocumentMoniker": "DoAnLapTrinhWeb\\Repositories\\EFTrangRepository.cs",
-              "ToolTip": "C:\\LTWEB\\Github_DoAn\\DoAnWeb\\DoAnLapTrinhWeb\\DoAnLapTrinhWeb\\Repositories\\EFTrangRepository.cs",
-              "RelativeToolTip": "DoAnLapTrinhWeb\\Repositories\\EFTrangRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAuwBMAAAA5AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-20T02:52:42.802Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "EFTheLoaiRepository.cs",
-              "DocumentMoniker": "C:\\LTWEB\\Github_DoAn\\DoAnWeb\\DoAnLapTrinhWeb\\DoAnLapTrinhWeb\\Repositories\\EFTheLoaiRepository.cs",
-              "RelativeDocumentMoniker": "DoAnLapTrinhWeb\\Repositories\\EFTheLoaiRepository.cs",
-              "ToolTip": "C:\\LTWEB\\Github_DoAn\\DoAnWeb\\DoAnLapTrinhWeb\\DoAnLapTrinhWeb\\Repositories\\EFTheLoaiRepository.cs",
-              "RelativeToolTip": "DoAnLapTrinhWeb\\Repositories\\EFTheLoaiRepository.cs",
-              "ViewState": "AQIAABwAAAAAAAAAAAAkwC0AAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-18T08:32:25.872Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 9,
               "Title": "EFSachRepository.cs",
               "DocumentMoniker": "C:\\LTWEB\\Github_DoAn\\DoAnWeb\\DoAnLapTrinhWeb\\DoAnLapTrinhWeb\\Repositories\\EFSachRepository.cs",
               "RelativeDocumentMoniker": "DoAnLapTrinhWeb\\Repositories\\EFSachRepository.cs",
@@ -293,8 +254,7 @@
               "RelativeToolTip": "DoAnLapTrinhWeb\\Repositories\\EFSachRepository.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAuAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-18T08:45:53.312Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-18T08:45:53.312Z"
             },
             {
               "$type": "Document",
@@ -304,131 +264,53 @@
               "RelativeDocumentMoniker": "DoAnLapTrinhWeb\\Controllers\\PageController.cs",
               "ToolTip": "C:\\LTWEB\\Github_DoAn\\DoAnWeb\\DoAnLapTrinhWeb\\DoAnLapTrinhWeb\\Controllers\\PageController.cs",
               "RelativeToolTip": "DoAnLapTrinhWeb\\Controllers\\PageController.cs",
-              "ViewState": "AQIAAB4AAAAAAAAAAAAmwDgAAABdAAAA",
+              "ViewState": "AQIAABcAAAAAAAAAAAAgwDMAAAAVAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-20T02:34:18.026Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "EFTacGiaRepository.cs",
-              "DocumentMoniker": "C:\\LTWEB\\Github_DoAn\\DoAnWeb\\DoAnLapTrinhWeb\\DoAnLapTrinhWeb\\Repositories\\EFTacGiaRepository.cs",
-              "RelativeDocumentMoniker": "DoAnLapTrinhWeb\\Repositories\\EFTacGiaRepository.cs",
-              "ToolTip": "C:\\LTWEB\\Github_DoAn\\DoAnWeb\\DoAnLapTrinhWeb\\DoAnLapTrinhWeb\\Repositories\\EFTacGiaRepository.cs",
-              "RelativeToolTip": "DoAnLapTrinhWeb\\Repositories\\EFTacGiaRepository.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAABAAAAAiAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-18T08:32:14.256Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Add.cshtml",
-              "DocumentMoniker": "C:\\LTWEB\\Github_DoAn\\DoAnWeb\\DoAnLapTrinhWeb\\DoAnLapTrinhWeb\\Views\\Page\\Add.cshtml",
-              "RelativeDocumentMoniker": "DoAnLapTrinhWeb\\Views\\Page\\Add.cshtml",
-              "ToolTip": "C:\\LTWEB\\Github_DoAn\\DoAnWeb\\DoAnLapTrinhWeb\\DoAnLapTrinhWeb\\Views\\Page\\Add.cshtml",
-              "RelativeToolTip": "DoAnLapTrinhWeb\\Views\\Page\\Add.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAzAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-20T02:37:16.946Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "BookController.cs",
-              "DocumentMoniker": "C:\\LTWEB\\Github_DoAn\\DoAnWeb\\DoAnLapTrinhWeb\\DoAnLapTrinhWeb\\Controllers\\BookController.cs",
-              "RelativeDocumentMoniker": "DoAnLapTrinhWeb\\Controllers\\BookController.cs",
-              "ToolTip": "C:\\LTWEB\\Github_DoAn\\DoAnWeb\\DoAnLapTrinhWeb\\DoAnLapTrinhWeb\\Controllers\\BookController.cs",
-              "RelativeToolTip": "DoAnLapTrinhWeb\\Controllers\\BookController.cs",
-              "ViewState": "AQIAAFQAAAAAAAAAAAAowGkAAAA6AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-18T03:29:08.536Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 1,
               "Title": "Update.cshtml",
               "DocumentMoniker": "C:\\LTWEB\\Github_DoAn\\DoAnWeb\\DoAnLapTrinhWeb\\DoAnLapTrinhWeb\\Views\\Book\\Update.cshtml",
               "RelativeDocumentMoniker": "DoAnLapTrinhWeb\\Views\\Book\\Update.cshtml",
               "ToolTip": "C:\\LTWEB\\Github_DoAn\\DoAnWeb\\DoAnLapTrinhWeb\\DoAnLapTrinhWeb\\Views\\Book\\Update.cshtml",
               "RelativeToolTip": "DoAnLapTrinhWeb\\Views\\Book\\Update.cshtml",
-              "ViewState": "AQIAAA8AAAAAAAAAAAAAwBoAAABkAAAA",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAwBoAAABlAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-04-20T03:08:55.767Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Index2.cshtml",
-              "DocumentMoniker": "C:\\LTWEB\\Github_DoAn\\DoAnWeb\\DoAnLapTrinhWeb\\DoAnLapTrinhWeb\\Views\\Book\\Index2.cshtml",
-              "RelativeDocumentMoniker": "DoAnLapTrinhWeb\\Views\\Book\\Index2.cshtml",
-              "ToolTip": "C:\\LTWEB\\Github_DoAn\\DoAnWeb\\DoAnLapTrinhWeb\\DoAnLapTrinhWeb\\Views\\Book\\Index2.cshtml",
-              "RelativeToolTip": "DoAnLapTrinhWeb\\Views\\Book\\Index2.cshtml",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAwCMAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-20T02:18:23.242Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "TheLoaiController.cs",
-              "DocumentMoniker": "C:\\LTWEB\\Github_DoAn\\DoAnWeb\\DoAnLapTrinhWeb\\DoAnLapTrinhWeb\\Controllers\\TheLoaiController.cs",
-              "RelativeDocumentMoniker": "DoAnLapTrinhWeb\\Controllers\\TheLoaiController.cs",
-              "ToolTip": "C:\\LTWEB\\Github_DoAn\\DoAnWeb\\DoAnLapTrinhWeb\\DoAnLapTrinhWeb\\Controllers\\TheLoaiController.cs",
-              "RelativeToolTip": "DoAnLapTrinhWeb\\Controllers\\TheLoaiController.cs",
-              "ViewState": "AQIAADwAAAAAAAAAAAAowEkAAAAWAAAA",
+              "DocumentIndex": 2,
+              "Title": "BookController.cs",
+              "DocumentMoniker": "C:\\LTWEB\\Github_DoAn\\DoAnWeb\\DoAnLapTrinhWeb\\DoAnLapTrinhWeb\\Controllers\\BookController.cs",
+              "RelativeDocumentMoniker": "DoAnLapTrinhWeb\\Controllers\\BookController.cs",
+              "ToolTip": "C:\\LTWEB\\Github_DoAn\\DoAnWeb\\DoAnLapTrinhWeb\\DoAnLapTrinhWeb\\Controllers\\BookController.cs",
+              "RelativeToolTip": "DoAnLapTrinhWeb\\Controllers\\BookController.cs",
+              "ViewState": "AQIAAJcAAAAAAAAAAAAowJoAAABGAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-18T08:33:23.951Z",
+              "WhenOpened": "2024-04-18T03:29:08.536Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "Display.cshtml",
-              "DocumentMoniker": "C:\\LTWEB\\Github_DoAn\\DoAnWeb\\DoAnLapTrinhWeb\\DoAnLapTrinhWeb\\Views\\TheLoai\\Display.cshtml",
-              "RelativeDocumentMoniker": "DoAnLapTrinhWeb\\Views\\TheLoai\\Display.cshtml",
-              "ToolTip": "C:\\LTWEB\\Github_DoAn\\DoAnWeb\\DoAnLapTrinhWeb\\DoAnLapTrinhWeb\\Views\\TheLoai\\Display.cshtml",
-              "RelativeToolTip": "DoAnLapTrinhWeb\\Views\\TheLoai\\Display.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAA6AAAA",
+              "DocumentIndex": 3,
+              "Title": "Add.cshtml",
+              "DocumentMoniker": "C:\\LTWEB\\Github_DoAn\\DoAnWeb\\DoAnLapTrinhWeb\\DoAnLapTrinhWeb\\Views\\Book\\Add.cshtml",
+              "RelativeDocumentMoniker": "DoAnLapTrinhWeb\\Views\\Book\\Add.cshtml",
+              "ToolTip": "C:\\LTWEB\\Github_DoAn\\DoAnWeb\\DoAnLapTrinhWeb\\DoAnLapTrinhWeb\\Views\\Book\\Add.cshtml",
+              "RelativeToolTip": "DoAnLapTrinhWeb\\Views\\Book\\Add.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAABCAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-18T08:39:45.976Z",
+              "WhenOpened": "2024-04-18T08:43:38.432Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Update.cshtml",
-              "DocumentMoniker": "C:\\LTWEB\\Github_DoAn\\DoAnWeb\\DoAnLapTrinhWeb\\DoAnLapTrinhWeb\\Views\\TheLoai\\Update.cshtml",
-              "RelativeDocumentMoniker": "DoAnLapTrinhWeb\\Views\\TheLoai\\Update.cshtml",
-              "ToolTip": "C:\\LTWEB\\Github_DoAn\\DoAnWeb\\DoAnLapTrinhWeb\\DoAnLapTrinhWeb\\Views\\TheLoai\\Update.cshtml",
-              "RelativeToolTip": "DoAnLapTrinhWeb\\Views\\TheLoai\\Update.cshtml",
-              "ViewState": "AQIAAAYAAAAAAAAAAADwvxIAAABDAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-18T08:39:59.312Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\LTWEB\\Github_DoAn\\DoAnWeb\\DoAnLapTrinhWeb\\DoAnLapTrinhWeb\\Views\\TheLoai\\Index.cshtml",
-              "RelativeDocumentMoniker": "DoAnLapTrinhWeb\\Views\\TheLoai\\Index.cshtml",
-              "ToolTip": "C:\\LTWEB\\Github_DoAn\\DoAnWeb\\DoAnLapTrinhWeb\\DoAnLapTrinhWeb\\Views\\TheLoai\\Index.cshtml",
-              "RelativeToolTip": "DoAnLapTrinhWeb\\Views\\TheLoai\\Index.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABoAAAApAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-18T08:39:52.24Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 4,
               "Title": "HomeController.cs",
               "DocumentMoniker": "C:\\LTWEB\\Github_DoAn\\DoAnWeb\\DoAnLapTrinhWeb\\DoAnLapTrinhWeb\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "DoAnLapTrinhWeb\\Controllers\\HomeController.cs",
@@ -441,7 +323,127 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "EFTheLoaiRepository.cs",
+              "DocumentMoniker": "C:\\LTWEB\\Github_DoAn\\DoAnWeb\\DoAnLapTrinhWeb\\DoAnLapTrinhWeb\\Repositories\\EFTheLoaiRepository.cs",
+              "RelativeDocumentMoniker": "DoAnLapTrinhWeb\\Repositories\\EFTheLoaiRepository.cs",
+              "ToolTip": "C:\\LTWEB\\Github_DoAn\\DoAnWeb\\DoAnLapTrinhWeb\\DoAnLapTrinhWeb\\Repositories\\EFTheLoaiRepository.cs",
+              "RelativeToolTip": "DoAnLapTrinhWeb\\Repositories\\EFTheLoaiRepository.cs",
+              "ViewState": "AQIAABwAAAAAAAAAAAAkwC0AAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-18T08:32:25.872Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "EFTrangRepository.cs",
+              "DocumentMoniker": "C:\\LTWEB\\Github_DoAn\\DoAnWeb\\DoAnLapTrinhWeb\\DoAnLapTrinhWeb\\Repositories\\EFTrangRepository.cs",
+              "RelativeDocumentMoniker": "DoAnLapTrinhWeb\\Repositories\\EFTrangRepository.cs",
+              "ToolTip": "C:\\LTWEB\\Github_DoAn\\DoAnWeb\\DoAnLapTrinhWeb\\DoAnLapTrinhWeb\\Repositories\\EFTrangRepository.cs",
+              "RelativeToolTip": "DoAnLapTrinhWeb\\Repositories\\EFTrangRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwBMAAAA5AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-20T02:52:42.802Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\LTWEB\\Github_DoAn\\DoAnWeb\\DoAnLapTrinhWeb\\DoAnLapTrinhWeb\\Views\\Page\\Index.cshtml",
+              "RelativeDocumentMoniker": "DoAnLapTrinhWeb\\Views\\Page\\Index.cshtml",
+              "ToolTip": "C:\\LTWEB\\Github_DoAn\\DoAnWeb\\DoAnLapTrinhWeb\\DoAnLapTrinhWeb\\Views\\Page\\Index.cshtml",
+              "RelativeToolTip": "DoAnLapTrinhWeb\\Views\\Page\\Index.cshtml",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAwwBoAAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-20T02:36:21.738Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "EFTacGiaRepository.cs",
+              "DocumentMoniker": "C:\\LTWEB\\Github_DoAn\\DoAnWeb\\DoAnLapTrinhWeb\\DoAnLapTrinhWeb\\Repositories\\EFTacGiaRepository.cs",
+              "RelativeDocumentMoniker": "DoAnLapTrinhWeb\\Repositories\\EFTacGiaRepository.cs",
+              "ToolTip": "C:\\LTWEB\\Github_DoAn\\DoAnWeb\\DoAnLapTrinhWeb\\DoAnLapTrinhWeb\\Repositories\\EFTacGiaRepository.cs",
+              "RelativeToolTip": "DoAnLapTrinhWeb\\Repositories\\EFTacGiaRepository.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABAAAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-18T08:32:14.256Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Add.cshtml",
+              "DocumentMoniker": "C:\\LTWEB\\Github_DoAn\\DoAnWeb\\DoAnLapTrinhWeb\\DoAnLapTrinhWeb\\Views\\Page\\Add.cshtml",
+              "RelativeDocumentMoniker": "DoAnLapTrinhWeb\\Views\\Page\\Add.cshtml",
+              "ToolTip": "C:\\LTWEB\\Github_DoAn\\DoAnWeb\\DoAnLapTrinhWeb\\DoAnLapTrinhWeb\\Views\\Page\\Add.cshtml",
+              "RelativeToolTip": "DoAnLapTrinhWeb\\Views\\Page\\Add.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAzAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-20T02:37:16.946Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Index2.cshtml",
+              "DocumentMoniker": "C:\\LTWEB\\Github_DoAn\\DoAnWeb\\DoAnLapTrinhWeb\\DoAnLapTrinhWeb\\Views\\Book\\Index2.cshtml",
+              "RelativeDocumentMoniker": "DoAnLapTrinhWeb\\Views\\Book\\Index2.cshtml",
+              "ToolTip": "C:\\LTWEB\\Github_DoAn\\DoAnWeb\\DoAnLapTrinhWeb\\DoAnLapTrinhWeb\\Views\\Book\\Index2.cshtml",
+              "RelativeToolTip": "DoAnLapTrinhWeb\\Views\\Book\\Index2.cshtml",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAwCMAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-20T02:18:23.242Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "TheLoaiController.cs",
+              "DocumentMoniker": "C:\\LTWEB\\Github_DoAn\\DoAnWeb\\DoAnLapTrinhWeb\\DoAnLapTrinhWeb\\Controllers\\TheLoaiController.cs",
+              "RelativeDocumentMoniker": "DoAnLapTrinhWeb\\Controllers\\TheLoaiController.cs",
+              "ToolTip": "C:\\LTWEB\\Github_DoAn\\DoAnWeb\\DoAnLapTrinhWeb\\DoAnLapTrinhWeb\\Controllers\\TheLoaiController.cs",
+              "RelativeToolTip": "DoAnLapTrinhWeb\\Controllers\\TheLoaiController.cs",
+              "ViewState": "AQIAADwAAAAAAAAAAAAowEkAAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-18T08:33:23.951Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Display.cshtml",
+              "DocumentMoniker": "C:\\LTWEB\\Github_DoAn\\DoAnWeb\\DoAnLapTrinhWeb\\DoAnLapTrinhWeb\\Views\\TheLoai\\Display.cshtml",
+              "RelativeDocumentMoniker": "DoAnLapTrinhWeb\\Views\\TheLoai\\Display.cshtml",
+              "ToolTip": "C:\\LTWEB\\Github_DoAn\\DoAnWeb\\DoAnLapTrinhWeb\\DoAnLapTrinhWeb\\Views\\TheLoai\\Display.cshtml",
+              "RelativeToolTip": "DoAnLapTrinhWeb\\Views\\TheLoai\\Display.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAA6AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-18T08:39:45.976Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Update.cshtml",
+              "DocumentMoniker": "C:\\LTWEB\\Github_DoAn\\DoAnWeb\\DoAnLapTrinhWeb\\DoAnLapTrinhWeb\\Views\\TheLoai\\Update.cshtml",
+              "RelativeDocumentMoniker": "DoAnLapTrinhWeb\\Views\\TheLoai\\Update.cshtml",
+              "ToolTip": "C:\\LTWEB\\Github_DoAn\\DoAnWeb\\DoAnLapTrinhWeb\\DoAnLapTrinhWeb\\Views\\TheLoai\\Update.cshtml",
+              "RelativeToolTip": "DoAnLapTrinhWeb\\Views\\TheLoai\\Update.cshtml",
+              "ViewState": "AQIAAAYAAAAAAAAAAADwvxIAAABDAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-18T08:39:59.312Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 14,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\LTWEB\\Github_DoAn\\DoAnWeb\\DoAnLapTrinhWeb\\DoAnLapTrinhWeb\\Views\\TheLoai\\Index.cshtml",
+              "RelativeDocumentMoniker": "DoAnLapTrinhWeb\\Views\\TheLoai\\Index.cshtml",
+              "ToolTip": "C:\\LTWEB\\Github_DoAn\\DoAnWeb\\DoAnLapTrinhWeb\\DoAnLapTrinhWeb\\Views\\TheLoai\\Index.cshtml",
+              "RelativeToolTip": "DoAnLapTrinhWeb\\Views\\TheLoai\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABoAAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-18T08:39:52.24Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\LTWEB\\Github_DoAn\\DoAnWeb\\DoAnLapTrinhWeb\\DoAnLapTrinhWeb\\Views\\Book\\Index.cshtml",
               "RelativeDocumentMoniker": "DoAnLapTrinhWeb\\Views\\Book\\Index.cshtml",
@@ -449,12 +451,11 @@
               "RelativeToolTip": "DoAnLapTrinhWeb\\Views\\Book\\Index.cshtml",
               "ViewState": "AQIAAAIAAAAAAAAAAADwvx4AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-18T08:36:39.864Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-18T08:36:39.864Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 17,
               "Title": "Details.cshtml",
               "DocumentMoniker": "C:\\LTWEB\\Github_DoAn\\DoAnWeb\\DoAnLapTrinhWeb\\DoAnLapTrinhWeb\\Views\\Book\\Details.cshtml",
               "RelativeDocumentMoniker": "DoAnLapTrinhWeb\\Views\\Book\\Details.cshtml",
@@ -462,20 +463,7 @@
               "RelativeToolTip": "DoAnLapTrinhWeb\\Views\\Book\\Details.cshtml",
               "ViewState": "AQIAAAYAAAAAAAAAAAAAABgAAAAjAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-16T04:29:42.839Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "Add.cshtml",
-              "DocumentMoniker": "C:\\LTWEB\\Github_DoAn\\DoAnWeb\\DoAnLapTrinhWeb\\DoAnLapTrinhWeb\\Views\\Book\\Add.cshtml",
-              "RelativeDocumentMoniker": "DoAnLapTrinhWeb\\Views\\Book\\Add.cshtml",
-              "ToolTip": "C:\\LTWEB\\Github_DoAn\\DoAnWeb\\DoAnLapTrinhWeb\\DoAnLapTrinhWeb\\Views\\Book\\Add.cshtml",
-              "RelativeToolTip": "DoAnLapTrinhWeb\\Views\\Book\\Add.cshtml",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAACcAAABMAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-18T08:43:38.432Z"
+              "WhenOpened": "2024-04-16T04:29:42.839Z"
             },
             {
               "$type": "Document",
