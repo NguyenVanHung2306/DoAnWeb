@@ -2,3 +2,29 @@
 @{
     ViewData["Title"] = "DoAnLapTrinhWeb";
 }
+<script src="~/js/onclick-Image.js"></script>
+<table class="table">
+    <tbody>
+        @foreach (var sach in Model)
+        {
+            <tr>
+                <td style="text-align: center;">
+                    <img src="@sach.imageUrl" style="width: 90px; height: 90px; cursor: pointer;" onclick="redirectToDetails(@sach.Id)" />
+                    <br />
+                    <a href="/Page/Details/@sach.Id">Doc</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<!-- Hiển thị các nút phân trang thủ công -->
+<div>
+    @if (ViewBag.PageCount > 1)
+    {
+        for (int i = 1; i <= ViewBag.PageCount; i++)
+        {
+            <a href="/Home/Index?page=@i">Trang @i</a>
+        }
+    }
+</div>

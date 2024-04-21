@@ -80,7 +80,11 @@ namespace DoAnLapTrinhWeb.Controllers
             }
             return "/pages/" + image.FileName; // Trả về đường dẫn tương đối
         }
-
+        public async Task<IActionResult> Details(int Id)
+        {
+            var sach = await _sachRepository.GetByIdAsync(Id);
+            return View(sach);
+        }
 
     }
 

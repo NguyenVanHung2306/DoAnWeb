@@ -58,6 +58,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va1xBZGQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/LTWEB/Github_DoAn/DoAnWeb/DoAnLapTrinhWeb/DoAnLapTrinhWeb/Views/Book/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/LTWEB/Github_DoAn/DoAnWeb/DoAnLapTrinhWeb/DoAnLapTrinhWeb/Views/Book/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va1xEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
@@ -80,6 +84,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/LTWEB/Github_DoAn/DoAnWeb/DoAnLapTrinhWeb/DoAnLapTrinhWeb/Views/Page/Add.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFnZVxBZGQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/LTWEB/Github_DoAn/DoAnWeb/DoAnLapTrinhWeb/DoAnLapTrinhWeb/Views/Page/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFnZVxEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/LTWEB/Github_DoAn/DoAnWeb/DoAnLapTrinhWeb/DoAnLapTrinhWeb/Views/Page/Index.cshtml]

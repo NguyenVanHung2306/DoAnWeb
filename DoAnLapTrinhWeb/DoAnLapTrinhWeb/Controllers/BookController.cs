@@ -179,7 +179,25 @@ namespace DoAnLapTrinhWeb.Controllers
 
             return RedirectToAction(nameof(Index));
         }
+        public async Task<IActionResult> Delete(int id)
+        {
+            var sach = await _sachRepository.GetByIdAsync(id);
+            if (sach == null)
+            {
+                return NotFound();
+            }
+            return View(sach);
+        }
 
-
+        [HttpPost, ActionName("DeleteConfirmed")]
+        public async Task<IActionResult> DeleteConfirmed(int id)
+        {
+            var sach = await _sachRepository.GetByIdAsync(id);
+            if (sach != null)
+            {
+                await _sachRepository.DeleteAsync(id);
+            }
+            return RedirectToAction(nameof(Index));
+        }
     }
 }
