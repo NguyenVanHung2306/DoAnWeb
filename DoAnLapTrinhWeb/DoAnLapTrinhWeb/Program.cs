@@ -51,9 +51,18 @@ app.MapRazorPages();
 app.UseEndpoints(endpoints =>
 {
     endpoints.MapControllerRoute(
-      name: "Admin",
-      pattern: "{area:exists}/{controller=Book}/{action=Index}/{id?}"
-    );
+        name: "Admin",
+        pattern: "{area:exists}/{controller=Book}/{action=Index}/{id?}");
+    endpoints.MapControllerRoute(
+        name: "Admin",
+        pattern: "{area:exists}/{controller=TheLoai}/{action=Index}/{id?}");
+    endpoints.MapControllerRoute(
+       name: "Admin",
+       pattern: "{area:exists}/{controller=TacGia}/{action=Index}/{id?}");
+    endpoints.MapControllerRoute(
+    name: "default",
+    pattern: "{controller=Book}/{action=Index}/{id?}");
+
 });
 
 app.MapControllerRoute(

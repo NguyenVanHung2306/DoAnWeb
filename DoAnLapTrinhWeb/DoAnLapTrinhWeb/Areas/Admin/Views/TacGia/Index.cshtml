@@ -5,12 +5,7 @@
 }
 
 <h2>Tác Giả</h2>
-@if (User.Identity.IsAuthenticated && User.IsInRole("Admin"))
-{
-    <h6><a asp-action="Add">Them Tac Gia</a></h6>
-}
-
-
+<h6><a asp-action="Add">Them Tac Gia</a></h6>
 <table class="table">
 
 
@@ -20,14 +15,12 @@
         </tr>
     </thead>
     <tbody>
-      
-            @foreach (var tacGia in Model)
-                {
+        @foreach (var tacGia in Model)
+        {
             <tr>
                 <td>@tacGia.TenTacGia</td>
-                @if (User.Identity.IsAuthenticated && User.IsInRole("Admin"))
-                {
-                    <td>
+
+                <td>
 
                     <a asp-action="Display" asp-route-id="@tacGia.Id">View</a> |
 
@@ -36,10 +29,7 @@
                     <a asp-action="Delete" asp-route-id="@tacGia.Id">Delete</a>
 
                 </td>
-                }
             </tr>
-                
         }
     </tbody>
-
 </table>

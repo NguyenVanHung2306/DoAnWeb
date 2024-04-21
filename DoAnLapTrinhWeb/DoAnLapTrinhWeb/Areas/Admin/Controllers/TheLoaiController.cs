@@ -3,11 +3,14 @@ using DoAnLapTrinhWeb.Repositories;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
-namespace DoAnLapTrinhWeb.Controllers
+namespace DoAnLapTrinhWeb.Areas.Admin.Controllers
 {
-    [Authorize]
+    [Area("Admin")]
+    [Authorize(Roles = SD.Role_Admin)]
+
     public class TheLoaiController : Controller
     {
+
         private readonly ISachRepository _sachRepository;
         private readonly ITheLoaiRepository _theLoaiyRepository;
         private readonly ITacGiaRepository _tacGiaRepository;
@@ -21,14 +24,13 @@ namespace DoAnLapTrinhWeb.Controllers
             _tacGiaRepository = tacGiaRepository;
         }
 
-        [AllowAnonymous]
+        
         public async Task<IActionResult> Index()
         {
             var theLoai = await _theLoaiyRepository.GetAllAsync();
             return View(theLoai);
         }
 
-        [AllowAnonymous]
         public async Task<IActionResult> Display(int id)
         {
             var theLoai = await _theLoaiyRepository.GetByIdAsync(id);
@@ -44,7 +46,6 @@ namespace DoAnLapTrinhWeb.Controllers
             return View();
         }
 
-        [AllowAnonymous]
         [HttpPost]
         public async Task<IActionResult> Add(tbTheLoai theLoai)
         {
@@ -111,7 +112,7 @@ namespace DoAnLapTrinhWeb.Controllers
         [HttpPost, ActionName("Delete")]
         public async Task<IActionResult> Delete(int id, tbTheLoai theLoai)
         {
-            
+
             if (theLoai != null)
             {
                 await _theLoaiyRepository.DeleteAsync(id);

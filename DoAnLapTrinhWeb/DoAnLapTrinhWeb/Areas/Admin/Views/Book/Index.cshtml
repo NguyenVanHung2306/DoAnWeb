@@ -5,21 +5,17 @@
 
 <h2>Books</h2>
 <script src="~/js/onclick-Image.js"></script>
-@if (User.Identity.IsAuthenticated && User.IsInRole("Admin"))
-{
-    <h6><a asp-action="Add">Thêm Sách</a></h6>
-}
-
+<h6><a asp-action="Add">Thêm Sách</a></h6>
 <table class="table">
 
-    
+
     <tbody>
         @foreach (var sach in Model)
         {
-            
+
             <tr>
                 <td><img src="@sach.imageUrl" style="width: 90px; height: 90px; cursor: pointer;" onclick="redirectToDetails(@sach.Id)" /></td>
-                
+
             </tr>
         }
     </tbody>

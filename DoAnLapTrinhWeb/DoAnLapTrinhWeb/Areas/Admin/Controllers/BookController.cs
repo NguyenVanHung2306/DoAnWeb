@@ -1,15 +1,16 @@
-﻿using DoAnLapTrinhWeb.Models;
+﻿    using DoAnLapTrinhWeb.Models;
 using DoAnLapTrinhWeb.Repositories;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.IdentityModel.Tokens;
 
-namespace DoAnLapTrinhWeb.Controllers
+namespace DoAnLapTrinhWeb.Areas.Admin.Controllers
 {
-    [Authorize]
+    [Area("Admin")]
+    [Authorize(Roles = SD.Role_Admin)]
+
     public class BookController : Controller
     {
         private readonly ISachRepository _sachRepository;
@@ -29,8 +30,7 @@ namespace DoAnLapTrinhWeb.Controllers
         }
 
         //Action xuất danh sách các cuốn sách
-
-        [AllowAnonymous]
+        
         public async Task<ActionResult> Index()
         {
             //THong ke nguoi dung da dang ki 
@@ -47,7 +47,7 @@ namespace DoAnLapTrinhWeb.Controllers
         }
 
         //Action Xuất thông tin sách
-        [AllowAnonymous]
+        
         public async Task<IActionResult> Details(int id)
         {
             var books = await _sachRepository.GetByIdAsync(id);
@@ -108,7 +108,7 @@ namespace DoAnLapTrinhWeb.Controllers
         }
 
 
-            // hàm SaveImage 
+        // hàm SaveImage 
         private async Task<string> SaveImage(IFormFile image)
         {
             var savePath = Path.Combine("wwwroot/images", image.FileName); //
@@ -119,6 +119,5 @@ namespace DoAnLapTrinhWeb.Controllers
             }
             return "/images/" + image.FileName; // Trả về đường dẫn tương đối
         }
-
     }
 }

@@ -3,16 +3,100 @@
   "WorkspaceRootPath": "D:\\DoAnWeb\\DoAnLapTrinhWeb\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{D06F71D4-0547-4316-B9DD-95EA3B7DBEF1}|DoAnLapTrinhWeb\\DoAnLapTrinhWeb.csproj|d:\\doanweb\\doanlaptrinhweb\\doanlaptrinhweb\\areas\\admin\\views\\book\\add.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D06F71D4-0547-4316-B9DD-95EA3B7DBEF1}|DoAnLapTrinhWeb\\DoAnLapTrinhWeb.csproj|solutionrelative:doanlaptrinhweb\\areas\\admin\\views\\book\\add.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{D06F71D4-0547-4316-B9DD-95EA3B7DBEF1}|DoAnLapTrinhWeb\\DoAnLapTrinhWeb.csproj|d:\\doanweb\\doanlaptrinhweb\\doanlaptrinhweb\\views\\book\\add.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{D06F71D4-0547-4316-B9DD-95EA3B7DBEF1}|DoAnLapTrinhWeb\\DoAnLapTrinhWeb.csproj|solutionrelative:doanlaptrinhweb\\views\\book\\add.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D06F71D4-0547-4316-B9DD-95EA3B7DBEF1}|DoAnLapTrinhWeb\\DoAnLapTrinhWeb.csproj|d:\\doanweb\\doanlaptrinhweb\\doanlaptrinhweb\\views\\tacgia\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D06F71D4-0547-4316-B9DD-95EA3B7DBEF1}|DoAnLapTrinhWeb\\DoAnLapTrinhWeb.csproj|solutionrelative:doanlaptrinhweb\\views\\tacgia\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D06F71D4-0547-4316-B9DD-95EA3B7DBEF1}|DoAnLapTrinhWeb\\DoAnLapTrinhWeb.csproj|d:\\doanweb\\doanlaptrinhweb\\doanlaptrinhweb\\views\\tacgia\\add.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D06F71D4-0547-4316-B9DD-95EA3B7DBEF1}|DoAnLapTrinhWeb\\DoAnLapTrinhWeb.csproj|solutionrelative:doanlaptrinhweb\\views\\tacgia\\add.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D06F71D4-0547-4316-B9DD-95EA3B7DBEF1}|DoAnLapTrinhWeb\\DoAnLapTrinhWeb.csproj|d:\\doanweb\\doanlaptrinhweb\\doanlaptrinhweb\\views\\tacgia\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D06F71D4-0547-4316-B9DD-95EA3B7DBEF1}|DoAnLapTrinhWeb\\DoAnLapTrinhWeb.csproj|solutionrelative:doanlaptrinhweb\\views\\tacgia\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D06F71D4-0547-4316-B9DD-95EA3B7DBEF1}|DoAnLapTrinhWeb\\DoAnLapTrinhWeb.csproj|d:\\doanweb\\doanlaptrinhweb\\doanlaptrinhweb\\views\\tacgia\\display.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D06F71D4-0547-4316-B9DD-95EA3B7DBEF1}|DoAnLapTrinhWeb\\DoAnLapTrinhWeb.csproj|solutionrelative:doanlaptrinhweb\\views\\tacgia\\display.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D06F71D4-0547-4316-B9DD-95EA3B7DBEF1}|DoAnLapTrinhWeb\\DoAnLapTrinhWeb.csproj|d:\\doanweb\\doanlaptrinhweb\\doanlaptrinhweb\\views\\book\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D06F71D4-0547-4316-B9DD-95EA3B7DBEF1}|DoAnLapTrinhWeb\\DoAnLapTrinhWeb.csproj|solutionrelative:doanlaptrinhweb\\views\\book\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D06F71D4-0547-4316-B9DD-95EA3B7DBEF1}|DoAnLapTrinhWeb\\DoAnLapTrinhWeb.csproj|d:\\doanweb\\doanlaptrinhweb\\doanlaptrinhweb\\areas\\admin\\controllers\\bookcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D06F71D4-0547-4316-B9DD-95EA3B7DBEF1}|DoAnLapTrinhWeb\\DoAnLapTrinhWeb.csproj|solutionrelative:doanlaptrinhweb\\areas\\admin\\controllers\\bookcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D06F71D4-0547-4316-B9DD-95EA3B7DBEF1}|DoAnLapTrinhWeb\\DoAnLapTrinhWeb.csproj|d:\\doanweb\\doanlaptrinhweb\\doanlaptrinhweb\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D06F71D4-0547-4316-B9DD-95EA3B7DBEF1}|DoAnLapTrinhWeb\\DoAnLapTrinhWeb.csproj|solutionrelative:doanlaptrinhweb\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D06F71D4-0547-4316-B9DD-95EA3B7DBEF1}|DoAnLapTrinhWeb\\DoAnLapTrinhWeb.csproj|d:\\doanweb\\doanlaptrinhweb\\doanlaptrinhweb\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D06F71D4-0547-4316-B9DD-95EA3B7DBEF1}|DoAnLapTrinhWeb\\DoAnLapTrinhWeb.csproj|solutionrelative:doanlaptrinhweb\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D06F71D4-0547-4316-B9DD-95EA3B7DBEF1}|DoAnLapTrinhWeb\\DoAnLapTrinhWeb.csproj|d:\\doanweb\\doanlaptrinhweb\\doanlaptrinhweb\\controllers\\bookcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D06F71D4-0547-4316-B9DD-95EA3B7DBEF1}|DoAnLapTrinhWeb\\DoAnLapTrinhWeb.csproj|solutionrelative:doanlaptrinhweb\\controllers\\bookcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{D06F71D4-0547-4316-B9DD-95EA3B7DBEF1}|DoAnLapTrinhWeb\\DoAnLapTrinhWeb.csproj|d:\\doanweb\\doanlaptrinhweb\\doanlaptrinhweb\\areas\\identity\\pages\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D06F71D4-0547-4316-B9DD-95EA3B7DBEF1}|DoAnLapTrinhWeb\\DoAnLapTrinhWeb.csproj|solutionrelative:doanlaptrinhweb\\areas\\identity\\pages\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D06F71D4-0547-4316-B9DD-95EA3B7DBEF1}|DoAnLapTrinhWeb\\DoAnLapTrinhWeb.csproj|d:\\doanweb\\doanlaptrinhweb\\doanlaptrinhweb\\areas\\identity\\pages\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D06F71D4-0547-4316-B9DD-95EA3B7DBEF1}|DoAnLapTrinhWeb\\DoAnLapTrinhWeb.csproj|solutionrelative:doanlaptrinhweb\\areas\\identity\\pages\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D06F71D4-0547-4316-B9DD-95EA3B7DBEF1}|DoAnLapTrinhWeb\\DoAnLapTrinhWeb.csproj|d:\\doanweb\\doanlaptrinhweb\\doanlaptrinhweb\\areas\\admin\\controllers\\theloaicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D06F71D4-0547-4316-B9DD-95EA3B7DBEF1}|DoAnLapTrinhWeb\\DoAnLapTrinhWeb.csproj|solutionrelative:doanlaptrinhweb\\areas\\admin\\controllers\\theloaicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D06F71D4-0547-4316-B9DD-95EA3B7DBEF1}|DoAnLapTrinhWeb\\DoAnLapTrinhWeb.csproj|d:\\doanweb\\doanlaptrinhweb\\doanlaptrinhweb\\areas\\admin\\controllers\\tacgiacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D06F71D4-0547-4316-B9DD-95EA3B7DBEF1}|DoAnLapTrinhWeb\\DoAnLapTrinhWeb.csproj|solutionrelative:doanlaptrinhweb\\areas\\admin\\controllers\\tacgiacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{D06F71D4-0547-4316-B9DD-95EA3B7DBEF1}|DoAnLapTrinhWeb\\DoAnLapTrinhWeb.csproj|d:\\doanweb\\doanlaptrinhweb\\doanlaptrinhweb\\controllers\\tacgiacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D06F71D4-0547-4316-B9DD-95EA3B7DBEF1}|DoAnLapTrinhWeb\\DoAnLapTrinhWeb.csproj|solutionrelative:doanlaptrinhweb\\controllers\\tacgiacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D06F71D4-0547-4316-B9DD-95EA3B7DBEF1}|DoAnLapTrinhWeb\\DoAnLapTrinhWeb.csproj|d:\\doanweb\\doanlaptrinhweb\\doanlaptrinhweb\\controllers\\theloaicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D06F71D4-0547-4316-B9DD-95EA3B7DBEF1}|DoAnLapTrinhWeb\\DoAnLapTrinhWeb.csproj|solutionrelative:doanlaptrinhweb\\controllers\\theloaicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D06F71D4-0547-4316-B9DD-95EA3B7DBEF1}|DoAnLapTrinhWeb\\DoAnLapTrinhWeb.csproj|d:\\doanweb\\doanlaptrinhweb\\doanlaptrinhweb\\views\\shared\\_loginpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D06F71D4-0547-4316-B9DD-95EA3B7DBEF1}|DoAnLapTrinhWeb\\DoAnLapTrinhWeb.csproj|solutionrelative:doanlaptrinhweb\\views\\shared\\_loginpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D06F71D4-0547-4316-B9DD-95EA3B7DBEF1}|DoAnLapTrinhWeb\\DoAnLapTrinhWeb.csproj|d:\\doanweb\\doanlaptrinhweb\\doanlaptrinhweb\\areas\\identity\\pages\\account\\register.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D06F71D4-0547-4316-B9DD-95EA3B7DBEF1}|DoAnLapTrinhWeb\\DoAnLapTrinhWeb.csproj|solutionrelative:doanlaptrinhweb\\areas\\identity\\pages\\account\\register.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D06F71D4-0547-4316-B9DD-95EA3B7DBEF1}|DoAnLapTrinhWeb\\DoAnLapTrinhWeb.csproj|d:\\doanweb\\doanlaptrinhweb\\doanlaptrinhweb\\areas\\admin\\views\\tacgia\\add.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D06F71D4-0547-4316-B9DD-95EA3B7DBEF1}|DoAnLapTrinhWeb\\DoAnLapTrinhWeb.csproj|solutionrelative:doanlaptrinhweb\\areas\\admin\\views\\tacgia\\add.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D06F71D4-0547-4316-B9DD-95EA3B7DBEF1}|DoAnLapTrinhWeb\\DoAnLapTrinhWeb.csproj|d:\\doanweb\\doanlaptrinhweb\\doanlaptrinhweb\\views\\theloai\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D06F71D4-0547-4316-B9DD-95EA3B7DBEF1}|DoAnLapTrinhWeb\\DoAnLapTrinhWeb.csproj|solutionrelative:doanlaptrinhweb\\views\\theloai\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D06F71D4-0547-4316-B9DD-95EA3B7DBEF1}|DoAnLapTrinhWeb\\DoAnLapTrinhWeb.csproj|d:\\doanweb\\doanlaptrinhweb\\doanlaptrinhweb\\areas\\admin\\views\\tacgia\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D06F71D4-0547-4316-B9DD-95EA3B7DBEF1}|DoAnLapTrinhWeb\\DoAnLapTrinhWeb.csproj|solutionrelative:doanlaptrinhweb\\areas\\admin\\views\\tacgia\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D06F71D4-0547-4316-B9DD-95EA3B7DBEF1}|DoAnLapTrinhWeb\\DoAnLapTrinhWeb.csproj|d:\\doanweb\\doanlaptrinhweb\\doanlaptrinhweb\\areas\\admin\\views\\tacgia\\update.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D06F71D4-0547-4316-B9DD-95EA3B7DBEF1}|DoAnLapTrinhWeb\\DoAnLapTrinhWeb.csproj|solutionrelative:doanlaptrinhweb\\areas\\admin\\views\\tacgia\\update.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D06F71D4-0547-4316-B9DD-95EA3B7DBEF1}|DoAnLapTrinhWeb\\DoAnLapTrinhWeb.csproj|d:\\doanweb\\doanlaptrinhweb\\doanlaptrinhweb\\views\\tacgia\\update.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D06F71D4-0547-4316-B9DD-95EA3B7DBEF1}|DoAnLapTrinhWeb\\DoAnLapTrinhWeb.csproj|solutionrelative:doanlaptrinhweb\\views\\tacgia\\update.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -40,39 +124,312 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Add.cshtml",
-              "DocumentMoniker": "D:\\DoAnWeb\\DoAnLapTrinhWeb\\DoAnLapTrinhWeb\\Views\\Book\\Add.cshtml",
-              "RelativeDocumentMoniker": "DoAnLapTrinhWeb\\Views\\Book\\Add.cshtml",
-              "ToolTip": "D:\\DoAnWeb\\DoAnLapTrinhWeb\\DoAnLapTrinhWeb\\Views\\Book\\Add.cshtml",
-              "RelativeToolTip": "DoAnLapTrinhWeb\\Views\\Book\\Add.cshtml",
-              "ViewState": "AQIAAC0AAAAAAAAAAAAUwFEAAAAAAAAA",
+              "DocumentMoniker": "D:\\DoAnWeb\\DoAnLapTrinhWeb\\DoAnLapTrinhWeb\\Areas\\Admin\\Views\\Book\\Add.cshtml",
+              "RelativeDocumentMoniker": "DoAnLapTrinhWeb\\Areas\\Admin\\Views\\Book\\Add.cshtml",
+              "ToolTip": "D:\\DoAnWeb\\DoAnLapTrinhWeb\\DoAnLapTrinhWeb\\Areas\\Admin\\Views\\Book\\Add.cshtml",
+              "RelativeToolTip": "DoAnLapTrinhWeb\\Areas\\Admin\\Views\\Book\\Add.cshtml",
+              "ViewState": "AQIAACQAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-20T14:14:35.268Z",
+              "WhenOpened": "2024-04-21T10:29:50.036Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "TacGiaController.cs",
-              "DocumentMoniker": "D:\\DoAnWeb\\DoAnLapTrinhWeb\\DoAnLapTrinhWeb\\Controllers\\TacGiaController.cs",
-              "RelativeDocumentMoniker": "DoAnLapTrinhWeb\\Controllers\\TacGiaController.cs",
-              "ToolTip": "D:\\DoAnWeb\\DoAnLapTrinhWeb\\DoAnLapTrinhWeb\\Controllers\\TacGiaController.cs",
-              "RelativeToolTip": "DoAnLapTrinhWeb\\Controllers\\TacGiaController.cs",
-              "ViewState": "AQIAACsAAAAAAAAAAAAkwCYAAAAAAAAA",
+              "DocumentIndex": 7,
+              "Title": "BookController.cs",
+              "DocumentMoniker": "D:\\DoAnWeb\\DoAnLapTrinhWeb\\DoAnLapTrinhWeb\\Areas\\Admin\\Controllers\\BookController.cs",
+              "RelativeDocumentMoniker": "DoAnLapTrinhWeb\\Areas\\Admin\\Controllers\\BookController.cs",
+              "ToolTip": "D:\\DoAnWeb\\DoAnLapTrinhWeb\\DoAnLapTrinhWeb\\Areas\\Admin\\Controllers\\BookController.cs",
+              "RelativeToolTip": "DoAnLapTrinhWeb\\Areas\\Admin\\Controllers\\BookController.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAACAAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-20T14:15:04.846Z",
+              "WhenOpened": "2024-04-21T05:53:53.361Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\DoAnWeb\\DoAnLapTrinhWeb\\DoAnLapTrinhWeb\\Program.cs",
+              "RelativeDocumentMoniker": "DoAnLapTrinhWeb\\Program.cs",
+              "ToolTip": "D:\\DoAnWeb\\DoAnLapTrinhWeb\\DoAnLapTrinhWeb\\Program.cs",
+              "RelativeToolTip": "DoAnLapTrinhWeb\\Program.cs",
+              "ViewState": "AQIAADIAAAAAAAAAAAAAAEAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-21T07:00:15.296Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "Add.cshtml",
+              "DocumentMoniker": "D:\\DoAnWeb\\DoAnLapTrinhWeb\\DoAnLapTrinhWeb\\Views\\Book\\Add.cshtml",
+              "RelativeDocumentMoniker": "DoAnLapTrinhWeb\\Views\\Book\\Add.cshtml",
+              "ToolTip": "D:\\DoAnWeb\\DoAnLapTrinhWeb\\DoAnLapTrinhWeb\\Views\\Book\\Add.cshtml",
+              "RelativeToolTip": "DoAnLapTrinhWeb\\Views\\Book\\Add.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-21T06:57:29.05Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\DoAnWeb\\DoAnLapTrinhWeb\\DoAnLapTrinhWeb\\Views\\TacGia\\Index.cshtml",
+              "RelativeDocumentMoniker": "DoAnLapTrinhWeb\\Views\\TacGia\\Index.cshtml",
+              "ToolTip": "D:\\DoAnWeb\\DoAnLapTrinhWeb\\DoAnLapTrinhWeb\\Views\\TacGia\\Index.cshtml",
+              "RelativeToolTip": "DoAnLapTrinhWeb\\Views\\TacGia\\Index.cshtml",
+              "ViewState": "AQIAABIAAAAAAAAAAAAAACUAAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-21T06:56:10.993Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Display.cshtml",
+              "DocumentMoniker": "D:\\DoAnWeb\\DoAnLapTrinhWeb\\DoAnLapTrinhWeb\\Views\\TacGia\\Display.cshtml",
+              "RelativeDocumentMoniker": "DoAnLapTrinhWeb\\Views\\TacGia\\Display.cshtml",
+              "ToolTip": "D:\\DoAnWeb\\DoAnLapTrinhWeb\\DoAnLapTrinhWeb\\Views\\TacGia\\Display.cshtml",
+              "RelativeToolTip": "DoAnLapTrinhWeb\\Views\\TacGia\\Display.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-21T07:23:09.01Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "D:\\DoAnWeb\\DoAnLapTrinhWeb\\DoAnLapTrinhWeb\\Views\\TacGia\\Delete.cshtml",
+              "RelativeDocumentMoniker": "DoAnLapTrinhWeb\\Views\\TacGia\\Delete.cshtml",
+              "ToolTip": "D:\\DoAnWeb\\DoAnLapTrinhWeb\\DoAnLapTrinhWeb\\Views\\TacGia\\Delete.cshtml",
+              "RelativeToolTip": "DoAnLapTrinhWeb\\Views\\TacGia\\Delete.cshtml",
+              "ViewState": "AQIAABgAAAAAAAAAAAAYwDYAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-21T05:53:22.825Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Add.cshtml",
+              "DocumentMoniker": "D:\\DoAnWeb\\DoAnLapTrinhWeb\\DoAnLapTrinhWeb\\Views\\TacGia\\Add.cshtml",
+              "RelativeDocumentMoniker": "DoAnLapTrinhWeb\\Views\\TacGia\\Add.cshtml",
+              "ToolTip": "D:\\DoAnWeb\\DoAnLapTrinhWeb\\DoAnLapTrinhWeb\\Views\\TacGia\\Add.cshtml",
+              "RelativeToolTip": "DoAnLapTrinhWeb\\Views\\TacGia\\Add.cshtml",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAAABUAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-21T05:49:42.026Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\DoAnWeb\\DoAnLapTrinhWeb\\DoAnLapTrinhWeb\\Views\\Book\\Index.cshtml",
+              "RelativeDocumentMoniker": "DoAnLapTrinhWeb\\Views\\Book\\Index.cshtml",
+              "ToolTip": "D:\\DoAnWeb\\DoAnLapTrinhWeb\\DoAnLapTrinhWeb\\Views\\Book\\Index.cshtml",
+              "RelativeToolTip": "DoAnLapTrinhWeb\\Views\\Book\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-21T06:57:36.673Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "D:\\DoAnWeb\\DoAnLapTrinhWeb\\DoAnLapTrinhWeb\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "DoAnLapTrinhWeb\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "D:\\DoAnWeb\\DoAnLapTrinhWeb\\DoAnLapTrinhWeb\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "DoAnLapTrinhWeb\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-21T07:22:53.481Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Register.cshtml",
+              "DocumentMoniker": "D:\\DoAnWeb\\DoAnLapTrinhWeb\\DoAnLapTrinhWeb\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
+              "RelativeDocumentMoniker": "DoAnLapTrinhWeb\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
+              "ToolTip": "D:\\DoAnWeb\\DoAnLapTrinhWeb\\DoAnLapTrinhWeb\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
+              "RelativeToolTip": "DoAnLapTrinhWeb\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
+              "ViewState": "AQIAABsAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-21T05:59:43.528Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "TheLoaiController.cs",
+              "DocumentMoniker": "D:\\DoAnWeb\\DoAnLapTrinhWeb\\DoAnLapTrinhWeb\\Areas\\Admin\\Controllers\\TheLoaiController.cs",
+              "RelativeDocumentMoniker": "DoAnLapTrinhWeb\\Areas\\Admin\\Controllers\\TheLoaiController.cs",
+              "ToolTip": "D:\\DoAnWeb\\DoAnLapTrinhWeb\\DoAnLapTrinhWeb\\Areas\\Admin\\Controllers\\TheLoaiController.cs",
+              "RelativeToolTip": "DoAnLapTrinhWeb\\Areas\\Admin\\Controllers\\TheLoaiController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABoAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-21T05:54:05.792Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
               "Title": "BookController.cs",
               "DocumentMoniker": "D:\\DoAnWeb\\DoAnLapTrinhWeb\\DoAnLapTrinhWeb\\Controllers\\BookController.cs",
               "RelativeDocumentMoniker": "DoAnLapTrinhWeb\\Controllers\\BookController.cs",
               "ToolTip": "D:\\DoAnWeb\\DoAnLapTrinhWeb\\DoAnLapTrinhWeb\\Controllers\\BookController.cs",
               "RelativeToolTip": "DoAnLapTrinhWeb\\Controllers\\BookController.cs",
-              "ViewState": "AQIAAEcAAAAAAAAAAAAYwFMAAAARAAAA",
+              "ViewState": "AQIAAB8AAAAAAAAAAAAQwHAAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-20T14:09:50.533Z",
+              "WhenOpened": "2024-04-21T06:58:09.115Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "TacGiaController.cs",
+              "DocumentMoniker": "D:\\DoAnWeb\\DoAnLapTrinhWeb\\DoAnLapTrinhWeb\\Areas\\Admin\\Controllers\\TacGiaController.cs",
+              "RelativeDocumentMoniker": "DoAnLapTrinhWeb\\Areas\\Admin\\Controllers\\TacGiaController.cs",
+              "ToolTip": "D:\\DoAnWeb\\DoAnLapTrinhWeb\\DoAnLapTrinhWeb\\Areas\\Admin\\Controllers\\TacGiaController.cs",
+              "RelativeToolTip": "DoAnLapTrinhWeb\\Areas\\Admin\\Controllers\\TacGiaController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAGwAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-21T05:43:49.193Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "D:\\DoAnWeb\\DoAnLapTrinhWeb\\DoAnLapTrinhWeb\\Areas\\Identity\\Pages\\Account\\Login.cshtml",
+              "RelativeDocumentMoniker": "DoAnLapTrinhWeb\\Areas\\Identity\\Pages\\Account\\Login.cshtml",
+              "ToolTip": "D:\\DoAnWeb\\DoAnLapTrinhWeb\\DoAnLapTrinhWeb\\Areas\\Identity\\Pages\\Account\\Login.cshtml",
+              "RelativeToolTip": "DoAnLapTrinhWeb\\Areas\\Identity\\Pages\\Account\\Login.cshtml",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-21T05:59:41.433Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "TheLoaiController.cs",
+              "DocumentMoniker": "D:\\DoAnWeb\\DoAnLapTrinhWeb\\DoAnLapTrinhWeb\\Controllers\\TheLoaiController.cs",
+              "RelativeDocumentMoniker": "DoAnLapTrinhWeb\\Controllers\\TheLoaiController.cs",
+              "ToolTip": "D:\\DoAnWeb\\DoAnLapTrinhWeb\\DoAnLapTrinhWeb\\Controllers\\TheLoaiController.cs",
+              "RelativeToolTip": "DoAnLapTrinhWeb\\Controllers\\TheLoaiController.cs",
+              "ViewState": "AQIAAGcAAAAAAAAAAADwv3gAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-21T07:01:47.321Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "TacGiaController.cs",
+              "DocumentMoniker": "D:\\DoAnWeb\\DoAnLapTrinhWeb\\DoAnLapTrinhWeb\\Controllers\\TacGiaController.cs",
+              "RelativeDocumentMoniker": "DoAnLapTrinhWeb\\Controllers\\TacGiaController.cs",
+              "ToolTip": "D:\\DoAnWeb\\DoAnLapTrinhWeb\\DoAnLapTrinhWeb\\Controllers\\TacGiaController.cs",
+              "RelativeToolTip": "DoAnLapTrinhWeb\\Controllers\\TacGiaController.cs",
+              "ViewState": "AQIAAGcAAAAAAAAAAAAwwHwAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-21T07:01:45.08Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "_LoginPartial.cshtml",
+              "DocumentMoniker": "D:\\DoAnWeb\\DoAnLapTrinhWeb\\DoAnLapTrinhWeb\\Views\\Shared\\_LoginPartial.cshtml",
+              "RelativeDocumentMoniker": "DoAnLapTrinhWeb\\Views\\Shared\\_LoginPartial.cshtml",
+              "ToolTip": "D:\\DoAnWeb\\DoAnLapTrinhWeb\\DoAnLapTrinhWeb\\Views\\Shared\\_LoginPartial.cshtml",
+              "RelativeToolTip": "DoAnLapTrinhWeb\\Views\\Shared\\_LoginPartial.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-21T07:23:00.346Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Register.cshtml.cs",
+              "DocumentMoniker": "D:\\DoAnWeb\\DoAnLapTrinhWeb\\DoAnLapTrinhWeb\\Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
+              "RelativeDocumentMoniker": "DoAnLapTrinhWeb\\Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
+              "ToolTip": "D:\\DoAnWeb\\DoAnLapTrinhWeb\\DoAnLapTrinhWeb\\Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
+              "RelativeToolTip": "DoAnLapTrinhWeb\\Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
+              "ViewState": "AQIAAI4AAAAAAAAAAAAuwKAAAABRAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-21T05:59:02.618Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\DoAnWeb\\DoAnLapTrinhWeb\\DoAnLapTrinhWeb\\Views\\TheLoai\\Index.cshtml",
+              "RelativeDocumentMoniker": "DoAnLapTrinhWeb\\Views\\TheLoai\\Index.cshtml",
+              "ToolTip": "D:\\DoAnWeb\\DoAnLapTrinhWeb\\DoAnLapTrinhWeb\\Views\\TheLoai\\Index.cshtml",
+              "RelativeToolTip": "DoAnLapTrinhWeb\\Views\\TheLoai\\Index.cshtml",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAcAAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-21T06:56:18.922Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Add.cshtml",
+              "DocumentMoniker": "D:\\DoAnWeb\\DoAnLapTrinhWeb\\DoAnLapTrinhWeb\\Areas\\Admin\\Views\\TacGia\\Add.cshtml",
+              "RelativeDocumentMoniker": "DoAnLapTrinhWeb\\Areas\\Admin\\Views\\TacGia\\Add.cshtml",
+              "ToolTip": "D:\\DoAnWeb\\DoAnLapTrinhWeb\\DoAnLapTrinhWeb\\Areas\\Admin\\Views\\TacGia\\Add.cshtml",
+              "RelativeToolTip": "DoAnLapTrinhWeb\\Areas\\Admin\\Views\\TacGia\\Add.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAEIAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-21T05:46:09.011Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "D:\\DoAnWeb\\DoAnLapTrinhWeb\\DoAnLapTrinhWeb\\Areas\\Admin\\Views\\TacGia\\Delete.cshtml",
+              "RelativeDocumentMoniker": "DoAnLapTrinhWeb\\Areas\\Admin\\Views\\TacGia\\Delete.cshtml",
+              "ToolTip": "D:\\DoAnWeb\\DoAnLapTrinhWeb\\DoAnLapTrinhWeb\\Areas\\Admin\\Views\\TacGia\\Delete.cshtml",
+              "RelativeToolTip": "DoAnLapTrinhWeb\\Areas\\Admin\\Views\\TacGia\\Delete.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAADYAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-21T05:52:37.363Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "Update.cshtml",
+              "DocumentMoniker": "D:\\DoAnWeb\\DoAnLapTrinhWeb\\DoAnLapTrinhWeb\\Views\\TacGia\\Update.cshtml",
+              "RelativeDocumentMoniker": "DoAnLapTrinhWeb\\Views\\TacGia\\Update.cshtml",
+              "ToolTip": "D:\\DoAnWeb\\DoAnLapTrinhWeb\\DoAnLapTrinhWeb\\Views\\TacGia\\Update.cshtml",
+              "RelativeToolTip": "DoAnLapTrinhWeb\\Views\\TacGia\\Update.cshtml",
+              "ViewState": "AQIAACwAAAAAAAAAAAAYwEoAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-21T05:52:04.568Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "Update.cshtml",
+              "DocumentMoniker": "D:\\DoAnWeb\\DoAnLapTrinhWeb\\DoAnLapTrinhWeb\\Areas\\Admin\\Views\\TacGia\\Update.cshtml",
+              "RelativeDocumentMoniker": "DoAnLapTrinhWeb\\Areas\\Admin\\Views\\TacGia\\Update.cshtml",
+              "ToolTip": "D:\\DoAnWeb\\DoAnLapTrinhWeb\\DoAnLapTrinhWeb\\Areas\\Admin\\Views\\TacGia\\Update.cshtml",
+              "RelativeToolTip": "DoAnLapTrinhWeb\\Areas\\Admin\\Views\\TacGia\\Update.cshtml",
+              "ViewState": "AQIAACwAAAAAAAAAAAAYwEoAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-21T05:50:15.782Z",
               "EditorCaption": ""
             }
           ]

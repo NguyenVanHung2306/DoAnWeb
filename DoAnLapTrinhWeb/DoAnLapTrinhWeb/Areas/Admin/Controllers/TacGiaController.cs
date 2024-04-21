@@ -2,12 +2,11 @@
 using DoAnLapTrinhWeb.Repositories;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.CodeAnalysis.Scripting;
 
-
-namespace DoAnLapTrinhWeb.Controllers
+namespace DoAnLapTrinhWeb.Areas.Admin.Controllers
 {
-    [Authorize]
+    [Area("Admin")]
+    [Authorize(Roles = SD.Role_Admin)]
     public class TacGiaController : Controller
     {
         private readonly ISachRepository _sachRepository;
@@ -23,7 +22,6 @@ namespace DoAnLapTrinhWeb.Controllers
             _tacGiaRepository = tacGiaRepository;
         }
 
-        [AllowAnonymous]
         public async Task<IActionResult> Index()
         {
             var tacGia = await _tacGiaRepository.GetAllAsync();
@@ -46,6 +44,7 @@ namespace DoAnLapTrinhWeb.Controllers
         {
             return View();
         }
+
         [HttpPost]
         public async Task<IActionResult> Add(tbTacGia tacGia)
         {
