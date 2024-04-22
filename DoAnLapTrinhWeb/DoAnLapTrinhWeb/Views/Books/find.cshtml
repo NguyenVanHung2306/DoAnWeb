@@ -1,0 +1,171 @@
+﻿@model IEnumerable<DoAnLapTrinhWeb.Models.tbSach>
+@using DoAnLapTrinhWeb.Models;
+
+@{
+    ViewData["Title"] = "Tìm kiếm";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<style>
+    #searchForm {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+
+    #searchInput {
+        padding: 8px;
+        font-size: 16px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        margin-right: 10px;
+        width: 300px; /* Điều chỉnh độ rộng cho phù hợp */
+    }
+
+        #searchInput:focus {
+            outline: none;
+            border-color: #007bff; /* Màu sắc khi ô nhập được focus */
+        }
+
+    #searchSubmit {
+        padding: 8px 16px;
+        font-size: 16px;
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+        #searchSubmit:hover {
+            background-color: #0056b3; /* Màu sắc khi rê chuột vào nút */
+        }
+
+    #searchSubmit {
+        padding: 8px 16px;
+        font-size: 16px;
+        background-color: #007bff; /* Màu nền */
+        color: #fff; /* Màu chữ */
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+        #searchSubmit:hover {
+            background-color: #0056b3; /* Màu nền khi rê chuột vào */
+        }
+
+    .ui-menu-item {
+        list-style-type: none; /* Loại bỏ dấu chấm */
+        padding: 5px; /* Điều chỉnh padding theo nhu cầu */
+    }
+
+        .ui-menu-item:hover {
+            background-color: #f0f0f0; /* Màu nền khi rê chuột vào */
+            cursor: pointer;
+        }
+
+    .ip-timkiem {
+        padding: 8px 16px;
+        font-size: 16px;
+        background-color: #007bff; /* Màu nền */
+        color: #fff; /* Màu chữ */
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+        .ip-timkiem:hover {
+            background-color: #0056b3; /* Màu nền khi rê chuột vào */
+        }
+
+</style>
+<h2>Tìm kiếm</h2>
+<form id="searchForm" asp-controller="Books" asp-action="find" method="get">
+    <p>
+        Tìm kiếm: <input type="text" id="searchInput" name="search" placeholder="Nhập tên sách hoặc tên tác giả" />
+        <input type="submit" value="Tìm kiếm" class="ip-timkiem" />
+    </p>
+</form>
+
+<head>
+    <title>Danh sách sách</title>
+    <style>
+        .book-list {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .book {
+            flex-basis: calc(16.666% - 20px);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 10px;
+        }
+
+        .book-image {
+            width: 100px;
+            height: 150px;
+            margin-bottom: 10px;
+        }
+
+        .book-title {
+            font-weight: bold;
+            margin-bottom: 5px;
+            width: 150px; /* Chiều rộng cố định, ví dụ 150px */
+            white-space: nowrap; /* Ngăn tiêu đề sách xuống dòng */
+            overflow: hidden; /* Ẩn phần vượt quá kích thước của tiêu đề sách */
+            text-overflow: ellipsis; /* Hiển thị dấu chấm (...) khi tiêu đề sách vượt quá kích thước */
+        }
+
+        .book-button {
+            padding: 5px 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Danh sách tìm kiếm</h1>
+
+    <div class="book-list">
+        @foreach (var obj in Model)
+        {
+            <div class="book">
+                <img class="book-image" src="@obj.imageUrl">
+                <div class="book-title">@obj.tenSach</div>
+                <a class="book-button" asp-action="Details" asp-route-id="@obj.Id">Xem thông tin sách</a>
+            </div>
+        }
+    </div>
+</body>
+
+@section Scripts {
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.min.js"></script>
+    <script>
+        $(function () {
+            $("#searchInput").autocomplete({
+                source: function (request, response) {
+                    $.ajax({
+                        url: "/Books/TimKiem",
+                        type: "GET",
+                        dataType: "json",
+                        data: { term: request.term },
+                        success: function (data) {
+                            response(data.sach.concat(data.tacGia));
+                        }
+                    });
+                },
+                minLength: 1,
+                select: function (event, ui) {
+                    $("#searchInput").val(ui.item.label);
+                    $("#searchForm").submit();
+                }
+            });
+        });
+    </script>
+}

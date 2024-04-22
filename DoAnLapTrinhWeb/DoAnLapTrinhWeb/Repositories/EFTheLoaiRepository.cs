@@ -39,6 +39,10 @@ namespace DoAnLapTrinhWeb.Repositories
             _context.tbTheLoai.Remove(theLoai);
             await _context.SaveChangesAsync();
         }
+        public async Task<bool> IsTenTheLoaiExisted(string TenTheLoai)
+        {
+            return await _context.tbTheLoai.AnyAsync(t => t.tenTheLoai == TenTheLoai);
+        }
     }
 }
 

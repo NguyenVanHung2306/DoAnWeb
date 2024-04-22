@@ -9,5 +9,7 @@ namespace DoAnLapTrinhWeb.Repositories
         Task AddAsync(tbSach sach);
         Task UpdateAsync(tbSach sach);
         Task DeleteAsync(int id);
+        Task<bool> IsTenSachExisted(string tenSach);
+        Task<dynamic> GetBookCountAsync();
     }
 }

@@ -9,5 +9,6 @@ namespace DoAnLapTrinhWeb.Repositories
         Task AddAsync(tbTheLoai theLoai);
         Task UpdateAsync(tbTheLoai theLoai);
         Task DeleteAsync(int id);
+        Task<bool> IsTenTheLoaiExisted(string tenTheLoai);
     }
 }

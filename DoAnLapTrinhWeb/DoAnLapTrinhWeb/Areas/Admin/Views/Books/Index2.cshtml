@@ -1,0 +1,110 @@
+﻿@model IEnumerable<DoAnLapTrinhWeb.Models.tbSach>
+@using DoAnLapTrinhWeb.Models;
+
+@{
+    ViewData["Title"] = "DoAnLapTrinhWeb";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    
+
+}
+<script>
+    function redirectToDetails(Id) {
+        window.location.href = "/Admin/Books/Details/" + Id;
+    }
+</script>  
+<head>
+    <title>Quản lý sách</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .btn-container {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        .btn {
+            padding: 10px 20px;
+            margin-right: 10px;
+            font-size: 16px;
+            border: none;
+            background-color: #4CAF50;
+            color: white;
+            cursor: pointer;
+        }
+
+            .btn a {
+                color: white;
+                text-decoration: none;
+            }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        tr:hover {
+            background-color: #f5f5f5;
+        }
+
+        .book-cover {
+            width: 80px;
+            height: 100px;
+            object-fit: cover;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Quản lý sách</h1>
+
+    <div class="btn-container">
+        <button class="btn"><a asp-action="Add">Thêm sách</a></button>
+    </div>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Ảnh bìa</th>
+                <th>Tên sách</th>
+                <th>Tác giả</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var sach in Model)
+            {
+                ApplicationDbContext context = new ApplicationDbContext();
+                var tacgia = context.tbTacGia.FirstOrDefault(b => b.Id == sach.tacGiaId);
+                <tr onclick="redirectToDetails(@sach.Id)">
+                    <td><img class="book-cover" src="@sach.imageUrl" alt="Ảnh bìa sách"></td>
+                    <td>@sach.tenSach</td>
+                    <td>@tacgia.TenTacGia</td>
+                    <td>
+                        @* <button class="btn"><a asp-action="Details" asp-route-id="@sach.Id">Xem chi tiết</a></button> *@
+                        <button class="btn"><a asp-action="Update" asp-route-id="@sach.Id">Sửa thông tin</a></button>
+                        @* <button class="btn"><a asp-action="Delete" asp-route-id="@sach.Id">Xóa sách</a></button> *@
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</body>

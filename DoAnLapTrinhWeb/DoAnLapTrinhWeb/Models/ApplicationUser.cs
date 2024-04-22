@@ -9,5 +9,6 @@ namespace DoAnLapTrinhWeb.Models
         public string? FullName { get; set; }
         public string? Address { get; set; }
         public string? Age { get; set; }
+        public int? is_active { get; set; }
     }
 }

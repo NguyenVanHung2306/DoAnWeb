@@ -28,7 +28,9 @@ builder.Services.AddControllersWithViews();
 
 builder.Services.AddScoped<ISachRepository, EFSachRepository>();
 builder.Services.AddScoped<ITheLoaiRepository, EFTheLoaiRepository>();
-
+builder.Services.AddScoped<ITacGiaRepository, EFTacGiaRepository>();
+builder.Services.AddScoped<ITrangRepository, EFTrangRepository>();
+builder.Services.AddScoped<IUserRepository, EFUserRepository>();
 
 var app = builder.Build();
 
@@ -53,13 +55,34 @@ app.MapRazorPages();
 app.UseEndpoints(endpoints =>
 {
     endpoints.MapControllerRoute(
-      name: "Admin",
-      pattern: "{area:exists}/{controller=Home}/{action=Index}/{id?}"
-    );
+        name: "Admin",
+        pattern: "{area:exists}/{controller=Page}/{action=Index}/{id?}");
+    endpoints.MapControllerRoute(
+        name: "Admin",
+        pattern: "{area:exists}/{controller=Books}/{action=Index}/{id?}");
+    endpoints.MapControllerRoute(
+        name: "Admin",
+        pattern: "{area:exists}/{controller=TheLoai}/{action=Index}/{id?}");
+    endpoints.MapControllerRoute(
+       name: "Admin",
+       pattern: "{area:exists}/{controller=TacGia}/{action=Index}/{id?}");
+    endpoints.MapControllerRoute(
+    name: "default",
+    pattern: "{controller=Books}/{action=Index}/{id?}");
+
 });
 
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Home}/{action=Index}/{id?}");
+    pattern: "{controller=Books}/{action=Index}/{id?}");
+
+app.MapControllerRoute(
+    name: "default",
+    pattern: "{controller=TacGia}/{action=Index}/{id?}");
+
+
+app.MapControllerRoute(
+    name: "default",
+    pattern: "{controller=TheLoai}/{action=Index}/{id?}");
 
 app.Run();

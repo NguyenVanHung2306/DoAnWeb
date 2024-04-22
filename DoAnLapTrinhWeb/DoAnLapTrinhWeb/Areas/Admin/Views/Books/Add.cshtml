@@ -1,0 +1,95 @@
+﻿@model DoAnLapTrinhWeb.Models.tbSach
+@using Microsoft.AspNetCore.Mvc.Rendering
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<a asp-action="Index2" onclick="confirmBackToList()">Back to List</a>
+
+<head>
+    <title>Thêm sách</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        form {
+            max-width: 500px;
+            margin: 0 auto;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+        .btn-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .btn {
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            background-color: #4CAF50;
+            color: white;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Thêm sách</h1>
+
+    <form asp-action="Add" method="post" enctype="multipart/form-data">
+        <div class="form-group">
+            <label asp-for="tenSach">Tên sách</label>
+            <input asp-for="tenSach" class="form-control" />
+            <span asp-validation-for="tenSach" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="imageUrl">Book Image</label>
+            <input type="file" asp-for="imageUrl" class="form-control" />
+            <span asp-validation-for="imageUrl" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="theLoaiId">Thể loại</label>
+            <select asp-for="theLoaiId" asp-items=" ViewBag.TheLoai" class="form-control">
+                <option value="-1">- chọn thể loại -</option>
+            </select>
+            <span asp-validation-for="theLoaiId" class="text-danger"></span>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="tacGiaId">Tác giả</label>
+            <select asp-for="tacGiaId" asp-items=" ViewBag.TacGia" class="form-control">
+                <option value="-1">- chọn tác giả -</option>
+            </select>
+            <span asp-validation-for="tacGiaId" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="moTa">Mô tả</label>
+            <input asp-for="moTa" class="form-control" />
+            <span asp-validation-for="moTa" class="text-danger"></span>
+        </div>
+        <div class="btn-container">
+            <button class="btn" type="submit">Thêm sách</button>
+        </div>
+    </form>
+</body>

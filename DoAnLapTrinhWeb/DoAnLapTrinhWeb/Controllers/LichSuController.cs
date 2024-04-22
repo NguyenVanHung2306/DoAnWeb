@@ -23,6 +23,10 @@ namespace DoAnLapTrinhWeb.Controllers
         // GET: LichSuController
         public ActionResult Index(string userId)
         {
+            if (!User.Identity.IsAuthenticated)
+            {
+                return RedirectToAction("Login", "Account"); // Chuyển hướng đến trang đăng nhập
+            }
             ViewBag.UserId = userId;
             return View();
         }

@@ -24,11 +24,18 @@
             margin-bottom: 10px;
         }
 
+        /* .book-title {
+            font-weight: bold;
+            margin-bottom: 5px;
+        } */
         .book-title {
             font-weight: bold;
             margin-bottom: 5px;
+            width: 150px; /* Chiều rộng cố định, ví dụ 150px */
+            white-space: nowrap; /* Ngăn tiêu đề sách xuống dòng */
+            overflow: hidden; /* Ẩn phần vượt quá kích thước của tiêu đề sách */
+            text-overflow: ellipsis; /* Hiển thị dấu chấm (...) khi tiêu đề sách vượt quá kích thước */
         }
-
         .book-button {
             padding: 5px 10px;
             background-color: #4CAF50;
@@ -40,8 +47,7 @@
 </head>
 <body>
     <h1>Danh sách các cuốn sách</h1>
-    
-        <div class="book-list">
+    <div class="book-list">
         @foreach (var item in Model)
         {
             <div class="book">
@@ -51,5 +57,14 @@
             </div>        
         }
         </div>
-    
 </body>
+
+<div style="text-align: center;">
+    @if (ViewBag.PageCount > 1)
+    {
+        for (int i = 1; i <= ViewBag.PageCount; i++)
+        {
+            <a href="/Books/Index?page=@i" style="margin: 5px; padding: 5px; border: 1px solid #ccc; border-radius: 3px; display: inline-block;">@i</a>
+        }
+    }
+</div>

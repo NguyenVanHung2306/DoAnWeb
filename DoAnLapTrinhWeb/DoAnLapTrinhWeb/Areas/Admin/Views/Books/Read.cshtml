@@ -1,0 +1,124 @@
+﻿@using DoAnLapTrinhWeb.Models;
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    var sachId = (int)ViewBag.SachId;
+    ApplicationDbContext context = new ApplicationDbContext();
+    var Sach = context.tbSach.FirstOrDefault(b => b.Id == sachId);
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <title>Đọc sách</title>
+    <style>
+        #container {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+
+        #prev-page,
+        #book-container,
+        #next-page {
+          margin: 10px;
+        }
+
+        #book-container {
+          text-align: center;
+          margin-bottom: 20px;
+        }
+
+        #book-image {
+          max-width: 50%;
+          height: auto;
+        }
+
+        #prev-page,
+        #next-page {
+          padding: 10px 20px;
+          background-color: #4CAF50;
+          color: white;
+          border: none;
+          cursor: pointer;
+        }
+
+        #prev-page:hover,
+        #next-page:hover {
+          background-color: #45a049;
+        }
+
+        .book-title {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+</style>
+</head>
+<body>
+    <div id="container ">
+        <h1 class="book-title">@Sach.tenSach.ToString()</h1>
+        <p id="book-page"></p>
+        <div id="book-container">
+            <button id="prev-page">&#10094</button>
+            <img id="book-image" src="" alt="Book Image">
+            <button id="next-page">&#10095</button>
+        </div>
+        
+    </div>
+    <script>
+        $(document).ready(function () {
+            var currentPage = 0;
+            var imagePaths = [];
+
+            // Hàm để tải danh sách đường dẫn hình ảnh từ máy chủ
+            function loadImagePaths() {
+                $.ajax({
+                    url: '/Books/GetImagePaths/?sachId=' + @ViewBag.SachId,
+                    type: 'GET',
+                    dataType: 'json',
+                    success: function (response) {
+                        imagePaths = response;
+                        loadPage(currentPage);
+                    },
+                    error: function () {
+                        alert('Có lỗi xảy ra khi tải danh sách đường dẫn hình ảnh.');
+                    }
+                });
+            }
+
+            // Hàm để tải nội dung trang sách từ danh sách đường dẫn hình ảnh
+            function loadPage(pageNumber) {
+                if (pageNumber >= 0 && pageNumber < imagePaths.length) {
+                    var imagePath = imagePaths[pageNumber];
+                    $('#book-image').attr('src', imagePath);
+                    currentPage = pageNumber;
+
+                    //Hiện số trang đang đọc
+                    const page = document.getElementById('book-page');
+                    var tongtrang = imagePaths.length;
+                    var tranghientai = pageNumber + 1;
+                    page.innerText = `Trang ${tranghientai}/${tongtrang}`;
+                }
+            }
+
+            // Sự kiện nút "Prev"
+            $('#prev-page').click(function () {
+                if (currentPage > 0) {
+                    loadPage(currentPage - 1);
+                }
+            });
+
+            // Sự kiện nút "Next"
+            $('#next-page').click(function () {
+                if (currentPage < imagePaths.length - 1) {
+                    loadPage(currentPage + 1);
+                }
+            });
+
+            // Tải danh sách đường dẫn hình ảnh khi trang được tải lần đầu
+            loadImagePaths();
+        });
+    </script>
+</body>
+</html>

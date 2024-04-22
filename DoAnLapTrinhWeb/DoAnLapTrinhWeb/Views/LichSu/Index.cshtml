@@ -6,20 +6,56 @@
     var listLichSu = context.tbLichSu.Where(lichSu => lichSu.userId == userId).ToList();
 }
 <h2>Lịch sử</h2>
+<style>
+    .table {
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+        .table th,
+        .table td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        .table th {
+            background-color: #f2f2f2;
+        }
+
+        .table tbody tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        .table tbody tr:hover {
+            background-color: #ddd;
+        }
+
+        .table td.actions {
+            white-space: nowrap;
+        }
+
+            .table td.actions button {
+                display: inline-block;
+                padding: 5px 10px;
+                margin-right: 5px;
+                font-size: 14px;
+                border: none;
+                background-color: #4CAF50;
+                color: white;
+                cursor: pointer;
+            }
+
+                .table td.actions button a {
+                    color: white;
+                    text-decoration: none;
+                }
+
+                .table td.actions button.delete {
+                    background-color: #f44336;
+                }
+</style>
 <table class="table">
-    <thead>
-        <tr>
-            <th>
-                Tên sách
-            </th>
-            <th>
-                Thời gian đọc
-            </th>
-            <th>
-                Action
-            </th>
-        </tr>
-    </thead>
     <tbody>
         @foreach (var item in listLichSu)
         {

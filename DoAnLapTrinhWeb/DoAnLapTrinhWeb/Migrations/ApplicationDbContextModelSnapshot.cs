@@ -83,6 +83,9 @@ namespace DoAnLapTrinhWeb.Migrations
                         .HasMaxLength(256)
                         .HasColumnType("nvarchar(256)");
 
+                    b.Property<int?>("is_active")
+                        .HasColumnType("int");
+
                     b.HasKey("Id");
 
                     b.HasIndex("NormalizedEmail")
@@ -105,10 +108,9 @@ namespace DoAnLapTrinhWeb.Migrations
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
                     b.Property<string>("Noidung")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("SachId")
+                    b.Property<int?>("SachId")
                         .HasColumnType("int");
 
                     b.HasKey("Id");
@@ -233,7 +235,6 @@ namespace DoAnLapTrinhWeb.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("moTa")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<int>("tacGiaId")
@@ -283,7 +284,6 @@ namespace DoAnLapTrinhWeb.Migrations
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
                     b.Property<string>("tenTheLoai")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
@@ -428,9 +428,7 @@ namespace DoAnLapTrinhWeb.Migrations
                 {
                     b.HasOne("DoAnLapTrinhWeb.Models.tbSach", "sach")
                         .WithMany("TbTrangs")
-                        .HasForeignKey("SachId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .HasForeignKey("SachId");
 
                     b.Navigation("sach");
                 });

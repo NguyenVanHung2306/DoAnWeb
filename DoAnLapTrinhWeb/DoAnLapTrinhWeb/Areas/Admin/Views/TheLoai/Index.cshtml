@@ -1,0 +1,89 @@
+﻿@model IEnumerable<DoAnLapTrinhWeb.Models.tbTheLoai>
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<head>
+    <title>Quản lý tthể loại</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .btn-container {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        .btn {
+            padding: 10px 20px;
+            margin-right: 10px;
+            font-size: 16px;
+            border: none;
+            background-color: #4CAF50;
+            color: white;
+            cursor: pointer;
+        }
+
+            .btn a {
+                color: white;
+                text-decoration: none;
+            }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        tr:hover {
+            background-color: #f5f5f5;
+        }
+    </style>
+</head>
+<body>
+    <h1>Quản lý thể loại</h1>
+
+    <div class="btn-container">
+        <button class="btn"><a asp-action="Add">Thêm thể loại</a></button>
+    </div>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Thể loại</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var theLoai in Model)
+            {
+                <tr>
+                    <td>@theLoai.tenTheLoai</td>
+                    <td>
+                        <button class="btn"><a asp-action="Update" asp-route-id="@theLoai.Id">Sửa thông tin</a></button>
+                        @* <a asp-action="Display" asp-route-id="@theLoai.Id">View</a> |
+                    <a asp-action="Delete" asp-route-id="@theLoai.Id">Delete</a>*@
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</body>
+    

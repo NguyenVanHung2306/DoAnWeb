@@ -1431,3 +1431,4 @@ D:\LapTrinhWeb\DoAn-ThucHien\DoAnWeb\DoAnLapTrinhWeb\DoAnLapTrinhWeb\obj\Debug\n
 D:\LapTrinhWeb\DoAn-ThucHien\DoAnWeb\DoAnLapTrinhWeb\DoAnLapTrinhWeb\obj\Debug\net8.0\DoAnLapTrinhWeb.pdb
 D:\LapTrinhWeb\DoAn-ThucHien\DoAnWeb\DoAnLapTrinhWeb\DoAnLapTrinhWeb\obj\Debug\net8.0\DoAnLapTrinhWeb.genruntimeconfig.cache
 D:\LapTrinhWeb\DoAn-ThucHien\DoAnWeb\DoAnLapTrinhWeb\DoAnLapTrinhWeb\obj\Debug\net8.0\ref\DoAnLapTrinhWeb.dll
+D:\LapTrinhWeb\DoAn-ThucHien\DoAnWeb\DoAnLapTrinhWeb\DoAnLapTrinhWeb\bin\Debug\net8.0\SweetAlert2.dll

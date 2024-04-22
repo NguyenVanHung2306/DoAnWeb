@@ -1,0 +1,71 @@
+﻿@model DoAnLapTrinhWeb.Models.tbSach
+
+@{
+    ViewData["Title"] = "Add";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+<head>
+    <title>Thêm tác giả</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        form {
+            max-width: 500px;
+            margin: 0 auto;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+        .btn-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .btn {
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            background-color: #4CAF50;
+            color: white;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Thêm trang</h1>
+    <form asp-area="Admin" asp-controller="Page" asp-action="Add" method="post" enctype="multipart/form-data">
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+        <input type="hidden" asp-for="Id" id="hiddenSachId" name="SachId" />
+        <div class="form-group">
+            <input type="file" name="imageUrls" class="form-control" multiple />
+        </div>
+        <div class="btn-container">
+            <button class="btn" type="submit">Thêm trang</button>
+        </div>
+    </form>
+    
+</body>

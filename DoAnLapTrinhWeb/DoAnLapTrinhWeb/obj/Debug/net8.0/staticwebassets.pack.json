@@ -13,6 +13,14 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "D:\\LapTrinhWeb\\DoAn-ThucHien\\DoAnWeb\\DoAnLapTrinhWeb\\DoAnLapTrinhWeb\\wwwroot\\images\\BackgroundDangKy.jpg",
+      "PackagePath": "staticwebassets\\images\\BackgroundDangKy.jpg"
+    },
+    {
+      "Id": "D:\\LapTrinhWeb\\DoAn-ThucHien\\DoAnWeb\\DoAnLapTrinhWeb\\DoAnLapTrinhWeb\\wwwroot\\images\\BackgroundMenu.jpg",
+      "PackagePath": "staticwebassets\\images\\BackgroundMenu.jpg"
+    },
+    {
       "Id": "D:\\LapTrinhWeb\\DoAn-ThucHien\\DoAnWeb\\DoAnLapTrinhWeb\\DoAnLapTrinhWeb\\wwwroot\\images\\Manh Tu_page-0001.jpg",
       "PackagePath": "staticwebassets\\images\\Manh Tu_page-0001.jpg"
     },
@@ -417,6 +425,110 @@
       "PackagePath": "staticwebassets\\images\\ToiThayHoaVangTrenCoXanh.jpg"
     },
     {
+      "Id": "D:\\LapTrinhWeb\\DoAn-ThucHien\\DoAnWeb\\DoAnLapTrinhWeb\\DoAnLapTrinhWeb\\wwwroot\\images\\TrangQuynh_page-0064.jpg",
+      "PackagePath": "staticwebassets\\images\\TrangQuynh_page-0064.jpg"
+    },
+    {
+      "Id": "D:\\LapTrinhWeb\\DoAn-ThucHien\\DoAnWeb\\DoAnLapTrinhWeb\\DoAnLapTrinhWeb\\wwwroot\\images\\TrangQuynh_page-0065.jpg",
+      "PackagePath": "staticwebassets\\images\\TrangQuynh_page-0065.jpg"
+    },
+    {
+      "Id": "D:\\LapTrinhWeb\\DoAn-ThucHien\\DoAnWeb\\DoAnLapTrinhWeb\\DoAnLapTrinhWeb\\wwwroot\\images\\TrangQuynh_page-0066.jpg",
+      "PackagePath": "staticwebassets\\images\\TrangQuynh_page-0066.jpg"
+    },
+    {
+      "Id": "D:\\LapTrinhWeb\\DoAn-ThucHien\\DoAnWeb\\DoAnLapTrinhWeb\\DoAnLapTrinhWeb\\wwwroot\\images\\ns-arrow-right.svg",
+      "PackagePath": "staticwebassets\\images\\ns-arrow-right.svg"
+    },
+    {
+      "Id": "D:\\LapTrinhWeb\\DoAn-ThucHien\\DoAnWeb\\DoAnLapTrinhWeb\\DoAnLapTrinhWeb\\wwwroot\\images\\pattern1.png",
+      "PackagePath": "staticwebassets\\images\\pattern1.png"
+    },
+    {
+      "Id": "D:\\LapTrinhWeb\\DoAn-ThucHien\\DoAnWeb\\DoAnLapTrinhWeb\\DoAnLapTrinhWeb\\wwwroot\\images\\pattern2.png",
+      "PackagePath": "staticwebassets\\images\\pattern2.png"
+    },
+    {
+      "Id": "D:\\LapTrinhWeb\\DoAn-ThucHien\\DoAnWeb\\DoAnLapTrinhWeb\\DoAnLapTrinhWeb\\wwwroot\\images\\post-img1.jpg",
+      "PackagePath": "staticwebassets\\images\\post-img1.jpg"
+    },
+    {
+      "Id": "D:\\LapTrinhWeb\\DoAn-ThucHien\\DoAnWeb\\DoAnLapTrinhWeb\\DoAnLapTrinhWeb\\wwwroot\\images\\post-img2.jpg",
+      "PackagePath": "staticwebassets\\images\\post-img2.jpg"
+    },
+    {
+      "Id": "D:\\LapTrinhWeb\\DoAn-ThucHien\\DoAnWeb\\DoAnLapTrinhWeb\\DoAnLapTrinhWeb\\wwwroot\\images\\post-img3.jpg",
+      "PackagePath": "staticwebassets\\images\\post-img3.jpg"
+    },
+    {
+      "Id": "D:\\LapTrinhWeb\\DoAn-ThucHien\\DoAnWeb\\DoAnLapTrinhWeb\\DoAnLapTrinhWeb\\wwwroot\\images\\product-item1.jpg",
+      "PackagePath": "staticwebassets\\images\\product-item1.jpg"
+    },
+    {
+      "Id": "D:\\LapTrinhWeb\\DoAn-ThucHien\\DoAnWeb\\DoAnLapTrinhWeb\\DoAnLapTrinhWeb\\wwwroot\\images\\product-item2.jpg",
+      "PackagePath": "staticwebassets\\images\\product-item2.jpg"
+    },
+    {
+      "Id": "D:\\LapTrinhWeb\\DoAn-ThucHien\\DoAnWeb\\DoAnLapTrinhWeb\\DoAnLapTrinhWeb\\wwwroot\\images\\product-item3.jpg",
+      "PackagePath": "staticwebassets\\images\\product-item3.jpg"
+    },
+    {
+      "Id": "D:\\LapTrinhWeb\\DoAn-ThucHien\\DoAnWeb\\DoAnLapTrinhWeb\\DoAnLapTrinhWeb\\wwwroot\\images\\product-item4.jpg",
+      "PackagePath": "staticwebassets\\images\\product-item4.jpg"
+    },
+    {
+      "Id": "D:\\LapTrinhWeb\\DoAn-ThucHien\\DoAnWeb\\DoAnLapTrinhWeb\\DoAnLapTrinhWeb\\wwwroot\\images\\product-item5.jpg",
+      "PackagePath": "staticwebassets\\images\\product-item5.jpg"
+    },
+    {
+      "Id": "D:\\LapTrinhWeb\\DoAn-ThucHien\\DoAnWeb\\DoAnLapTrinhWeb\\DoAnLapTrinhWeb\\wwwroot\\images\\product-item6.jpg",
+      "PackagePath": "staticwebassets\\images\\product-item6.jpg"
+    },
+    {
+      "Id": "D:\\LapTrinhWeb\\DoAn-ThucHien\\DoAnWeb\\DoAnLapTrinhWeb\\DoAnLapTrinhWeb\\wwwroot\\images\\product-item7.jpg",
+      "PackagePath": "staticwebassets\\images\\product-item7.jpg"
+    },
+    {
+      "Id": "D:\\LapTrinhWeb\\DoAn-ThucHien\\DoAnWeb\\DoAnLapTrinhWeb\\DoAnLapTrinhWeb\\wwwroot\\images\\product-item8.jpg",
+      "PackagePath": "staticwebassets\\images\\product-item8.jpg"
+    },
+    {
+      "Id": "D:\\LapTrinhWeb\\DoAn-ThucHien\\DoAnWeb\\DoAnLapTrinhWeb\\DoAnLapTrinhWeb\\wwwroot\\images\\single-image.jpg",
+      "PackagePath": "staticwebassets\\images\\single-image.jpg"
+    },
+    {
+      "Id": "D:\\LapTrinhWeb\\DoAn-ThucHien\\DoAnWeb\\DoAnLapTrinhWeb\\DoAnLapTrinhWeb\\wwwroot\\images\\tab-item1.jpg",
+      "PackagePath": "staticwebassets\\images\\tab-item1.jpg"
+    },
+    {
+      "Id": "D:\\LapTrinhWeb\\DoAn-ThucHien\\DoAnWeb\\DoAnLapTrinhWeb\\DoAnLapTrinhWeb\\wwwroot\\images\\tab-item2.jpg",
+      "PackagePath": "staticwebassets\\images\\tab-item2.jpg"
+    },
+    {
+      "Id": "D:\\LapTrinhWeb\\DoAn-ThucHien\\DoAnWeb\\DoAnLapTrinhWeb\\DoAnLapTrinhWeb\\wwwroot\\images\\tab-item3.jpg",
+      "PackagePath": "staticwebassets\\images\\tab-item3.jpg"
+    },
+    {
+      "Id": "D:\\LapTrinhWeb\\DoAn-ThucHien\\DoAnWeb\\DoAnLapTrinhWeb\\DoAnLapTrinhWeb\\wwwroot\\images\\tab-item4.jpg",
+      "PackagePath": "staticwebassets\\images\\tab-item4.jpg"
+    },
+    {
+      "Id": "D:\\LapTrinhWeb\\DoAn-ThucHien\\DoAnWeb\\DoAnLapTrinhWeb\\DoAnLapTrinhWeb\\wwwroot\\images\\tab-item5.jpg",
+      "PackagePath": "staticwebassets\\images\\tab-item5.jpg"
+    },
+    {
+      "Id": "D:\\LapTrinhWeb\\DoAn-ThucHien\\DoAnWeb\\DoAnLapTrinhWeb\\DoAnLapTrinhWeb\\wwwroot\\images\\tab-item6.jpg",
+      "PackagePath": "staticwebassets\\images\\tab-item6.jpg"
+    },
+    {
+      "Id": "D:\\LapTrinhWeb\\DoAn-ThucHien\\DoAnWeb\\DoAnLapTrinhWeb\\DoAnLapTrinhWeb\\wwwroot\\images\\tab-item7.jpg",
+      "PackagePath": "staticwebassets\\images\\tab-item7.jpg"
+    },
+    {
+      "Id": "D:\\LapTrinhWeb\\DoAn-ThucHien\\DoAnWeb\\DoAnLapTrinhWeb\\DoAnLapTrinhWeb\\wwwroot\\images\\tab-item8.jpg",
+      "PackagePath": "staticwebassets\\images\\tab-item8.jpg"
+    },
+    {
       "Id": "D:\\LapTrinhWeb\\DoAn-ThucHien\\DoAnWeb\\DoAnLapTrinhWeb\\DoAnLapTrinhWeb\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },
@@ -647,6 +759,266 @@
     {
       "Id": "D:\\LapTrinhWeb\\DoAn-ThucHien\\DoAnWeb\\DoAnLapTrinhWeb\\DoAnLapTrinhWeb\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "D:\\LapTrinhWeb\\DoAn-ThucHien\\DoAnWeb\\DoAnLapTrinhWeb\\DoAnLapTrinhWeb\\wwwroot\\pages\\TrangQuynh_page-0001.jpg",
+      "PackagePath": "staticwebassets\\pages\\TrangQuynh_page-0001.jpg"
+    },
+    {
+      "Id": "D:\\LapTrinhWeb\\DoAn-ThucHien\\DoAnWeb\\DoAnLapTrinhWeb\\DoAnLapTrinhWeb\\wwwroot\\pages\\TrangQuynh_page-0002.jpg",
+      "PackagePath": "staticwebassets\\pages\\TrangQuynh_page-0002.jpg"
+    },
+    {
+      "Id": "D:\\LapTrinhWeb\\DoAn-ThucHien\\DoAnWeb\\DoAnLapTrinhWeb\\DoAnLapTrinhWeb\\wwwroot\\pages\\TrangQuynh_page-0003.jpg",
+      "PackagePath": "staticwebassets\\pages\\TrangQuynh_page-0003.jpg"
+    },
+    {
+      "Id": "D:\\LapTrinhWeb\\DoAn-ThucHien\\DoAnWeb\\DoAnLapTrinhWeb\\DoAnLapTrinhWeb\\wwwroot\\pages\\TrangQuynh_page-0004.jpg",
+      "PackagePath": "staticwebassets\\pages\\TrangQuynh_page-0004.jpg"
+    },
+    {
+      "Id": "D:\\LapTrinhWeb\\DoAn-ThucHien\\DoAnWeb\\DoAnLapTrinhWeb\\DoAnLapTrinhWeb\\wwwroot\\pages\\TrangQuynh_page-0005.jpg",
+      "PackagePath": "staticwebassets\\pages\\TrangQuynh_page-0005.jpg"
+    },
+    {
+      "Id": "D:\\LapTrinhWeb\\DoAn-ThucHien\\DoAnWeb\\DoAnLapTrinhWeb\\DoAnLapTrinhWeb\\wwwroot\\pages\\TrangQuynh_page-0006.jpg",
+      "PackagePath": "staticwebassets\\pages\\TrangQuynh_page-0006.jpg"
+    },
+    {
+      "Id": "D:\\LapTrinhWeb\\DoAn-ThucHien\\DoAnWeb\\DoAnLapTrinhWeb\\DoAnLapTrinhWeb\\wwwroot\\pages\\TrangQuynh_page-0007.jpg",
+      "PackagePath": "staticwebassets\\pages\\TrangQuynh_page-0007.jpg"
+    },
+    {
+      "Id": "D:\\LapTrinhWeb\\DoAn-ThucHien\\DoAnWeb\\DoAnLapTrinhWeb\\DoAnLapTrinhWeb\\wwwroot\\pages\\TrangQuynh_page-0008.jpg",
+      "PackagePath": "staticwebassets\\pages\\TrangQuynh_page-0008.jpg"
+    },
+    {
+      "Id": "D:\\LapTrinhWeb\\DoAn-ThucHien\\DoAnWeb\\DoAnLapTrinhWeb\\DoAnLapTrinhWeb\\wwwroot\\pages\\TrangQuynh_page-0012.jpg",
+      "PackagePath": "staticwebassets\\pages\\TrangQuynh_page-0012.jpg"
+    },
+    {
+      "Id": "D:\\LapTrinhWeb\\DoAn-ThucHien\\DoAnWeb\\DoAnLapTrinhWeb\\DoAnLapTrinhWeb\\wwwroot\\pages\\TrangQuynh_page-0013.jpg",
+      "PackagePath": "staticwebassets\\pages\\TrangQuynh_page-0013.jpg"
+    },
+    {
+      "Id": "D:\\LapTrinhWeb\\DoAn-ThucHien\\DoAnWeb\\DoAnLapTrinhWeb\\DoAnLapTrinhWeb\\wwwroot\\pages\\TrangQuynh_page-0014.jpg",
+      "PackagePath": "staticwebassets\\pages\\TrangQuynh_page-0014.jpg"
+    },
+    {
+      "Id": "D:\\LapTrinhWeb\\DoAn-ThucHien\\DoAnWeb\\DoAnLapTrinhWeb\\DoAnLapTrinhWeb\\wwwroot\\pages\\TrangQuynh_page-0015.jpg",
+      "PackagePath": "staticwebassets\\pages\\TrangQuynh_page-0015.jpg"
+    },
+    {
+      "Id": "D:\\LapTrinhWeb\\DoAn-ThucHien\\DoAnWeb\\DoAnLapTrinhWeb\\DoAnLapTrinhWeb\\wwwroot\\pages\\TrangQuynh_page-0016.jpg",
+      "PackagePath": "staticwebassets\\pages\\TrangQuynh_page-0016.jpg"
+    },
+    {
+      "Id": "D:\\LapTrinhWeb\\DoAn-ThucHien\\DoAnWeb\\DoAnLapTrinhWeb\\DoAnLapTrinhWeb\\wwwroot\\pages\\TrangQuynh_page-0017.jpg",
+      "PackagePath": "staticwebassets\\pages\\TrangQuynh_page-0017.jpg"
+    },
+    {
+      "Id": "D:\\LapTrinhWeb\\DoAn-ThucHien\\DoAnWeb\\DoAnLapTrinhWeb\\DoAnLapTrinhWeb\\wwwroot\\pages\\TrangQuynh_page-0018.jpg",
+      "PackagePath": "staticwebassets\\pages\\TrangQuynh_page-0018.jpg"
+    },
+    {
+      "Id": "D:\\LapTrinhWeb\\DoAn-ThucHien\\DoAnWeb\\DoAnLapTrinhWeb\\DoAnLapTrinhWeb\\wwwroot\\pages\\TrangQuynh_page-0019.jpg",
+      "PackagePath": "staticwebassets\\pages\\TrangQuynh_page-0019.jpg"
+    },
+    {
+      "Id": "D:\\LapTrinhWeb\\DoAn-ThucHien\\DoAnWeb\\DoAnLapTrinhWeb\\DoAnLapTrinhWeb\\wwwroot\\pages\\TrangQuynh_page-0020.jpg",
+      "PackagePath": "staticwebassets\\pages\\TrangQuynh_page-0020.jpg"
+    },
+    {
+      "Id": "D:\\LapTrinhWeb\\DoAn-ThucHien\\DoAnWeb\\DoAnLapTrinhWeb\\DoAnLapTrinhWeb\\wwwroot\\pages\\TrangQuynh_page-0021.jpg",
+      "PackagePath": "staticwebassets\\pages\\TrangQuynh_page-0021.jpg"
+    },
+    {
+      "Id": "D:\\LapTrinhWeb\\DoAn-ThucHien\\DoAnWeb\\DoAnLapTrinhWeb\\DoAnLapTrinhWeb\\wwwroot\\pages\\TrangQuynh_page-0022.jpg",
+      "PackagePath": "staticwebassets\\pages\\TrangQuynh_page-0022.jpg"
+    },
+    {
+      "Id": "D:\\LapTrinhWeb\\DoAn-ThucHien\\DoAnWeb\\DoAnLapTrinhWeb\\DoAnLapTrinhWeb\\wwwroot\\pages\\TrangQuynh_page-0023.jpg",
+      "PackagePath": "staticwebassets\\pages\\TrangQuynh_page-0023.jpg"
+    },
+    {
+      "Id": "D:\\LapTrinhWeb\\DoAn-ThucHien\\DoAnWeb\\DoAnLapTrinhWeb\\DoAnLapTrinhWeb\\wwwroot\\pages\\TrangQuynh_page-0024.jpg",
+      "PackagePath": "staticwebassets\\pages\\TrangQuynh_page-0024.jpg"
+    },
+    {
+      "Id": "D:\\LapTrinhWeb\\DoAn-ThucHien\\DoAnWeb\\DoAnLapTrinhWeb\\DoAnLapTrinhWeb\\wwwroot\\pages\\TrangQuynh_page-0025.jpg",
+      "PackagePath": "staticwebassets\\pages\\TrangQuynh_page-0025.jpg"
+    },
+    {
+      "Id": "D:\\LapTrinhWeb\\DoAn-ThucHien\\DoAnWeb\\DoAnLapTrinhWeb\\DoAnLapTrinhWeb\\wwwroot\\pages\\TrangQuynh_page-0026.jpg",
+      "PackagePath": "staticwebassets\\pages\\TrangQuynh_page-0026.jpg"
+    },
+    {
+      "Id": "D:\\LapTrinhWeb\\DoAn-ThucHien\\DoAnWeb\\DoAnLapTrinhWeb\\DoAnLapTrinhWeb\\wwwroot\\pages\\TrangQuynh_page-0027.jpg",
+      "PackagePath": "staticwebassets\\pages\\TrangQuynh_page-0027.jpg"
+    },
+    {
+      "Id": "D:\\LapTrinhWeb\\DoAn-ThucHien\\DoAnWeb\\DoAnLapTrinhWeb\\DoAnLapTrinhWeb\\wwwroot\\pages\\TrangQuynh_page-0028.jpg",
+      "PackagePath": "staticwebassets\\pages\\TrangQuynh_page-0028.jpg"
+    },
+    {
+      "Id": "D:\\LapTrinhWeb\\DoAn-ThucHien\\DoAnWeb\\DoAnLapTrinhWeb\\DoAnLapTrinhWeb\\wwwroot\\pages\\TrangQuynh_page-0029.jpg",
+      "PackagePath": "staticwebassets\\pages\\TrangQuynh_page-0029.jpg"
+    },
+    {
+      "Id": "D:\\LapTrinhWeb\\DoAn-ThucHien\\DoAnWeb\\DoAnLapTrinhWeb\\DoAnLapTrinhWeb\\wwwroot\\pages\\TrangQuynh_page-0030.jpg",
+      "PackagePath": "staticwebassets\\pages\\TrangQuynh_page-0030.jpg"
+    },
+    {
+      "Id": "D:\\LapTrinhWeb\\DoAn-ThucHien\\DoAnWeb\\DoAnLapTrinhWeb\\DoAnLapTrinhWeb\\wwwroot\\pages\\TrangQuynh_page-0031.jpg",
+      "PackagePath": "staticwebassets\\pages\\TrangQuynh_page-0031.jpg"
+    },
+    {
+      "Id": "D:\\LapTrinhWeb\\DoAn-ThucHien\\DoAnWeb\\DoAnLapTrinhWeb\\DoAnLapTrinhWeb\\wwwroot\\pages\\TrangQuynh_page-0032.jpg",
+      "PackagePath": "staticwebassets\\pages\\TrangQuynh_page-0032.jpg"
+    },
+    {
+      "Id": "D:\\LapTrinhWeb\\DoAn-ThucHien\\DoAnWeb\\DoAnLapTrinhWeb\\DoAnLapTrinhWeb\\wwwroot\\pages\\TrangQuynh_page-0033.jpg",
+      "PackagePath": "staticwebassets\\pages\\TrangQuynh_page-0033.jpg"
+    },
+    {
+      "Id": "D:\\LapTrinhWeb\\DoAn-ThucHien\\DoAnWeb\\DoAnLapTrinhWeb\\DoAnLapTrinhWeb\\wwwroot\\pages\\TrangQuynh_page-0034.jpg",
+      "PackagePath": "staticwebassets\\pages\\TrangQuynh_page-0034.jpg"
+    },
+    {
+      "Id": "D:\\LapTrinhWeb\\DoAn-ThucHien\\DoAnWeb\\DoAnLapTrinhWeb\\DoAnLapTrinhWeb\\wwwroot\\pages\\TrangQuynh_page-0035.jpg",
+      "PackagePath": "staticwebassets\\pages\\TrangQuynh_page-0035.jpg"
+    },
+    {
+      "Id": "D:\\LapTrinhWeb\\DoAn-ThucHien\\DoAnWeb\\DoAnLapTrinhWeb\\DoAnLapTrinhWeb\\wwwroot\\pages\\TrangQuynh_page-0036.jpg",
+      "PackagePath": "staticwebassets\\pages\\TrangQuynh_page-0036.jpg"
+    },
+    {
+      "Id": "D:\\LapTrinhWeb\\DoAn-ThucHien\\DoAnWeb\\DoAnLapTrinhWeb\\DoAnLapTrinhWeb\\wwwroot\\pages\\TrangQuynh_page-0037.jpg",
+      "PackagePath": "staticwebassets\\pages\\TrangQuynh_page-0037.jpg"
+    },
+    {
+      "Id": "D:\\LapTrinhWeb\\DoAn-ThucHien\\DoAnWeb\\DoAnLapTrinhWeb\\DoAnLapTrinhWeb\\wwwroot\\pages\\TrangQuynh_page-0038.jpg",
+      "PackagePath": "staticwebassets\\pages\\TrangQuynh_page-0038.jpg"
+    },
+    {
+      "Id": "D:\\LapTrinhWeb\\DoAn-ThucHien\\DoAnWeb\\DoAnLapTrinhWeb\\DoAnLapTrinhWeb\\wwwroot\\pages\\TrangQuynh_page-0039.jpg",
+      "PackagePath": "staticwebassets\\pages\\TrangQuynh_page-0039.jpg"
+    },
+    {
+      "Id": "D:\\LapTrinhWeb\\DoAn-ThucHien\\DoAnWeb\\DoAnLapTrinhWeb\\DoAnLapTrinhWeb\\wwwroot\\pages\\TrangQuynh_page-0040.jpg",
+      "PackagePath": "staticwebassets\\pages\\TrangQuynh_page-0040.jpg"
+    },
+    {
+      "Id": "D:\\LapTrinhWeb\\DoAn-ThucHien\\DoAnWeb\\DoAnLapTrinhWeb\\DoAnLapTrinhWeb\\wwwroot\\pages\\TrangQuynh_page-0041.jpg",
+      "PackagePath": "staticwebassets\\pages\\TrangQuynh_page-0041.jpg"
+    },
+    {
+      "Id": "D:\\LapTrinhWeb\\DoAn-ThucHien\\DoAnWeb\\DoAnLapTrinhWeb\\DoAnLapTrinhWeb\\wwwroot\\pages\\TrangQuynh_page-0042.jpg",
+      "PackagePath": "staticwebassets\\pages\\TrangQuynh_page-0042.jpg"
+    },
+    {
+      "Id": "D:\\LapTrinhWeb\\DoAn-ThucHien\\DoAnWeb\\DoAnLapTrinhWeb\\DoAnLapTrinhWeb\\wwwroot\\pages\\TrangQuynh_page-0043.jpg",
+      "PackagePath": "staticwebassets\\pages\\TrangQuynh_page-0043.jpg"
+    },
+    {
+      "Id": "D:\\LapTrinhWeb\\DoAn-ThucHien\\DoAnWeb\\DoAnLapTrinhWeb\\DoAnLapTrinhWeb\\wwwroot\\pages\\TrangQuynh_page-0044.jpg",
+      "PackagePath": "staticwebassets\\pages\\TrangQuynh_page-0044.jpg"
+    },
+    {
+      "Id": "D:\\LapTrinhWeb\\DoAn-ThucHien\\DoAnWeb\\DoAnLapTrinhWeb\\DoAnLapTrinhWeb\\wwwroot\\pages\\TrangQuynh_page-0045.jpg",
+      "PackagePath": "staticwebassets\\pages\\TrangQuynh_page-0045.jpg"
+    },
+    {
+      "Id": "D:\\LapTrinhWeb\\DoAn-ThucHien\\DoAnWeb\\DoAnLapTrinhWeb\\DoAnLapTrinhWeb\\wwwroot\\pages\\TrangQuynh_page-0046.jpg",
+      "PackagePath": "staticwebassets\\pages\\TrangQuynh_page-0046.jpg"
+    },
+    {
+      "Id": "D:\\LapTrinhWeb\\DoAn-ThucHien\\DoAnWeb\\DoAnLapTrinhWeb\\DoAnLapTrinhWeb\\wwwroot\\pages\\TrangQuynh_page-0047.jpg",
+      "PackagePath": "staticwebassets\\pages\\TrangQuynh_page-0047.jpg"
+    },
+    {
+      "Id": "D:\\LapTrinhWeb\\DoAn-ThucHien\\DoAnWeb\\DoAnLapTrinhWeb\\DoAnLapTrinhWeb\\wwwroot\\pages\\TrangQuynh_page-0048.jpg",
+      "PackagePath": "staticwebassets\\pages\\TrangQuynh_page-0048.jpg"
+    },
+    {
+      "Id": "D:\\LapTrinhWeb\\DoAn-ThucHien\\DoAnWeb\\DoAnLapTrinhWeb\\DoAnLapTrinhWeb\\wwwroot\\pages\\TrangQuynh_page-0049.jpg",
+      "PackagePath": "staticwebassets\\pages\\TrangQuynh_page-0049.jpg"
+    },
+    {
+      "Id": "D:\\LapTrinhWeb\\DoAn-ThucHien\\DoAnWeb\\DoAnLapTrinhWeb\\DoAnLapTrinhWeb\\wwwroot\\pages\\TrangQuynh_page-0050.jpg",
+      "PackagePath": "staticwebassets\\pages\\TrangQuynh_page-0050.jpg"
+    },
+    {
+      "Id": "D:\\LapTrinhWeb\\DoAn-ThucHien\\DoAnWeb\\DoAnLapTrinhWeb\\DoAnLapTrinhWeb\\wwwroot\\pages\\TrangQuynh_page-0051.jpg",
+      "PackagePath": "staticwebassets\\pages\\TrangQuynh_page-0051.jpg"
+    },
+    {
+      "Id": "D:\\LapTrinhWeb\\DoAn-ThucHien\\DoAnWeb\\DoAnLapTrinhWeb\\DoAnLapTrinhWeb\\wwwroot\\pages\\TrangQuynh_page-0052.jpg",
+      "PackagePath": "staticwebassets\\pages\\TrangQuynh_page-0052.jpg"
+    },
+    {
+      "Id": "D:\\LapTrinhWeb\\DoAn-ThucHien\\DoAnWeb\\DoAnLapTrinhWeb\\DoAnLapTrinhWeb\\wwwroot\\pages\\TrangQuynh_page-0053.jpg",
+      "PackagePath": "staticwebassets\\pages\\TrangQuynh_page-0053.jpg"
+    },
+    {
+      "Id": "D:\\LapTrinhWeb\\DoAn-ThucHien\\DoAnWeb\\DoAnLapTrinhWeb\\DoAnLapTrinhWeb\\wwwroot\\pages\\TrangQuynh_page-0054.jpg",
+      "PackagePath": "staticwebassets\\pages\\TrangQuynh_page-0054.jpg"
+    },
+    {
+      "Id": "D:\\LapTrinhWeb\\DoAn-ThucHien\\DoAnWeb\\DoAnLapTrinhWeb\\DoAnLapTrinhWeb\\wwwroot\\pages\\TrangQuynh_page-0055.jpg",
+      "PackagePath": "staticwebassets\\pages\\TrangQuynh_page-0055.jpg"
+    },
+    {
+      "Id": "D:\\LapTrinhWeb\\DoAn-ThucHien\\DoAnWeb\\DoAnLapTrinhWeb\\DoAnLapTrinhWeb\\wwwroot\\pages\\TrangQuynh_page-0056.jpg",
+      "PackagePath": "staticwebassets\\pages\\TrangQuynh_page-0056.jpg"
+    },
+    {
+      "Id": "D:\\LapTrinhWeb\\DoAn-ThucHien\\DoAnWeb\\DoAnLapTrinhWeb\\DoAnLapTrinhWeb\\wwwroot\\pages\\TrangQuynh_page-0057.jpg",
+      "PackagePath": "staticwebassets\\pages\\TrangQuynh_page-0057.jpg"
+    },
+    {
+      "Id": "D:\\LapTrinhWeb\\DoAn-ThucHien\\DoAnWeb\\DoAnLapTrinhWeb\\DoAnLapTrinhWeb\\wwwroot\\pages\\TrangQuynh_page-0058.jpg",
+      "PackagePath": "staticwebassets\\pages\\TrangQuynh_page-0058.jpg"
+    },
+    {
+      "Id": "D:\\LapTrinhWeb\\DoAn-ThucHien\\DoAnWeb\\DoAnLapTrinhWeb\\DoAnLapTrinhWeb\\wwwroot\\pages\\TrangQuynh_page-0059.jpg",
+      "PackagePath": "staticwebassets\\pages\\TrangQuynh_page-0059.jpg"
+    },
+    {
+      "Id": "D:\\LapTrinhWeb\\DoAn-ThucHien\\DoAnWeb\\DoAnLapTrinhWeb\\DoAnLapTrinhWeb\\wwwroot\\pages\\TrangQuynh_page-0060.jpg",
+      "PackagePath": "staticwebassets\\pages\\TrangQuynh_page-0060.jpg"
+    },
+    {
+      "Id": "D:\\LapTrinhWeb\\DoAn-ThucHien\\DoAnWeb\\DoAnLapTrinhWeb\\DoAnLapTrinhWeb\\wwwroot\\pages\\TrangQuynh_page-0061.jpg",
+      "PackagePath": "staticwebassets\\pages\\TrangQuynh_page-0061.jpg"
+    },
+    {
+      "Id": "D:\\LapTrinhWeb\\DoAn-ThucHien\\DoAnWeb\\DoAnLapTrinhWeb\\DoAnLapTrinhWeb\\wwwroot\\pages\\TrangQuynh_page-0062.jpg",
+      "PackagePath": "staticwebassets\\pages\\TrangQuynh_page-0062.jpg"
+    },
+    {
+      "Id": "D:\\LapTrinhWeb\\DoAn-ThucHien\\DoAnWeb\\DoAnLapTrinhWeb\\DoAnLapTrinhWeb\\wwwroot\\pages\\TrangQuynh_page-0063.jpg",
+      "PackagePath": "staticwebassets\\pages\\TrangQuynh_page-0063.jpg"
+    },
+    {
+      "Id": "D:\\LapTrinhWeb\\DoAn-ThucHien\\DoAnWeb\\DoAnLapTrinhWeb\\DoAnLapTrinhWeb\\wwwroot\\pages\\TrangQuynh_page-0064.jpg",
+      "PackagePath": "staticwebassets\\pages\\TrangQuynh_page-0064.jpg"
+    },
+    {
+      "Id": "D:\\LapTrinhWeb\\DoAn-ThucHien\\DoAnWeb\\DoAnLapTrinhWeb\\DoAnLapTrinhWeb\\wwwroot\\pages\\TrangQuynh_page-0065.jpg",
+      "PackagePath": "staticwebassets\\pages\\TrangQuynh_page-0065.jpg"
+    },
+    {
+      "Id": "D:\\LapTrinhWeb\\DoAn-ThucHien\\DoAnWeb\\DoAnLapTrinhWeb\\DoAnLapTrinhWeb\\wwwroot\\pages\\TrangQuynh_page-0066.jpg",
+      "PackagePath": "staticwebassets\\pages\\TrangQuynh_page-0066.jpg"
+    },
+    {
+      "Id": "D:\\LapTrinhWeb\\DoAn-ThucHien\\DoAnWeb\\DoAnLapTrinhWeb\\DoAnLapTrinhWeb\\wwwroot\\pages\\TrangQuynh_page-0067.jpg",
+      "PackagePath": "staticwebassets\\pages\\TrangQuynh_page-0067.jpg"
+    },
+    {
+      "Id": "D:\\LapTrinhWeb\\DoAn-ThucHien\\DoAnWeb\\DoAnLapTrinhWeb\\DoAnLapTrinhWeb\\wwwroot\\pages\\TrangQuynh_page-0068.jpg",
+      "PackagePath": "staticwebassets\\pages\\TrangQuynh_page-0068.jpg"
     },
     {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.DoAnLapTrinhWeb.Microsoft.AspNetCore.StaticWebAssets.props",

@@ -1,0 +1,98 @@
+﻿@model DoAnLapTrinhWeb.Models.tbSach
+@using DoAnLapTrinhWeb.Models;
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ApplicationDbContext context = new ApplicationDbContext();
+    var theloai = context.tbTheLoai.FirstOrDefault(b => b.Id == @Model.theLoaiId);
+    var tacgia = context.tbTacGia.FirstOrDefault(b => b.Id == @Model.tacGiaId);
+    var listPhieuDanhGia = context.tbPhieuDanhGia.Where(p => p.sachId == Model.Id).ToList();
+    float trungBinhDanhGia()
+    {
+        float result = 0;
+        foreach (var item in listPhieuDanhGia)
+        {
+            result += (float)item.diem;
+        }
+        float average = result / listPhieuDanhGia.Count();
+        return (float)Math.Round(average, 2);
+    }
+}
+<head>
+    <title>Thông tin sách</title>
+    <style>
+        .book-info {
+            max-width: 620px;
+            margin: 0 auto;
+            padding: 30px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            display: flex;
+        }
+
+        .book-details {
+            flex: 1;
+            margin-left: 20px;
+        }
+
+        .book-title {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .book-author {
+            font-size: 18px;
+            font-style: italic;
+            margin-bottom: 10px;
+        }
+
+        .book-description {
+            margin-bottom: 20px;
+        }
+
+        .book-cover {
+            max-width: 300px;
+            height: auto;
+        }
+
+        .book-category {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        .book-buttons {
+            display: flex;
+        }
+
+        .book-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="book-info">
+        <img class="book-cover" src="@Model.imageUrl">
+        <div class="book-details">
+            <h1 class="book-title">@Model.tenSach</h1>
+            <h2 class="book-author">@tacgia.TenTacGia.ToString()</h2>
+            <p class="book-description">Mô tả: @Model.moTa</p>
+            <div class="book-category">Thể loại: @theloai.tenTheLoai.ToString()</div>
+            <p class="book-rating">Đánh giá: @trungBinhDanhGia().ToString()/5★</p>
+            <div class="book-buttons">
+                <a class="book-button" asp-controller="Books" asp-action="Read" asp-route-sachId="@Model.Id">Đọc</a>
+                @* <a class="book-button" asp-area="Admin" asp-controller="page" asp-action="Add" asp-route-sachId="@Model.Id">Thêm trang</a> *@
+                <a class="book-button" href="/Admin/Page/Add/@Model.Id">Thêm trang</a>
+            </div>
+        </div>
+    </div>
+</body>
+
+

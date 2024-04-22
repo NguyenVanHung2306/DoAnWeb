@@ -1,4 +1,6 @@
-﻿<!DOCTYPE html>
+﻿@using DoAnLapTrinhWeb.Areas.Admin.Models;
+
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8" />
@@ -10,22 +12,69 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
-            <div class="container-fluid">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">DoAnLapTrinhWeb</a>
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light  border-bottom box-shadow mb-3" style="background-color: #e1dcc5">
+
+            <div class="container-fluid" style="height: 72px;">
+                <a class="navbar-brand" asp-area="" asp-controller="Books" asp-action="Index">
+                    <img src="~/images/BackgroundMenu.jpg" style="height: 90px; width: 200px;" />
+                </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                    <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Books" asp-action="Index">Trang chủ</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-controller="LichSu" asp-action="Index" asp-route-userId="@ViewBag.UserId">Lịch sử</a>
-                        </li>
-                    </ul>
+                    <div class="menu">
+                        <ul class="navbar-nav flex-grow-1">
+                            @if (User.Identity.IsAuthenticated && User.IsInRole("Admin"))
+                            {
+                                <li class="nav-item">
+                                    <a class="nav-link" style="font-size: 20px;
+                                                               font-family: 'Times New Roman';
+                                                               font-weight: bold;"  asp-area="Admin" asp-controller="Books" asp-action="Index">My Book</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"
+                                       style="font-size: 20px;
+                                                               font-family: 'Times New Roman';
+                                                               font-weight: bold;
+                                                               background-color: #e1dcc5 ">Danh Mục</a>
+                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <li class="nav-item">
+                                            <a class="nav-link" asp-area="Admin" asp-controller="Books" asp-action="Index2">Quản lý Sách</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" asp-area="Admin" asp-controller="TacGia" asp-action="Index">Quản lý tác Giả</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link"  asp-area="Admin" asp-controller="TheLoai" asp-action="Index">Quản lý thể Loại</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link"  asp-area="Admin" asp-controller="Books" asp-action="ListUser">Quản lý tài Khoản</a>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                            }
+                            else @if (User.Identity.IsAuthenticated)
+                            {
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark" asp-area="" asp-controller="Books" asp-action="Index" style="font-size: 20px;
+                                                               font-family: 'Times New Roman';
+                                                               font-weight: bold;">Trang chủ</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark" asp-controller="LichSu" asp-action="Index" asp-route-userId="@ViewBag.UserId" style="font-size: 20px;
+                                                               font-family: 'Times New Roman';
+                                                               font-weight: bold;">Lịch sử</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark" asp-area="" asp-controller="Books" asp-action="find" asp-route-search="" style="font-size: 20px;
+                                                               font-family: 'Times New Roman';
+                                                               font-weight: bold;">Tìm kiếm</a>
+                                </li>
+                            }
+                        </ul>
+                    </div>
                         <partial name="_LoginPartial" />
                 </div>
             </div>
