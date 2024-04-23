@@ -1,9 +1,6 @@
 ﻿@model DoAnLapTrinhWeb.Models.tbTacGia
 
-@{
-    ViewData["Title"] = "Add";
-    Layout = "~/Views/Shared/_Layout.cshtml";
-}
+
 <div>
     <a asp-action="Index">Back to List</a>
 </div>
@@ -60,7 +57,7 @@
     <form asp-action="Add">
         <div asp-validation-summary="ModelOnly" class="text-danger"></div>
         <div class="form-group">
-            <label asp-for="TenTacGia" class="control-label"></label>
+            <label asp-for="TenTacGia" class="control-label">Tên tác giả</label>
             <input asp-for="TenTacGia" class="form-control" />
             <span asp-validation-for="TenTacGia" class="text-danger"></span>
         </div>

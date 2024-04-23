@@ -2,7 +2,6 @@
 @using DoAnLapTrinhWeb.Models;
 
 @{
-    Layout = "~/Views/Shared/_Layout.cshtml";
     ApplicationDbContext context = new ApplicationDbContext();
     var theloai = context.tbTheLoai.FirstOrDefault(b => b.Id == @Model.theLoaiId);
     var tacgia = context.tbTacGia.FirstOrDefault(b => b.Id == @Model.tacGiaId);

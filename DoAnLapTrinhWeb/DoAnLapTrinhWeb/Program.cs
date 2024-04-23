@@ -12,25 +12,31 @@ builder.Services.AddIdentity<ApplicationUser, IdentityRole>()
     .AddDefaultUI()
     .AddEntityFrameworkStores<ApplicationDbContext>();
 
-builder.Services.ConfigureApplicationCookie(options =>
-{
-    options.LoginPath = $"/Identity/Account/Login";
-    options.LoginPath = $"/Identity/Account/Logout";
-    options.LoginPath = $"/Identity/Account/AccessDenied";
-
-});
-
-builder.Services.AddRazorPages();
-
-// Add services to the container.
-builder.Services.AddControllersWithViews();
-
-
 builder.Services.AddScoped<ISachRepository, EFSachRepository>();
 builder.Services.AddScoped<ITheLoaiRepository, EFTheLoaiRepository>();
 builder.Services.AddScoped<ITacGiaRepository, EFTacGiaRepository>();
 builder.Services.AddScoped<ITrangRepository, EFTrangRepository>();
 builder.Services.AddScoped<IUserRepository, EFUserRepository>();
+
+/*builder.Services.ConfigureApplicationCookie(options =>
+{
+    options.LoginPath = $"/Identity/Account/Login";
+    options.LoginPath = $"/Identity/Account/Logout";
+    options.LoginPath = $"/Identity/Account/AccessDenied";
+
+});*/
+
+builder.Services.AddRazorPages();
+
+// Add services to the container.
+builder.Services.AddControllersWithViews();
+builder.Services.AddDistributedMemoryCache();
+builder.Services.AddSession(options =>
+{
+    options.IdleTimeout = TimeSpan.FromMinutes(30);
+    options.Cookie.HttpOnly = true;
+    options.Cookie.IsEssential = true;
+});
 
 var app = builder.Build();
 
@@ -42,12 +48,13 @@ if (!app.Environment.IsDevelopment())
     app.UseHsts();
 }
 
+app.UseSession();
 app.UseHttpsRedirection();
 app.UseStaticFiles();
 
 
 app.UseRouting();
-
+app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapRazorPages();
@@ -56,33 +63,13 @@ app.UseEndpoints(endpoints =>
 {
     endpoints.MapControllerRoute(
         name: "Admin",
-        pattern: "{area:exists}/{controller=Page}/{action=Index}/{id?}");
-    endpoints.MapControllerRoute(
-        name: "Admin",
-        pattern: "{area:exists}/{controller=Books}/{action=Index}/{id?}");
-    endpoints.MapControllerRoute(
-        name: "Admin",
-        pattern: "{area:exists}/{controller=TheLoai}/{action=Index}/{id?}");
-    endpoints.MapControllerRoute(
-       name: "Admin",
-       pattern: "{area:exists}/{controller=TacGia}/{action=Index}/{id?}");
-    endpoints.MapControllerRoute(
-    name: "default",
-    pattern: "{controller=Books}/{action=Index}/{id?}");
+        pattern: "{area:exists}/{controller=Books}/{action=Index}/{id?}"
+    );
 
+    endpoints.MapControllerRoute(
+        name: "default",
+        pattern: "{controller=Books}/{action=Index}/{id?}"
+    );
 });
-
-app.MapControllerRoute(
-    name: "default",
-    pattern: "{controller=Books}/{action=Index}/{id?}");
-
-app.MapControllerRoute(
-    name: "default",
-    pattern: "{controller=TacGia}/{action=Index}/{id?}");
-
-
-app.MapControllerRoute(
-    name: "default",
-    pattern: "{controller=TheLoai}/{action=Index}/{id?}");
 
 app.Run();

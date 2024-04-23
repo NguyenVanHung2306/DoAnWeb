@@ -12,7 +12,6 @@ using System;
 
 namespace DoAnLapTrinhWeb.Controllers
 {
-    [Authorize]
     public class BooksController : Controller
     {
         private readonly ISachRepository _sachRepository;
@@ -26,7 +25,6 @@ namespace DoAnLapTrinhWeb.Controllers
             _sachRepository = sachRepositoryy;
             _context = context;
             _userManager = userManager;
-
         }
 
         //Action Index tượng trưng
@@ -50,7 +48,7 @@ namespace DoAnLapTrinhWeb.Controllers
             // Gán giá trị số lượng trang cho ViewBag
             ViewBag.PageCount = pageCount;
             var user = await _userManager.GetUserAsync(User);
-            ViewBag.UserId = user.Id;
+            //ViewBag.UserId = user.Id;
             return View(pagedSachList);
         }
 
@@ -63,34 +61,42 @@ namespace DoAnLapTrinhWeb.Controllers
             {
                 return NotFound();
             }
-            ViewBag.UserId = user.Id;
+            //ViewBag.UserId = user.Id;
             return View(books);
         }
 
 		//Action để đọc các trang sách
 		public async Task<IActionResult> Read(int sachId)
         {
-            var user = await _userManager.GetUserAsync(User);
-            var lichSu = _context.tbLichSu.FirstOrDefault(p => p.sachId == sachId && p.userId == user.Id);
-            if (lichSu == null)
+            if (!User.Identity.IsAuthenticated)
             {
-                //Nếu sách chưa có trong lịch sử thì thêm vào
-                tbLichSu tempLichSu = new tbLichSu();
-                tempLichSu.sachId = sachId;
-                tempLichSu.userId = user.Id;
-                tempLichSu.thoiGianDoc = DateTime.Now;
-                _context.tbLichSu.Add(tempLichSu);
+                return Redirect("https://localhost:7226/Identity/Account/Login"); // Chuyển hướng đến trang đăng nhập
             }
             else
             {
-                //Đã có thì cập nhật thời gian đọc
-                lichSu.thoiGianDoc = DateTime.UtcNow;
-            }
+                var user = await _userManager.GetUserAsync(User);
+                var lichSu = _context.tbLichSu.FirstOrDefault(p => p.sachId == sachId && p.userId == user.Id);
+                if (lichSu == null)
+                {
+                    //Nếu sách chưa có trong lịch sử thì thêm vào
+                    tbLichSu tempLichSu = new tbLichSu();
+                    tempLichSu.sachId = sachId;
+                    tempLichSu.userId = user.Id;
+                    tempLichSu.thoiGianDoc = DateTime.Now;
+                    _context.tbLichSu.Add(tempLichSu);
+                }
+                else
+                {
+                    //Đã có thì cập nhật thời gian đọc
+                    lichSu.thoiGianDoc = DateTime.UtcNow;
+                }
 
-            _context.SaveChanges();
-            ViewBag.SachId = sachId;
-            ViewBag.UserId = user.Id;
-            return View();
+                _context.SaveChanges();
+                ViewBag.SachId = sachId;
+                ViewBag.UserId = user.Id;
+                return View();
+            }
+            
         }
 
         //Action dùng để lấy danh sách trang
@@ -118,7 +124,7 @@ namespace DoAnLapTrinhWeb.Controllers
             }
             List<tbSach> sachList = result.ToList();
             var user = await _userManager.GetUserAsync(User);
-            ViewBag.UserId = user.Id;
+            //ViewBag.UserId = user.Id;
             return View(sachList);
         }
 

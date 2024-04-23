@@ -9,7 +9,6 @@ using System;
 
 namespace DoAnLapTrinhWeb.Controllers
 {
-    [Authorize]
     public class LichSuController : Controller
     {
         private readonly ApplicationDbContext _context;
@@ -21,15 +20,32 @@ namespace DoAnLapTrinhWeb.Controllers
             _userManager = userManager;
         }
         // GET: LichSuController
-        public ActionResult Index(string userId)
+        //public ActionResult Index(string userId)
+        //{
+        //    if (!User.Identity.IsAuthenticated)
+        //    {
+        //        return Redirect("https://localhost:7226/Identity/Account/Login"); // Chuyển hướng đến trang đăng nhập
+        //    }
+        //    else
+        //    {
+        //        ViewBag.UserId = userId;
+        //        return View();
+        //    }
+        //}
+        public async Task<IActionResult> Index()
         {
             if (!User.Identity.IsAuthenticated)
             {
-                return RedirectToAction("Login", "Account"); // Chuyển hướng đến trang đăng nhập
+                return Redirect("https://localhost:7226/Identity/Account/Login"); // Chuyển hướng đến trang đăng nhập
             }
-            ViewBag.UserId = userId;
-            return View();
+            else
+            {
+                var user = await _userManager.GetUserAsync(User);
+                ViewBag.UserId = user.Id;
+                return View();
+            }
         }
+
         // GET: LichSuController/Delete/5
         public ActionResult Delete(int sachId, string userId)
         {
@@ -39,6 +55,7 @@ namespace DoAnLapTrinhWeb.Controllers
                 _context.tbLichSu.Remove(recordsToDelete);
                 _context.SaveChanges();
             }
+
             return RedirectToAction("Index", "LichSu", new { userId = userId });
         }
     }

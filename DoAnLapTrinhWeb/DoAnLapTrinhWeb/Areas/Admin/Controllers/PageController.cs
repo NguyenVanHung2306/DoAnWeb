@@ -8,7 +8,7 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 namespace DoAnLapTrinhWeb.Controllers
 {
     [Area("Admin")]
-    [Authorize(Roles = SD.Role_Admin)]
+    [Authorize(Roles = "Admin")]
     public class PageController : Controller
     {
         private readonly ITrangRepository _trangRepository;
@@ -50,15 +50,15 @@ namespace DoAnLapTrinhWeb.Controllers
                 {
                     var savedImage = await SaveImage(imageUrl);
 
-                    // Tạo một đối tượng PostJobImage mới
-                    var postJobImage = new TbTrang
+                    // Tạo một đối tượng pageImage mới
+                    var pageImage = new TbTrang
                     {
                         SachId = Id,
                         Noidung = savedImage,
                     };
 
-                    // Thêm đối tượng PostJobImage mới vào danh sách post_job.post_Job_Images
-                    await _trangRepository.AddAsync(postJobImage);
+                    // Thêm đối tượng pageImage mới vào danh sách
+                    await _trangRepository.AddAsync(pageImage);
                 }
             }
             else
@@ -69,6 +69,7 @@ namespace DoAnLapTrinhWeb.Controllers
             TempData["SuccessMessage"] = "Đã thêm tác giả thành công.";
 
             return RedirectToAction(nameof(Index));
+            //return RedirectToAction("Details", "Books", new { id = Id });
         }
 
 

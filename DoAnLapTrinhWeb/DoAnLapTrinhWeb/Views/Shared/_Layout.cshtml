@@ -25,45 +25,13 @@
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
                     <div class="menu">
                         <ul class="navbar-nav flex-grow-1">
-                            @if (User.Identity.IsAuthenticated && User.IsInRole("Admin"))
-                            {
-                                <li class="nav-item">
-                                    <a class="nav-link" style="font-size: 20px;
-                                                               font-family: 'Times New Roman';
-                                                               font-weight: bold;"  asp-area="Admin" asp-controller="Books" asp-action="Index">My Book</a>
-                                </li>
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"
-                                       style="font-size: 20px;
-                                                               font-family: 'Times New Roman';
-                                                               font-weight: bold;
-                                                               background-color: #e1dcc5 ">Danh Mục</a>
-                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                        <li class="nav-item">
-                                            <a class="nav-link" asp-area="Admin" asp-controller="Books" asp-action="Index2">Quản lý Sách</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" asp-area="Admin" asp-controller="TacGia" asp-action="Index">Quản lý tác Giả</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link"  asp-area="Admin" asp-controller="TheLoai" asp-action="Index">Quản lý thể Loại</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link"  asp-area="Admin" asp-controller="Books" asp-action="ListUser">Quản lý tài Khoản</a>
-                                        </li>
-                                    </ul>
-                                </li>
-
-                            }
-                            else @if (User.Identity.IsAuthenticated)
-                            {
                                 <li class="nav-item">
                                     <a class="nav-link text-dark" asp-area="" asp-controller="Books" asp-action="Index" style="font-size: 20px;
                                                                font-family: 'Times New Roman';
                                                                font-weight: bold;">Trang chủ</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link text-dark" asp-controller="LichSu" asp-action="Index" asp-route-userId="@ViewBag.UserId" style="font-size: 20px;
+                                    <a class="nav-link text-dark" asp-controller="LichSu" asp-action="Index" style="font-size: 20px;
                                                                font-family: 'Times New Roman';
                                                                font-weight: bold;">Lịch sử</a>
                                 </li>
@@ -72,7 +40,6 @@
                                                                font-family: 'Times New Roman';
                                                                font-weight: bold;">Tìm kiếm</a>
                                 </li>
-                            }
                         </ul>
                     </div>
                         <partial name="_LoginPartial" />
@@ -88,7 +55,7 @@
 
     <footer class="border-top footer text-muted">
         <div class="container">
-            &copy; 2024 - DoAnLapTrinhWeb - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+            Đồ án lập trình web - Nhóm 6
         </div>
     </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>

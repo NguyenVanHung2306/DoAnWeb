@@ -1,7 +1,6 @@
 ﻿@using DoAnLapTrinhWeb.Models;
 
 @{
-    Layout = "~/Views/Shared/_Layout.cshtml";
     var sachId = (int)ViewBag.SachId;
     ApplicationDbContext context = new ApplicationDbContext();
     var Sach = context.tbSach.FirstOrDefault(b => b.Id == sachId);

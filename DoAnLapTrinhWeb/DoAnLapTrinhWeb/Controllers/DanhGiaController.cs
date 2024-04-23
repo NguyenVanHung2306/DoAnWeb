@@ -8,7 +8,6 @@ using Microsoft.EntityFrameworkCore;
 
 namespace DoAnLapTrinhWeb.Controllers
 {
-    [Authorize]
     public class DanhGiaController : Controller
     {
         private readonly ISachRepository _sachRepository;
@@ -34,10 +33,17 @@ namespace DoAnLapTrinhWeb.Controllers
 
         public async Task<IActionResult> LuuDanhGia(int sachId)
         {
-            ViewBag.sachId = sachId;
-            var user = await _userManager.GetUserAsync(User);
-            ViewBag.UserId = user.Id;
-            return View();
+            if (!User.Identity.IsAuthenticated)
+            {
+                return Redirect("https://localhost:7226/Identity/Account/Login"); // Chuyển hướng đến trang đăng nhập
+            }
+            else
+            {
+                ViewBag.sachId = sachId;
+                var user = await _userManager.GetUserAsync(User);
+                ViewBag.UserId = user.Id;
+                return View();
+            }
         }
 
         [HttpPost]

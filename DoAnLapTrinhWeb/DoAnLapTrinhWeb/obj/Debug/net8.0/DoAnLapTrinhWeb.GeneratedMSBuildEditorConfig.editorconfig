@@ -74,6 +74,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUGFnZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/LapTrinhWeb/DoAn-ThucHien/DoAnWeb/DoAnLapTrinhWeb/DoAnLapTrinhWeb/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2hhcmVkXF9MYXlvdXRBZG1pbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/LapTrinhWeb/DoAn-ThucHien/DoAnWeb/DoAnLapTrinhWeb/DoAnLapTrinhWeb/Areas/Admin/Views/TacGia/Add.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcVGFjR2lhXEFkZC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -116,6 +120,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [D:/LapTrinhWeb/DoAn-ThucHien/DoAnWeb/DoAnLapTrinhWeb/DoAnLapTrinhWeb/Areas/Admin/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/LapTrinhWeb/DoAn-ThucHien/DoAnWeb/DoAnLapTrinhWeb/DoAnLapTrinhWeb/Areas/Admin/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/LapTrinhWeb/DoAn-ThucHien/DoAnWeb/DoAnLapTrinhWeb/DoAnLapTrinhWeb/Areas/Identity/Pages/Account/Login.cshtml]

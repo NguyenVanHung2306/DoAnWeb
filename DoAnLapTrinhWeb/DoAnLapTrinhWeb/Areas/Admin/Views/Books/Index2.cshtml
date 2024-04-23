@@ -1,12 +1,6 @@
 ﻿@model IEnumerable<DoAnLapTrinhWeb.Models.tbSach>
 @using DoAnLapTrinhWeb.Models;
 
-@{
-    ViewData["Title"] = "DoAnLapTrinhWeb";
-    Layout = "~/Views/Shared/_Layout.cshtml";
-    
-
-}
 <script>
     function redirectToDetails(Id) {
         window.location.href = "/Admin/Books/Details/" + Id;

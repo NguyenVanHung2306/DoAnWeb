@@ -7,10 +7,10 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using DoAnLapTrinhWeb.Areas.Admin.Models;
 
-namespace DoAnLapTrinhWeb.Areas.Admin.Controlle
+namespace DoAnLapTrinhWeb.Areas.Admin.Controllers
 {
     [Area("Admin")]
-    [Authorize(Roles = SD.Role_Admin)]
+    [Authorize(Roles = "Admin")]
     public class BooksController : Controller
     {
         private readonly ISachRepository _sachRepository;

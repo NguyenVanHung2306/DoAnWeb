@@ -83,7 +83,7 @@
 <h2>Tìm kiếm</h2>
 <form id="searchForm" asp-controller="Books" asp-action="find" method="get">
     <p>
-        Tìm kiếm: <input type="text" id="searchInput" name="search" placeholder="Nhập tên sách hoặc tên tác giả" />
+        Tìm kiếm: <input style="background-color: #e1dcc5; " type="text" id="searchInput" name="search" placeholder="Nhập tên sách hoặc tên tác giả" />
         <input type="submit" value="Tìm kiếm" class="ip-timkiem" />
     </p>
 </form>
@@ -166,6 +166,7 @@
                     $("#searchForm").submit();
                 }
             });
-        });
+
+        }); 
     </script>
 }
